@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumeroSocio" type="xs:string" minOccurs="0" /> 
+              <xs:element name="TipoDocumento" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroDocumento" type="xs:int" minOccurs="0" />
+              <xs:element name="Apellido" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoZonaGrupo" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoCategoria" type="xs:string" minOccurs="0" />
+              <xs:element name="Categoria" type="xs:string" minOccurs="0" />
+              <xs:element name="IdTipoCargoLoteEnviado" type="xs:int" minOccurs="0" />
+              <xs:element name="PeriodoEnviado" type="xs:int" minOccurs="0" />
+              <xs:element name="FormaCobro" type="xs:string" minOccurs="0" />
+              <xs:element name="ImporteTotalEnviado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteTotalDescontado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteTotalRevertido" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PeriodoCargo" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaCargo" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Concepto" type="xs:string" minOccurs="0" />
+              <xs:element name="ImporteCargo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteCargoPeriodoAnterior" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteCargoEnviado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FechaImputado" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ImporteImputado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteSaldoCargo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="Estado" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalDescontado" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

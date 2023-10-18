@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Maestra.Master" AutoEventWireup="true" CodeBehind="nmpAfiliados.master.cs" Inherits="IU.Modulos.Afiliados.nmpAfiliados" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="ContentHead" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="ContentEncabezado" ContentPlaceHolderID="ContentPlaceEncabezado" runat="server">
+    
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceIzquierdoArriba" runat="server">
+
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceDerechaArriba" runat="server">
+
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceIzquierdoCentro" runat="server">
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+  <div class="card">
+  <div class="card-header">
+    Datos del Afiliado
+  </div>
+  <div class="card-body">
+      <div class="form-group row">
+        <asp:Label CssClass="col-3 col-lg-1 col-form-label" ID="lblAfiliado" runat="server" Text="Afiliado"></asp:Label>
+        <div class="col-9 col-lg-3">
+          <asp:TextBox CssClass="form-control" ID="txtAfiliado" Enabled="false" runat="server"></asp:TextBox>
+            </div>
+        <asp:Label CssClass="col-3 col-lg-1 col-form-label" ID="lblTipoDocumento" runat="server" Text="Documento"></asp:Label>
+        <div class="col-3 col-lg-1">
+          <asp:TextBox CssClass="form-control" ID="txtTipoDocumento" Enabled="false" runat="server"></asp:TextBox>
+        </div>
+          <div class="col-6 col-lg-2">
+        <asp:TextBox CssClass="form-control" ID="txtNumeroDocumento" Enabled="false" runat="server"></asp:TextBox>
+              </div>
+        <asp:Label CssClass="col-3 col-lg-1 col-form-label" ID="lblIdAfiliado" runat="server" Text="Id Afiliado"></asp:Label>
+        <div class="col-9 col-lg-3">
+          <asp:TextBox CssClass="form-control" ID="txtIdAfiliado" Enabled="false" runat="server"></asp:TextBox>
+            </div>
+    </div>
+      <div class="form-group row">
+        <asp:Label CssClass="col-3 col-lg-1 col-form-label" ID="lblNumeroSocio" runat="server" Text="Nro. socio"></asp:Label>
+        <div class="col-9 col-lg-3">
+          <asp:TextBox CssClass="form-control" ID="txtNumeroSocio" Enabled="false" runat="server"></asp:TextBox>
+            </div>
+        <asp:Label CssClass="col-3 col-lg-1 col-form-label" ID="lblCategoria" runat="server" Text="Categoria"></asp:Label>
+        <div class="col-9 col-lg-3">
+          <asp:TextBox CssClass="form-control" ID="txtCategoria" Enabled="false" runat="server"></asp:TextBox>
+            </div>
+        <asp:Label CssClass="col-3 col-lg-1 col-form-label" ID="lblEstado" runat="server" Text="Estado"></asp:Label>
+        <div class="col-9 col-lg-3">
+          <asp:TextBox CssClass="form-control" ID="txtEstado" Enabled="false" runat="server"></asp:TextBox>
+            </div>
+       </div>
+      <div class="form-group row">
+        <asp:Label CssClass="col-3 col-lg-1 col-form-label" ID="lblMatriculaIAF" runat="server" Text="Legajo"></asp:Label>
+        <div class="col-9 col-lg-3">
+          <asp:TextBox CssClass="form-control" ID="txtMatriculaIAF" Enabled="false" runat="server"></asp:TextBox>
+        </div>
+        <asp:Label CssClass="col-3 col-lg-1 col-form-label" ID="lblCorreoElectronico" runat="server" Text="Correo"></asp:Label>
+        <div class="col-9 col-lg-3">
+          <asp:TextBox CssClass="form-control" ID="txtCorreoElectronico" Enabled="false" runat="server"></asp:TextBox>
+        </div>
+        <asp:Label CssClass="col-3 col-lg-1 col-form-label" ID="lblFechaNacimiento" runat="server" Text="Fecha Nac."></asp:Label>
+        <div class="col-9 col-lg-3">
+          <asp:TextBox CssClass="form-control" ID="txtFechaNacimientoTitular" Enabled="false" runat="server"></asp:TextBox>
+        </div>
+        </div>
+      <div class="form-group row">
+        <asp:Label CssClass="col-3 col-lg-1 col-form-label" ID="lblZonaGrupo" runat="server" Text="Dependencia"></asp:Label>
+        <div class="col-9 col-lg-3">
+          <asp:TextBox CssClass="form-control" ID="txtZonaGrupo" Enabled="false" runat="server"></asp:TextBox>
+            </div>
+            <asp:Label CssClass="col-3 col-lg-1 col-form-label" ID="lblCbu" runat="server" Text="CBU"></asp:Label>
+        <div class="col-9 col-lg-3">
+          <asp:TextBox CssClass="form-control" ID="txtCbu" Enabled="false" runat="server"></asp:TextBox>
+            </div>
+          <asp:Label CssClass="col-3 col-lg-1 col-form-label" ID="lblCelular" runat="server" Text="Celular"></asp:Label>
+        <div class="col-9 col-lg-3">
+          <asp:TextBox CssClass="form-control" ID="txtCelular" Enabled="false" runat="server"></asp:TextBox>
+            </div>
+        </div>
+       </div>
+</div>
+    
+    <asp:ContentPlaceHolder ID="cphPrincipal" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content6" ContentPlaceHolderID="ContentPlaceDerechaCentro" runat="server">
+</asp:Content>
+<asp:Content ID="Content7" ContentPlaceHolderID="ContentPlaceIzquierdoAbajo" runat="server">
+</asp:Content>
+<asp:Content ID="Content8" ContentPlaceHolderID="ContentPlaceDerechaAbajo" runat="server">
+</asp:Content>

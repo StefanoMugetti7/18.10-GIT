@@ -1,0 +1,52 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+forecolor="#333333" backcolor="White"
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<asp:Menu SkinID="MenuBasicoFormal" runat="server"
+    ForeColor="white"
+    Font-Size="small" 
+    Font-Names="Tahoma"
+    DynamicHorizontalOffset="0" 
+    DynamicVerticalOffset="0"
+    StaticEnableDefaultPopOutImage="true"
+    HorizontalPadding="2px"
+    CssClass="Menu-Skin-Horizontal">
+    <StaticMenuItemStyle ForeColor="white"  HorizontalPadding="2px" VerticalPadding="6px" Width="9em" height="2.5em" CssClass="Menu-Skin-StaticItem" />
+    <StaticHoverStyle BackColor="#7373b9" ForeColor="White" />
+    <DynamicMenuItemStyle BackColor="#EEEEE8" ForeColor="black"  Font-Size="small" HorizontalPadding="10px" VerticalPadding="3px" Width="20.5em" CssClass="Menu-Skin-DinamicItem" />
+    <DynamicHoverStyle BackColor="#163d6c" ForeColor="White" CssClass="Menu-Skin-DynamicHover" />
+</asp:Menu>
+
+<asp:GridView SkinID="GrillaBasicaFormal" Runat="server" GridLines="None" CellPadding="4" width="100%"  CssClass="GridViewStyle" >
+    <HeaderStyle forecolor="#F7F6F3" backcolor="#163d6c" font-bold="true" />
+    <RowStyle backcolor="#C1C8FF" />
+    <AlternatingRowStyle backcolor="#8591FE" />
+    <SelectedRowStyle backcolor="#FFFFFF" />
+    <PagerStyle forecolor="#00FFFF" backcolor="#284775" Font-Names="Arial" Font-Size="8" HorizontalAlign="Center" />
+    <FooterStyle forecolor="#F7F6F3" backcolor="#163d6c" font-bold="true" HorizontalAlign="Right" />
+</asp:GridView>
+
+<asp:GridView SkinID="GrillaBasicaFormalHija" Runat="server" GridLines="None" CellPadding="4" width="100%"  CssClass="GridViewStyle" >
+    <HeaderStyle forecolor="#F7F6F3" backcolor="#333366" font-bold="true" Font-Size="9" />
+    <RowStyle backcolor="#C1C8FF" Font-Size="9" />
+    <AlternatingRowStyle backcolor="#8591FE" />
+    <SelectedRowStyle backcolor="#FFFFFF" />
+    <PagerStyle forecolor="#00FFFF" backcolor="#284775" Font-Names="Arial" Font-Size="6" HorizontalAlign="Center" />
+    <FooterStyle forecolor="#F7F6F3" backcolor="#333366" Height="5px" HorizontalAlign="Right" />
+</asp:GridView>
+
+<asp:TabContainer runat="server" SkinID="MyTab" CssClass="ajax__tab_auge" />
+
+

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="LibroDiario" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Table0" msdata:IsDataSet="true" msdata:Locale="">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Periodo" type="xs:string" minOccurs="0" />
+              <xs:element name="NroLote" type="xs:string" minOccurs="0" />
+              <xs:element name="FormaCobro" type="xs:string" minOccurs="0" />
+              <xs:element name="CantidadRegistrosLote" type="xs:string" minOccurs="0" />
+              <xs:element name="ImporteTotalLote" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Dependencia" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaDependencia" type="xs:string" minOccurs="0" />
+              <xs:element name="CantidadRegistrosDependencia" type="xs:int" minOccurs="0" />
+              <xs:element name="ImporteEnviado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteCobrado" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CUIT" type="xs:string" minOccurs="0" />
+              <xs:element name="Empresa" type="xs:string" minOccurs="0" />
+              <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

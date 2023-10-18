@@ -1,0 +1,96 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdOrdenCompra" type="xs:int" minOccurs="0" />
+              <xs:element name="Observacion" type="xs:string" minOccurs="0" />
+              <xs:element name="ProveedorIdProveedor" type="xs:int" minOccurs="0" />
+              <xs:element name="ProveedorRazonSocial" type="xs:string" minOccurs="0" />
+              <xs:element name="ProveedorDomicilioCalle" type="xs:string" minOccurs="0" />
+              <xs:element name="CondicionPagoIdCondicionPago" type="xs:int" minOccurs="0" />
+              <xs:element name="CondicionPagoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaEntrega" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DireccionDestino" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoOrdenCompraIdTipoOrdenCompra" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoOrdenCompraDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="CuotasDescuentoAfiliado" type="xs:int" minOccurs="0" />
+              <xs:element name="CuotasPagoProveedor" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaAlta" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UsuarioAltaIdUsuarioAlta" type="xs:int" minOccurs="0" />
+              <xs:element name="UsuarioAltaApellidoNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaAutorizacion" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UsuarioAutorizarIdUsuarioAutorizar" type="xs:int" minOccurs="0" />
+              <xs:element name="UsuarioAutorizarApellidoNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="PrimerVencimiento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaBaja" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdUsuarioBaja" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaEvento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdUsuarioEvento" type="xs:int" minOccurs="0" />
+              <xs:element name="SelloTiempo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="AfiliadoIdAfiliado" type="xs:int" minOccurs="0" />
+              <xs:element name="AfiliadoNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoNumeroSocio" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoMatriculaIAF" type="xs:long" minOccurs="0" />
+              <xs:element name="AfiliadoTipoDocumentoTipoDocumento" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoNumeroDocumento" type="xs:int" minOccurs="0" />
+              <xs:element name="FormaCobroAfiliadoIdFormaCobroAfiliado" type="xs:int" minOccurs="0" />
+              <xs:element name="FormaCobroAfiliadoFormaCobroIdFormaCobro" type="xs:int" minOccurs="0" />
+              <xs:element name="FormaCobroAfiliadoFormaCobroFormaCobro" type="xs:string" minOccurs="0" />
+              <xs:element name="FormaCobroAfiliadoIdAfiliado" type="xs:int" minOccurs="0" />
+              <xs:element name="FormaCobroAfiliadoPredeterminado" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ImporteTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteCuota" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NotaAutorizacion" type="xs:string" minOccurs="0" />
+              <xs:element name="NotaComercio" type="xs:string" minOccurs="0" />
+              <xs:element name="NotaTituloEjecutivo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdOrdenCompraDetalle" type="xs:int" minOccurs="0" />
+              <xs:element name="IdOrdenCompra" type="xs:int" minOccurs="0" />
+              <xs:element name="ProductoIdProducto" type="xs:int" minOccurs="0" />
+              <xs:element name="ProductoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductoFamiliaCuentaContableDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductoFamiliaCuentaContableIdCuentaContable" type="xs:int" minOccurs="0" />
+              <xs:element name="ProductoFamiliaCuentaContableNumeroCuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductoFamiliaDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductoFamiliaIdFamilia" type="xs:int" minOccurs="0" />
+              <xs:element name="Cantidad" type="xs:int" minOccurs="0" />
+              <xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="CantidadRecibida" type="xs:int" minOccurs="0" />
+              <xs:element name="CantidadPagada" type="xs:int" minOccurs="0" />
+              <xs:element name="Precio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteIVA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IdMoneda" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaEvento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdUsuarioEvento" type="xs:int" minOccurs="0" />
+              <xs:element name="Comentario" type="xs:string" minOccurs="0" />
+              <xs:element name="ImporteItem" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SelloTiempo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

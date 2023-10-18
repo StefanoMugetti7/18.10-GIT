@@ -1,0 +1,63 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Orden" type="xs:int" minOccurs="0" />
+              <xs:element name="IdBancoCuentaMovimiento" type="xs:int" minOccurs="0" />
+              <xs:element name="BancoCuentaIdBancoCuenta" type="xs:int" minOccurs="0" />
+              <xs:element name="BancoCuentaNumeroCuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="BancoCuentaBancoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="BancoCuentaBancoDenominacion" type="xs:string" minOccurs="0" />
+              <xs:element name="BancoCuentaFilialIdFilial" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaMovimiento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdRefTipoOperacion" type="xs:int" minOccurs="0" />
+              <xs:element name="NumeroTipoOperacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteDebe" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteHaber" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Detalle" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaConciliacion" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdUsuarioConciliacion" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaConfirmacionBanco" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdUsuarioAlta" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaAlta" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaEvento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TipoOperacionIdTipoOperacion" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoOperacion" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoOperacionCodigoOperacion" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoMovimientoIdTipoMovimiento" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoMovimientoTipoMovimiento" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoMovimientoCodigoMovimiento" type="xs:string" minOccurs="0" />
+              <xs:element name="EstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="DetalleCheque" type="xs:string" minOccurs="0" />
+              <xs:element name="SelloTiempo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="ConceptoContableIdConceptoContable" type="xs:int" minOccurs="0" />
+              <xs:element name="ConceptoContableCuentaContableIdCuentaContable" type="xs:int" minOccurs="0" />
+              <xs:element name="BancoCuentaDestinoIdRefTipoOperacion" type="xs:int" minOccurs="0" />
+              <xs:element name="BancoCuentaDestinoIdBancoCuenta" type="xs:int" minOccurs="0" />
+              <xs:element name="BancoCuentaDestinoFilialIdFilial" type="xs:int" minOccurs="0" />
+              <xs:element name="BancoCuentaDestinoBancoCuentaTipoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Saldo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Empresa" type="xs:string" minOccurs="0" />
+              <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

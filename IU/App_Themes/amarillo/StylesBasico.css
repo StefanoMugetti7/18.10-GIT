@@ -1,0 +1,621 @@
+﻿.body {
+	padding-top: 3.7rem;
+	background-color: #fff !important; /*#e6e6e6; #ebf0fa;*/
+	/*background-image: linear-gradient(-90deg, #E6E6E6 0%, #CCCCCC 99%);*/
+	line-height: 1.1 !important;
+}
+
+.navbarEvol {
+	min-height: 60px;
+	background-color: #ffed00;
+	line-height: 1.15;
+	/*background:url(images/apretado.png) repeat-x;*/
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: black !important;
+}
+
+	.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+		color: black !important;
+		background-color: #e6d600;
+		border-radius: .25rem;
+	}
+
+.navbar-dark .navbar-nav .show > .nav-link {
+	color: black !important;
+	background-color: #e6d600;
+	border-radius: .25rem;
+}
+
+.dropdown-menu {
+	background-color: #f2f2f2;
+}
+
+.dropdown-item {
+	background-color: #f2f2f2;
+}
+
+	.dropdown-item:hover {
+		background-color: #ffed00;
+		color: black !important;
+	}
+
+.active-dropdown {
+	background-color: #ffed00 !important;
+	color: black !important;
+}
+
+input[disabled] {
+	cursor: not-allowed;
+}
+
+.container-fluid {
+	/*margin-left:.5rem !important;*/
+	/*margin-right:.5rem !important;*/
+}
+
+.form-control {
+	height: calc(1.1em + .75rem + 2px) !important;
+	font-size: .9rem !important;
+}
+
+.form-group {
+	margin-bottom: 0.1rem !important;
+}
+
+textarea.form-control {
+	height: auto !important;
+}
+
+.col-form-label {
+	font-size: .9rem !important;
+}
+
+.btn {
+	line-height: 1.25 !important;
+}
+
+.btn-primary {
+	/*background-color:#4e89c5 !important;
+    border-color:#4e89c5 !important;*/
+}
+
+.card {
+	margin-bottom: 0.5rem;
+}
+
+.card-header {
+	padding: .5rem !important;
+	background-color: #ffed00 !important;
+}
+
+.card-body {
+	padding: .5rem !important;
+	background-color: #fff898;
+}
+
+.modal-content {
+	background-color: #fff898 !important;
+}
+
+.modal-footer {
+	display: block !important;
+	text-align: center !important;
+}
+
+.modal-minHeight85 {
+	min-height: 85vh;
+}
+
+.modal-header {
+	background-color: #ffed00 !important;
+}
+
+.table th {
+	padding-left: 0.3rem !important;
+	padding-right: 0.3rem !important;
+}
+
+.table td {
+	padding: 0.3rem !important;
+	vertical-align: baseline !important;
+}
+.txtPrefijoNumeroComprobante2
+{
+	width: 40% !important;
+    display:inline-block !important;
+	}
+
+.select2PrefijoNumeroComprobante {
+	width: 40% !important;
+	display: inline-block !important;
+	vertical-align: top;
+}
+.select2-results__options {
+	overflow-x: hidden;
+}
+.txtPrefijoNumeroComprobante2 {
+	width: 40% !important;
+	display: inline-block !important;
+}
+
+.txtSufijoNumeroComprobante2 {
+	width: 56% !important;
+	display: inline-block !important;
+}
+
+.select2-container--bootstrap4 .select2-selection {
+	/*height: calc(.98em + .75rem + 2px) !important;*/
+	height: calc(1.1em + .75rem + 2px) !important;
+}
+
+.select2-container--bootstrap4 .select2-selection--single .select2-selection__rendered {
+	/*line-height: 1.7rem !important;*/
+	font-size: .9rem !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+	font-size: .9rem !important;
+}
+
+.select2-results__message {
+	font-size: .9rem !important;
+}
+
+.gj-datepicker-bootstrap [role=right-icon] button .gj-icon, .gj-datepicker-bootstrap [role=right-icon] button .material-icons {
+	top: .25rem;
+}
+
+legend {
+	background-color: #ffed00;
+	padding: .5rem !important;
+	font-size: 1rem !important;
+	font-weight: 400 !important;
+	border-top-left-radius: .25rem;
+	border-top-right-radius: .25rem;
+}
+
+fieldset {
+	background-color: #fffab3;
+	border-radius: .25rem;
+	margin-bottom: .5rem !important;
+	padding-bottom: .5rem !important;
+}
+
+/* Progress BAR */
+.myProgress {
+	width: 100%;
+	background-color: grey;
+}
+
+.myBar {
+	width: 0%;
+	height: 30px;
+	background-color: #15376e;
+	text-align: center; /* To center it horizontally (if you want) */
+	line-height: 30px; /* To center it vertically */
+	color: white;
+}
+
+.myBarError {
+	height: 30px;
+	background-color: Red;
+	text-align: center; /* To center it horizontally (if you want) */
+	line-height: 30px; /* To center it vertically */
+	color: white;
+}
+
+
+/*Menu-----------------------------------------------------*/
+.foo {
+}
+/* W3C CSS validator likes CSS files to start with a class rather than a comment. Soooooo.... */
+
+/* ------------------------------------------------------------------- */
+/* Specific to this sample web site. */
+/* These rules are probably not useful in your site. */
+
+.GridViewStyle {
+	word-wrap: break-word;
+	/*font-size: .8rem;*/
+}
+
+.GridViewHeaderStyle {
+	font-weight: bold;
+	white-space: nowrap !important;
+	color: white !important;
+	background-color: black; /*!important;*/
+}
+
+	/*puntovista saque underline*/
+	.GridViewHeaderStyle a {
+		/*font-weight:bold;*/
+		color: white !important;
+		text-decoration: none !important;
+	}
+
+.GridViewRowStyle {
+	background-color: white;
+	border-bottom: solid 1px #145072;
+	color: black;
+	text-shadow: none;
+	height: 24px;
+	font-weight: normal;
+}
+
+.GridViewAlternatingRowStyle {
+	background-color: white;
+	border-bottom: solid 1px #145072;
+	color: black;
+	text-shadow: none;
+	height: 24px;
+	font-weight: normal;
+}
+
+	.GridViewRowStyle:hover, .GridViewAlternatingRowStyle:hover {
+		background-color: #fff133;
+	}
+
+
+.GridViewSelectedRowStyle {
+	background-color: #FFFFFF;
+}
+
+.GridViewPagerStyle {
+	background-color: black;
+	color: white !important;
+}
+
+	.GridViewPagerStyle a {
+		color: white !important;
+	}
+
+.GridViewFooterStyle {
+	background-color: black;
+	color: white !important;
+}
+
+	.GridViewFooterStyle td span {
+		display: inline-table !important;
+		width: 100% !important;
+	}
+
+/*multitab*/
+.ajax__tab_auge {
+	margin-bottom: .5rem;
+}
+
+	.ajax__tab_auge .ajax__tab_header {
+		flex-wrap: wrap;
+		padding-left: 0;
+		padding-right: .5rem;
+		margin-bottom: 0;
+		border-top-left-radius: .25rem;
+		border-top-right-radius: .25rem;
+		/*background-color: #fff899;*/ /*Barra fondo header */
+		height: 2rem !important;
+		background-image: none !important;
+	}
+
+		.ajax__tab_auge .ajax__tab_header .ajax__tab_outer {
+			background-image: none !important;
+			background-color: #ffed00 !important;
+			border-top-left-radius: .25rem;
+			border-top-right-radius: .25rem;
+			padding-right: .5rem !important;
+			height: 1.95rem !important;
+			margin-right: .1rem !important;
+			border-color: #145072;
+			border-style: solid;
+			border-width: 1px;
+			border-bottom: none;
+		}
+
+		.ajax__tab_auge .ajax__tab_header .ajax__tab_inner {
+			background-image: none !important;
+		}
+
+		.ajax__tab_auge .ajax__tab_header .ajax__tab_tab {
+			background-image: none !important;
+			padding: .4rem !important;
+		}
+
+	.ajax__tab_auge .ajax__tab_tab {
+		font-family: Arial;
+		font-size: .9rem;
+		font-weight: 400;
+		color: black;
+		padding: .75rem .5rem;
+		border: none;
+		background-image: none !important;
+	}
+
+	.ajax__tab_auge .ajax__tab_hover .ajax__tab_tab {
+		color: black;
+		background-image: none !important;
+	}
+
+	.ajax__tab_auge .ajax__tab_active .ajax__tab_inner {
+		background-image: none !important;
+		background-color: #ffed00;
+		border-top-left-radius: .25rem;
+		border-top-right-radius: .25rem;
+	}
+
+	.ajax__tab_auge .ajax__tab_active .ajax__tab_inner {
+		background-image: none !important;
+		background-color: #fffccc;
+		border-top-left-radius: .25rem;
+		border-top-right-radius: .25rem;
+	}
+
+	.ajax__tab_auge .ajax__tab_active .ajax__tab_outer {
+		margin-right: .2rem !important;
+		background-color: #fffccc !important;
+		margin-right: .1rem !important;
+		padding: 0 !important;
+		height: 2rem !important;
+	}
+
+	.ajax__tab_auge .ajax__tab_active .ajax__tab_tab {
+		color: black;
+		background-image: none !important;
+		font-family: Arial;
+		font-size: .9rem;
+		font-weight: 500 !important;
+		padding: .75rem .5rem;
+	}
+
+		.ajax__tab_auge .ajax__tab_active .ajax__tab_tab:hover {
+			color: black;
+		}
+
+		.ajax__tab_auge .ajax__tab_active .ajax__tab_tab:focus {
+			border: none !important;
+			outline: none !important;
+		}
+
+	.ajax__tab_auge .ajax__tab_disabled {
+		color: #A0A0A0;
+	}
+
+	.ajax__tab_auge .ajax__tab_body {
+		clear: both;
+		font-family: Arial;
+		font-size: .9rem;
+		border: 1px solid #145072 !important;
+		background-color: #fffccc !important;
+		border-top-right-radius: .25rem;
+		border-bottom-left-radius: .25rem;
+		border-bottom-right-radius: .25rem;
+		min-height: 12rem;
+		padding: .5rem !important;
+		padding-top: 1rem !important;
+	}
+
+
+.listbox {
+	width: 18.6%;
+	border-radius: 4px;
+	padding: 2px 4px;
+}
+
+
+.selectEvol {
+	width: 20.3%;
+	border-radius: 4px;
+	padding: 2px 4px;
+}
+
+.Select2-Container {
+	position: inherit;
+	display: inline-block;
+	width: 18.6%;
+	max-width: 600px;
+}
+
+.Select2-Container2 {
+	position: inherit;
+	display: inline-block;
+	width: 50%;
+	max-width: 600px;
+}
+
+.select2 {
+	/*left: 4%;*/
+	/*width:95%;*/
+	/*max-width: 600px;*/
+	padding-bottom: 0;
+}
+
+.select2Disabled {
+	/*left: 4%;*/
+	width: 95%;
+	max-width: 600px;
+	border-radius: 4px;
+}
+
+.labelEvol {
+	margin-bottom: 0.3%;
+	width: 8.3%;
+	display: inline-block;
+	/*font-weight:bold !important;*/
+	font-size: 10pt !important;
+	color: Black;
+	text-align: left !important;
+}
+
+.labelFooterEvol {
+	margin-bottom: 0.3%;
+	width: 9.5%;
+	display: inline-block;
+	margin-left: 1%;
+	font-weight: bold !important;
+	font-size: .9rem !important;
+	color: White;
+	text-align: right !important;
+}
+
+.botonesEvol, .button {
+	background-color: black;
+	/*background-image: linear-gradient(-90deg, #4E89C5 0%, #2567AB 98%);*/
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+	color: white;
+	font-family: Arial;
+	padding: .35rem .7rem;
+	font-size: .9rem;
+	font-weight: 400;
+	line-height: 1.25;
+	text-align: center;
+	/*text-shadow: 0 -1px 1px #145072;*/
+	vertical-align: middle;
+	border-radius: .25rem;
+}
+	/*#pnlContenidoPrincipal input[type=submit]:hover, */
+	.botonesEvol:hover {
+		background-color: #404040;
+		/*background-image: linear-gradient(-90deg, #72B0D4 0%, #4B88B6 99%);*/
+		border-color: black;
+		cursor: pointer;
+	}
+
+/* Definiciones de Estilos */
+
+.borrar {
+	clear: both;
+}
+
+.EnLinea {
+	float: left;
+}
+
+
+#ContenidoSuperior, #ContenidoCentral, #ContenidoInferior {
+	width: 100%;
+	vertical-align: top;
+}
+
+#ContenidoCentral, #ContenidoInferior {
+	margin-top: 0.5%;
+}
+
+#ContenidoSuperiorIzquierdo {
+	float: left;
+}
+
+#ContenidoSuperiorCentro {
+	float: left;
+}
+
+#ContenidoSuperiorDerecho {
+	float: right;
+}
+
+#ContenidoCentralIzquierdo, #ContenidoCentralDerecho,
+#ContenidoInferiorIzquierdo, #ContenidoInferiorDerecho {
+}
+
+/* #ContenidoSuperiorCentro, #ContenidoInferiorCentro */
+#ContenidoPrincipal {
+	width: 100%;
+	vertical-align: top;
+}
+
+#ContenidoPrincipal {
+	border: solid 0px gray;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* FIN PAGINA MAESTRA */
+
+.IniciarSistema {
+	width: 100%;
+	text-align: center;
+}
+
+
+/* Accordion */
+
+.accordionHeader {
+	border: 1px solid #2F4F4F;
+	color: black;
+	background-color: #ffed00;
+	font-family: Arial, Sans-Serif;
+	font-size: .9rem;
+	font-weight: bold;
+	padding: 5px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+#master_content .accordionHeader a {
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+	#master_content .accordionHeader a:hover {
+		background: none;
+		text-decoration: underline;
+	}
+
+.accordionHeaderSelected
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #5078B3;
+	font-family: Arial, Sans-Serif;
+	font-size: .9rem;
+	font-weight: bold;
+	padding: 5px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+#master_content .accordionHeaderSelected a {
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+	#master_content .accordionHeaderSelected a:hover {
+		background: none;
+		text-decoration: underline;
+	}
+
+.accordionContent
+{
+    background-color: #D3DEEF;
+    border: 1px dashed #2F4F4F;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+/* BUG ASYNC FILEUPLOAD FIREFOX*/
+.imageUploaderField {
+	padding-top: .4rem;
+	font-size: .9rem;
+	font-weight: 400;
+	display: block;
+}
+
+	.imageUploaderField input {
+		width: 100% !important;
+	}
+
+
+/*Pantalla de Inicio*/
+
+.logo {
+	text-align: center;
+	margin: 1%;
+}
+
+.remove-all-styles {
+	all: initial;
+}

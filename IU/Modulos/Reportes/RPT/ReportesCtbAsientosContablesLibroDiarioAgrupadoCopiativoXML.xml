@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="LibroDiario" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="LibroDiarioAgrupado" msdata:IsDataSet="true" msdata:Locale="">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdAsientoContable" type="xs:int" minOccurs="0" />
+              <xs:element name="NumeroAsiento" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaAsiento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DetalleGeneral" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroCuentaContable" type="xs:string" minOccurs="0" />
+              <xs:element name="CuentaContable" type="xs:string" minOccurs="0" />
+              <xs:element name="Debe" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Haber" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Detalle" type="xs:string" minOccurs="0" />
+              <xs:element name="Referencia" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoOperacion" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroAsientoCopiativo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

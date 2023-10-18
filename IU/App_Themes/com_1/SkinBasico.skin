@@ -1,0 +1,126 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+forecolor="#333333" backcolor="White"
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<asp:Menu SkinID="MenuBasicoFormal" runat="server"
+    DynamicHorizontalOffset="0" 
+    DynamicVerticalOffset="0"
+    StaticEnableDefaultPopOutImage="true"
+    HorizontalPadding="2px"
+    CssClass="Menu-Skin-Horizontal">
+    <StaticMenuItemStyle CssClass="Menu-Skin-StaticItem" />
+    <StaticHoverStyle  CssClass="Menu-Skin-StaticHover"/>
+    <DynamicMenuItemStyle CssClass="Menu-Skin-DynamicItem" />
+    <DynamicHoverStyle CssClass="Menu-Skin-DynamicHover" />
+</asp:Menu>
+
+<Evol:EvolGridView SkinID="GrillaBasicaFormal" Runat="server" HeaderStyle-Wrap="false" ScrollHeight="500" EnabledScrollbar="false" 
+    GridLines="None" CellPadding="4" width="100%"  CssClass="table" AllowCustomPaging="true">
+    <HeaderStyle CssClass="GridViewHeaderStyle" />
+    <RowStyle CssClass="GridViewRowStyle" />
+    <AlternatingRowStyle CssClass="GridViewAlternatingRowStyle"/>
+    <SelectedRowStyle CssClass="GridViewSelectedRowStyle" />
+    <PagerStyle CssClass="GridViewPagerStyle" />
+    <FooterStyle CssClass="GridViewFooterStyle" />
+    <pagersettings mode="Numeric" position="Bottom" pagebuttoncount="5" />
+</Evol:EvolGridView>
+
+<Evol:EvolGridView SkinID="GrillaBasicaFormalSticky" Runat="server" HeaderStyle-Wrap="false" EnabledScrollbar="false" Paginacion="true"
+    GridLines="None" CellPadding="4" width="100%"  CssClass="table table-responsive d-table GridViewStyle" AllowCustomPaging="true">
+    <HeaderStyle CssClass="GridViewHeaderStyle stickyTop" />
+    <RowStyle CssClass="GridViewRowStyle" />
+    <AlternatingRowStyle CssClass="GridViewAlternatingRowStyle"/>
+    <SelectedRowStyle CssClass="GridViewSelectedRowStyle" />
+    <PagerStyle CssClass="GridViewPagerStyle stickyBotton" />
+    <FooterStyle CssClass="GridViewFooterStyle" />
+    <pagersettings mode="Numeric" position="Bottom" pagebuttoncount="5" />
+</Evol:EvolGridView>
+
+<Evol:EvolGridView SkinID="GrillaBasicaFormalSinSticky" Runat="server" HeaderStyle-Wrap="false" EnabledScrollbar="false" Paginacion="true"
+    GridLines="None" CellPadding="4" width="100%"  CssClass="table table-responsive d-table GridViewStyle" AllowCustomPaging="true">
+    <HeaderStyle CssClass="GridViewHeaderStyle" />
+    <RowStyle CssClass="GridViewRowStyle" />
+    <AlternatingRowStyle CssClass="GridViewAlternatingRowStyle"/>
+    <SelectedRowStyle CssClass="GridViewSelectedRowStyle" />
+    <PagerStyle CssClass="GridViewPagerStyle stickyBotton" />
+    <FooterStyle CssClass="GridViewFooterStyle" />
+    <pagersettings mode="Numeric" position="Bottom" pagebuttoncount="5" />
+</Evol:EvolGridView>
+
+
+
+<Evol:EvolGridView SkinID="GrillaBasicaPopUp" Runat="server" HeaderStyle-Wrap="false" PageSize="10" ScrollHeight="400" EnabledScrollbar="false"
+    GridLines="None" CellPadding="4" width="100%" CssClass="GridViewStyle" >
+    <HeaderStyle CssClass="GridViewHeaderStyle" />
+    <RowStyle CssClass="GridViewRowStyle" />
+    <AlternatingRowStyle CssClass="GridViewAlternatingRowStyle"/>
+    <SelectedRowStyle CssClass="GridViewSelectedRowStyle" />
+    <PagerStyle CssClass="GridViewPagerStyle" />
+    <FooterStyle CssClass="GridViewFooterStyle" />
+</Evol:EvolGridView>
+
+<Evol:EvolGridView SkinID="GrillaBasicaFormalMedia" Runat="server" HeaderStyle-Wrap="false" ScrollHeight="400" EnabledScrollbar="false"
+    GridLines="None" CellPadding="4" width="50%"  CssClass="GridViewStyle" >
+    <HeaderStyle CssClass="GridViewHeaderStyle" />
+    <RowStyle CssClass="GridViewRowStyle" />
+    <AlternatingRowStyle CssClass="GridViewAlternatingRowStyle"/>
+    <SelectedRowStyle CssClass="GridViewSelectedRowStyle" />
+    <PagerStyle CssClass="GridViewPagerStyle" />
+    <FooterStyle CssClass="GridViewFooterStyle" />
+</Evol:EvolGridView>
+
+<asp:GridView SkinID="GrillaResponsive" Runat="server" HeaderStyle-Wrap="false" PageSize="20"
+    GridLines="None" CssClass="table" >
+    <HeaderStyle CssClass="GridViewHeaderStyle" />
+    <RowStyle CssClass="GridViewRowStyle" />
+    <AlternatingRowStyle CssClass="GridViewAlternatingRowStyle"/>
+    <SelectedRowStyle CssClass="GridViewSelectedRowStyle" />
+    <PagerStyle CssClass="GridViewPagerStyle" />
+    <FooterStyle CssClass="GridViewFooterStyle" />
+</asp:GridView>
+
+<asp:GridView SkinID="GrillaBasicaFormal" Runat="server" HeaderStyle-Wrap="false" PageSize="25"
+    GridLines="None" CssClass="table table-responsive d-block GridViewStyle" >
+    <HeaderStyle CssClass="GridViewHeaderStyle" />
+    <RowStyle CssClass="GridViewRowStyle" />
+    <AlternatingRowStyle CssClass="GridViewAlternatingRowStyle"/>
+    <SelectedRowStyle CssClass="GridViewSelectedRowStyle" />
+    <PagerStyle CssClass="GridViewPagerStyle" />
+    <FooterStyle CssClass="GridViewFooterStyle" />
+</asp:GridView>
+
+<asp:GridView SkinID="GrillaBasicaPopUp" Runat="server" HeaderStyle-Wrap="false" PageSize="10"
+    GridLines="None" CellPadding="4" width="100%"  CssClass="GridViewStyle" >
+    <HeaderStyle CssClass="GridViewHeaderStyle" />
+    <RowStyle CssClass="GridViewRowStyle" />
+    <AlternatingRowStyle CssClass="GridViewAlternatingRowStyle"/>
+    <SelectedRowStyle CssClass="GridViewSelectedRowStyle" />
+    <PagerStyle CssClass="GridViewPagerStyle" />
+    <FooterStyle CssClass="GridViewFooterStyle" />
+</asp:GridView>
+
+<asp:GridView SkinID="GrillaBasicaFormalMedia" Runat="server" HeaderStyle-Wrap="false"
+    GridLines="None" CellPadding="4" width="50%"  CssClass="GridViewStyle" >
+    <HeaderStyle CssClass="GridViewHeaderStyle" />
+    <RowStyle CssClass="GridViewRowStyle" />
+    <AlternatingRowStyle CssClass="GridViewAlternatingRowStyle"/>
+    <SelectedRowStyle CssClass="GridViewSelectedRowStyle" />
+    <PagerStyle CssClass="GridViewPagerStyle" />
+    <FooterStyle CssClass="GridViewFooterStyle" />
+</asp:GridView>
+
+<asp:TabContainer runat="server" SkinID="MyTab" CssClass="ajax__tab_auge" />
+
+

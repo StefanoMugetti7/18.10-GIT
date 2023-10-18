@@ -1,0 +1,251 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdTesoreria" type="xs:int" minOccurs="0" />
+              <xs:element name="FilialIdFilial" type="xs:int" minOccurs="0" />
+              <xs:element name="FilialFilial" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaAbrir" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdUsuarioAbrir" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaCerrar" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdUsuarioCerrar" type="xs:int" minOccurs="0" />
+              <xs:element name="IdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaEvento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdUsuarioEvento" type="xs:int" minOccurs="0" />
+              <xs:element name="SelloTiempo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="UsuarioAbrirIdUsuarioAbrir" type="xs:int" minOccurs="0" />
+              <xs:element name="UsuarioAbrirApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioAbrirNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioAbrirCorreoElectronico" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioAbrirUsuario" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioCerrarIdUsuarioCerrar" type="xs:int" minOccurs="0" />
+              <xs:element name="UsuarioCerrarApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioCerrarNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioCerrarCorreoElectronico" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioCerrarUsuario" type="xs:string" minOccurs="0" />
+              <xs:element name="EstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoDescripcion" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdTesoreriaMoneda" type="xs:int" minOccurs="0" />
+              <xs:element name="IdTesoreria" type="xs:int" minOccurs="0" />
+              <xs:element name="IdMoneda" type="xs:int" minOccurs="0" />
+              <xs:element name="SaldoInicial" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Ingreso" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Egreso" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoFinal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaEvento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdUsuarioEvento" type="xs:int" minOccurs="0" />
+              <xs:element name="SelloTiempo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="EstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="MonedaIdMoneda" type="xs:int" minOccurs="0" />
+              <xs:element name="MonedaMoneda" type="xs:string" minOccurs="0" />
+              <xs:element name="MonedaDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoValorIdTipoValor" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoValorTipoValor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdTesoreriaMovimiento" type="xs:int" minOccurs="0" />
+              <xs:element name="IdTipoOperacion" type="xs:int" minOccurs="0" />
+              <xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IdTipoValor" type="xs:int" minOccurs="0" />
+              <xs:element name="SelloTiempo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="EstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoValorIdTipoValor" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoValorTipoValor" type="xs:string" minOccurs="0" />
+              <xs:element name="TesoreriaMonedaIdTesoreriaMoneda" type="xs:int" minOccurs="0" />
+              <xs:element name="TesoreriaMonedaMonedaIdMoneda" type="xs:int" minOccurs="0" />
+              <xs:element name="TesoreriaMonedaMonedaMoneda" type="xs:string" minOccurs="0" />
+              <xs:element name="TesoreriaMonedaMonedaDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="IdTesoreria" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoOperacionIdTipoOperacion" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoOperacion" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoMovimientoIdTipoMovimiento" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoMovimientoTipoMovimiento" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdParametro" type="xs:int" minOccurs="0" />
+              <xs:element name="NombreParametro" type="xs:string" minOccurs="0" />
+              <xs:element name="ParametroValor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table4">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TesoreriaIdTesoreria" type="xs:int" minOccurs="0" />
+              <xs:element name="IdCaja" type="xs:int" minOccurs="0" />
+              <xs:element name="NumeroCaja" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaAbrir" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaCerrar" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EstadoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="EstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="SaldoInicial" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Ingreso" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Egreso" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoFinal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoInicialCQ" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IngresoCQ" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EgresoCQ" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoFinalCQ" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IdCajaMoneda" type="xs:int" minOccurs="0" />
+              <xs:element name="MonedaMoneda" type="xs:string" minOccurs="0" />
+              <xs:element name="MonedaDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="IdCajaMovimiento" type="xs:int" minOccurs="0" />
+              <xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="IdRefTipoOperacion" type="xs:int" minOccurs="0" />
+              <xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoOperacion" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoMovimientoTipoMovimiento" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoIdAfiliado" type="xs:int" minOccurs="0" />
+              <xs:element name="AfiliadoApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoValorIdTipoValor" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoValorTipoValor" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoValorTipoValorEF" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoValorTipoValorCQ" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoValorImporte" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table5">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdCaja" type="xs:int" minOccurs="0" />
+              <xs:element name="IdCajaMoneda" type="xs:int" minOccurs="0" />
+              <xs:element name="IdMoneda" type="xs:int" minOccurs="0" />
+              <xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="IdCajaMonedaValor" type="xs:int" minOccurs="0" />
+              <xs:element name="IdTipoValor" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoValor" type="xs:string" minOccurs="0" />
+              <xs:element name="SaldoInicial" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Ingresos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Egresos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoFinal" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table6">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TesoreriaIdTesoreria" type="xs:int" minOccurs="0" />
+              <xs:element name="IdCaja" type="xs:int" minOccurs="0" />
+              <xs:element name="NumeroCaja" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaAbrir" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaCerrar" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EstadoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="EstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="SaldoInicial" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Ingreso" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Egreso" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoFinal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IdCajaMoneda" type="xs:int" minOccurs="0" />
+              <xs:element name="MonedaMoneda" type="xs:string" minOccurs="0" />
+              <xs:element name="MonedaDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="IdCajaMovimiento" type="xs:int" minOccurs="0" />
+              <xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="IdRefTipoOperacion" type="xs:int" minOccurs="0" />
+              <xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoOperacion" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoMovimientoTipoMovimiento" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoIdAfiliado" type="xs:int" minOccurs="0" />
+              <xs:element name="AfiliadoApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoValorIdTipoValor" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoValorTipoValor" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoValorImporte" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table7">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MonedaIdMoneda" type="xs:int" minOccurs="0" />
+              <xs:element name="MonedaMoneda" type="xs:string" minOccurs="0" />
+              <xs:element name="MonedaDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoMovimientoTipoMovimiento" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoOperacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table8">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Empresa" type="xs:int" minOccurs="0" />
+              <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <!--<xs:element name="Table8">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TesoreriaIdTesoreria" type="xs:int" minOccurs="0" />
+              <xs:element name="IdCaja" type="xs:int" minOccurs="0" />
+              <xs:element name="NumeroCaja" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaAbrir" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaCerrar" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EstadoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="Ingreso" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Egreso" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoFinal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IdCajaMoneda" type="xs:int" minOccurs="0" />
+              <xs:element name="MonedaMoneda" type="xs:string" minOccurs="0" />
+              <xs:element name="MonedaDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="IdRefTipoOperacion" type="xs:int" minOccurs="0" />
+              <xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoOperacion" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoMovimientoTipoMovimiento" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoIdAfiliado" type="xs:int" minOccurs="0" />
+              <xs:element name="AfiliadoApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoNombre" type="xs:string" minOccurs="0" /> 
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table9">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MonedaIdMoneda" type="xs:int" minOccurs="0" />
+              <xs:element name="MonedaMoneda" type="xs:string" minOccurs="0" />
+              <xs:element name="MonedaDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoMovimientoTipoMovimiento" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoOperacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>-->
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

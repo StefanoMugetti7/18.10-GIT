@@ -1,0 +1,63 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FechaCumplimiento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdAfiliado" type="xs:int" minOccurs="0" />
+              <xs:element name="Nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="Apellido" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoDocumentoTipoDocumento" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroDocumento" type="xs:int" minOccurs="0" />
+              <xs:element name="NumeroSocio" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaNacimiento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EstadoCivilEstadoCivil" type="xs:string" minOccurs="0" />
+              <xs:element name="Calle" type="xs:string" minOccurs="0" />
+              <xs:element name="Numero" type="xs:int" minOccurs="0" />
+              <xs:element name="Piso" type="xs:int" minOccurs="0" />
+              <xs:element name="Departamento" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoPostal" type="xs:string" minOccurs="0" />
+              <xs:element name="LocalidadDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="LocalidadProvinciaDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="FormaPago" type="xs:string" minOccurs="0" />
+              <xs:element name="Titulo" type="xs:string" minOccurs="0" />
+              <xs:element name="Banco" type="xs:string" minOccurs="0" />
+              <xs:element name="Filial" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoZonaGrupo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdParametro" type="xs:int" minOccurs="0" />
+              <xs:element name="NombreParametro" type="xs:string" minOccurs="0" />
+              <xs:element name="ParametroValor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdParametroValor" type="xs:int" minOccurs="0" />
+              <xs:element name="IdParametro" type="xs:int" minOccurs="0" />
+              <xs:element name="ParametroValor" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SelloTiempo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="EstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioAltaIdUsuarioAlta" type="xs:int" minOccurs="0" />
+              <xs:element name="UsuarioAltaApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioAltaNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioAltaCorreoElectronico" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioAltaUsuario" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

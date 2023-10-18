@@ -1,0 +1,1382 @@
+﻿.body
+{
+    padding-top: 4.5rem;
+	background-color:#ebeeff !important; /*#e6e6e6; #ebf0fa;*/
+    /*background-image: linear-gradient(-90deg, #E6E6E6 0%, #CCCCCC 99%);*/
+    line-height: 1.1 !important;
+	   }
+
+.navbarEvol {
+    min-height:60px;
+    background-color:#558cc3;
+    line-height:1.15;
+    /*background:url(images/apretado.png) repeat-x;*/
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.7) !important;
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255,255,255,1) !important;
+    background-color:#0275d8;
+    border-radius:.25rem;
+}
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: rgba(255,255,255,1) !important;
+    background-color:#0275d8;
+    border-radius:.25rem;
+}
+
+input[disabled] {
+    cursor:not-allowed;
+}
+/*.dropdown-item .show > .active-dropdown {
+    background-color:#0275d8;
+}*/
+.dropdown-item:hover {
+    background-color:#0275d8;
+    color: rgba(255,255,255,1) !important;
+}
+.active-dropdown {
+    background-color:#0275d8 !important;
+    color: rgba(255,255,255,1) !important;
+}
+
+
+.container-fluid {
+    /*margin-left:.5rem !important;*/
+    /*margin-right:.5rem !important;*/
+}
+.form-control, .input-group-append {
+    height:calc(1.1em + .75rem + 2px) !important;
+    font-size: .9rem !important;
+}
+.form-group {
+    margin-bottom: 0.1rem !important;
+}
+textarea.form-control {
+    height: auto !important;
+}
+.col-form-label {
+    font-size:.9rem !important;
+}
+.btn {
+    line-height: 1.25 !important;
+}
+.btn-primary {
+    /*background-color:#4e89c5 !important;
+    border-color:#4e89c5 !important;*/
+}
+.card {
+    margin-bottom:0.5rem;
+}
+.card-header {
+    padding:.5rem !important;
+    background-color:#94B7D6 !important;
+}
+.card-body {
+    padding:.5rem !important;
+    background-color:#DAE6F1;
+}
+
+.modal-content {
+    background-color:#ebeeff !important;
+}
+.modal-footer {
+    display:block !important;
+    text-align:center !important;
+}
+.modal-minHeight85 {
+    min-height:85vh;
+}
+
+.table th {
+    padding-left: 0.3rem !important;
+    padding-right: 0.3rem !important;
+}
+.table td {
+    padding: 0.3rem !important;
+    vertical-align: middle !important;
+}
+
+.select2PrefijoNumeroComprobante {
+    width: 40% !important;
+    display:inline-block !important;
+    vertical-align:top;
+}
+.txtPrefijoNumeroComprobante2
+{
+	width: 40% !important;
+    display:inline-block !important;
+	}
+
+.txtSufijoNumeroComprobante2
+{
+	width: 56% !important;
+    display:inline-block !important;
+	}
+
+.select2-container--bootstrap4 .select2-selection {
+    /*height: calc(.98em + .75rem + 2px) !important;*/
+    height: calc(1.1em + .75rem + 2px) !important;
+}
+
+.select2-container--bootstrap4 .select2-selection--single .select2-selection__rendered {
+    /*line-height: 1.7rem !important;*/
+    font-size: .9rem !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    font-size: .9rem !important;
+}
+.select2-results__message {
+    font-size: .9rem !important;
+}
+.gj-datepicker-bootstrap [role=right-icon] button .gj-icon, .gj-datepicker-bootstrap [role=right-icon] button .material-icons {
+    top:.25rem;
+}
+
+legend {
+    background-color:#94B7D6;
+    padding:.5rem !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    border-top-left-radius:.25rem;
+    border-top-right-radius:.25rem;
+}
+fieldset {
+    background-color:#DAE6F1;
+    border-radius:.25rem;
+    margin-bottom:.5rem !important;
+    padding-bottom: .5rem !important;
+}
+
+.gvImage { vertical-align:baseline !important;}
+/* Progress BAR */
+.myProgress {
+    width: 100%;
+    background-color: grey;
+}
+.myBar 
+  {
+  width:0%;
+  height: 30px;
+  background-color:#15376e;
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: white; 
+}
+.myBarError
+  {
+  height: 30px;
+  background-color: Red;
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: white; 
+}
+
+
+/*Menu-----------------------------------------------------*/
+.foo {} /* W3C CSS validator likes CSS files to start with a class rather than a comment. Soooooo.... */
+
+/* ------------------------------------------------------------------- */
+/* Specific to this sample web site. */
+/* These rules are probably not useful in your site. */
+
+
+.CuentasContableDatos span
+{
+	width: 30% !important;
+	}
+.CuentasContableDatos selectEvol
+{
+	width:32.6% !important;
+}
+.CuentasContableDatos input[type=text]
+{
+	width:31% !important;
+}
+
+.AfiliadoModificarDatosDomicilios selectEvol, .AfiliadoModificarDatosDomicilios input[type=text], 
+.AfiliadoModificarDatosTelefono input[type=text], .AfiliadoModificarDatosTelefono selectEvol,
+.GestionarRerportesParametros selectEvol, .GestionarRerportesParametros input[type=text],
+.ParametrosDatosPopUp selectEvol, .ParametrosDatosPopUp input[type=text],
+.ListasValoresDetallesDatosPopUp selectEvol, .ListasValoresDetallesDatosPopUp input[type=text],
+.CargoAfiliadoModificarDatosPopUp selectEvol, .CargoAfiliadoModificarDatosPopUp input[type=text],
+.ProveedorModificarDatosDomicilios span, .ProveedorModificarDatosTelefono span,
+.ProveedorModificarDatosDomicilios selectEvol, .ProveedorModificarDatosTelefono selectEvol,
+.ProveedorModificarDatosDomicilios input[type=text],
+.SegMenuesModificarDatosPopUp selectEvol, .SegMenuesModificarDatosPopUp input[type=text],
+.SegMenuesModificarDatosPopUp span
+{
+	width:40% !important;
+	}
+/*	
+.AfiliadosListar input[type=text]{
+	width:15% !important;
+	}
+.AfiliadosListar selectEvol{
+	width:15.9% !important;
+	}
+.DatosAfiliados span{
+	color: #333333;
+	display: inline-block;
+    margin-left: 10px;
+    width: 12%;
+	font-size:9pt;
+		}
+.DatosAfiliados input{
+	width:18%;
+	font-size:8pt;
+	}
+
+.AfiliadosDatos input
+{
+	width:15%;
+	}
+.AfiliadosDatos input[type=checkbox]
+{
+	width:10px;
+	}
+*/
+.GestionarReportes div textarea, .OrdenesCobrosDatos textarea,
+.OrdenesCobrosAgregarFormasCobros textarea, .Archivos textarea
+{
+	width:50.25%;
+	height:30px;
+	font-family:Arial;
+	border-radius:4px;
+	font-size:small;
+	vertical-align:bottom;
+}
+
+.ExpedientesModificarDatos textarea
+{
+	width:52%;
+	height:75px;
+	font-family:Arial;
+	border-radius:4px;
+	font-size:small;
+	vertical-align:bottom;
+	}
+
+.AfiliadoModificarDatosAlertasTipos, .AfiliadoModificarDatosFormasCobros
+{
+	display:inline;
+	white-space: nowrap;
+	}
+.AfiliadoModificarDatosAlertasTipos labelEvol, AfiliadoModificarDatosFormasCobros labelEvol
+{
+	padding:4px 2px 4px 2px;	
+	font-size: 10pt;
+	}
+.AfiliadoModificarDatosAlertasTipos input[type=checkbox]:checked + labelEvol
+{
+	background:red;
+	font-weight:bold;
+	color:White;
+	font-size: 10pt;
+	}
+	
+.AfiliadoModificarDatosFormasCobros input[type=checkbox]:checked + labelEvol
+{
+	background:black;
+	font-weight:bold;
+	color:White;
+	font-size: 10pt;
+	}
+
+.AfiliadoModificarDatosAlertasTipos td, .AfiliadoModificarDatosFormasCobros td
+{
+	width:250px;
+	font-size: 10pt;
+}
+
+.EstadoMoroso, .MensajesAlertas
+{
+	color:Red;
+	border-color:Red;
+	font-weight:bold;
+    -webkit-animation-name: blinker;
+    -webkit-animation-delay:2s;
+    -webkit-animation-duration: 500ms;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: blinker;
+    -moz-animation-delay:2s;
+    -moz-animation-duration: 500ms;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-fill-mode: forwards;
+
+    animation-name: blinker;
+    animation-delay:2s;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    100% { opacity: 0.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    100% { opacity: 0.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    100% { opacity: 0.0; }
+}
+
+/*Gestionar Reportes*/
+.GestionarReportes div table{
+ width:100%;
+}
+	
+/* --------------------------------------------------------------------------------------------------- */
+/* Used when the Menu adapter is NOT used. */
+/* These styles are used by the Menu's skin, found in this theme's skin file. */
+/*Menu Principal PV*/
+.Menu-Skin-Horizontal
+{
+    position:absolute;
+   /* left: 9.5em;*/
+    top: 0;
+        z-index: 300;
+   /* Font-Size="small" 
+    Font-Names="Tahoma"*/
+}
+
+/*
+.Menu-Skin-Horizontal a.popout{
+	padding:21px !important;
+	color: #FFFFFF;
+}*/
+
+/* Redefino la imagen del Menu para todos los items PV */
+#mnMenuPrincipal a.popout {
+	background-image: url(Images/flecha.png) !important;
+	background-repeat:no-repeat;
+	background-position:right center;
+	}
+
+.Menu-Skin-StaticItem
+{
+    font-size: small;
+	color: #FFF;
+	padding:21px !important;
+	text-shadow: 0 -1px 1px #254F7A;
+}
+.Menu-Skin-StaticItem:hover {
+	background-color:#417EBD !important;
+	color:#fff !important;	
+}
+.Menu-Skin-DynamicItem{
+	background-color:#eeeee8;
+	color:#000;
+	font-size:small;
+	padding: 5px 23px 5px 10px !important;
+	width:auto;
+	min-width:100px;
+	text-align:left;
+}
+.Menu-Skin-DynamicItem:hover{
+color:#fff !important;
+text-align:left;
+background-color:#417EBD;
+}
+/*Grilla PV*/
+
+.pnlGridView
+{
+	height:400px;
+	}
+
+.GridViewStyle
+{
+	word-wrap:break-word;
+	/*font-size: .8rem;*/
+	}
+	.GridViewHeaderStyle
+	{
+		font-weight:bold;
+		white-space:nowrap !important;
+		color:#F7F6F3 !important;
+		background-color:#386492; /*!important;*/
+		/*background-image: -webkit-linear-gradient(-90deg, #81A8CE 0%, #5E87B0 98%) !important;*/
+		/*background-image: linear-gradient(-90deg, #81A8CE 0%, #5E87B0 98%);*/
+		text-shadow: 0 -1px 1px #254F7A;
+		background: #81a8ce; /* Old browsers */
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzgxYThjZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1ZTg3YjAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top,  #81a8ce 0%, #5e87b0 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#81a8ce), color-stop(100%,#5e87b0)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #81a8ce 0%,#5e87b0 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #81a8ce 0%,#5e87b0 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #81a8ce 0%,#5e87b0 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #81a8ce 0%,#5e87b0 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81a8ce', endColorstr='#5e87b0',GradientType=0 ); /* IE6-8 */
+	}
+
+
+
+
+
+				
+		/*puntovista saque underline*/
+	.GridViewHeaderStyle a
+	{
+		/*font-weight:bold;*/
+		color:#F7F6F3 !important;
+		text-decoration: none !important;
+				}
+    .GridViewRowStyle{
+		background-color:#DAE6F1;
+		 border-bottom: solid 1px #145072;
+		 color:#386492;
+		 text-shadow:none;
+		 height:24px;
+		 font-weight:normal;
+		 }
+   .GridViewAlternatingRowStyle{
+	  background-color:#94B7D6;
+	  border-bottom: solid 1px #145072;
+	  color:#386492;
+	  text-shadow: none;
+	  height:24px;
+	  font-weight:normal;
+	  }
+	  .GridViewRowStyle:hover, .GridViewAlternatingRowStyle:hover
+		{
+		   background-color: #5882FA;
+		}
+		
+		/*
+		.GridViewRowStyle td input[type=text], .GridViewAlternatingRowStyle td input[type=text]
+		{
+			width:95% !important;	
+			border-radius: 4px;
+			padding: 2px 4px;
+			}
+		*/
+        .GridViewPagerStyleResponsive{
+	   background-color:#284775;
+	   color:#fff !important;
+
+        }
+	   .GridViewPagerStyleResponsive a{
+	    color:#fff !important;}
+	  
+   .GridViewSelectedRowStyle{
+	   background-color:#FFFFFF;}
+   .GridViewPagerStyle{
+	   background-color:#284775;
+	   color:#fff !important;}
+	   .GridViewPagerStyle a{
+	    color:#fff !important;}
+.GridViewFooterStyle {
+	background-color: #386492;
+	color: #F7F6F3 !important;
+   }
+   .GridViewFooterStyle td span
+   {
+   	display:inline-table !important;
+   	width:100% !important;
+   	}
+   	.gvSelect
+   {
+   	width:95% !important;
+   	}
+	
+	.gvTxtFecha 
+	{
+		width:80% !important;
+		}
+	.gvTextBox
+	{
+		width:95% !important;
+		}
+		
+	.gvTextBoxChico
+	{
+		width:40% !important;
+		}
+	
+	.gvLabelMoneda
+	{
+		width:95% !important;
+		text-align:right;
+		}
+	
+/*multitab*/
+.ajax__tab_auge {    
+    margin-bottom: .5rem;
+}
+.ajax__tab_auge .ajax__tab_header {
+	flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: .5rem;
+    margin-bottom: 0;
+	border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    background-color:#94B7D6;
+    height:2rem !important;
+    background-image:none !important;
+    /*border-bottom-color:#edf1f8;
+    border-bottom-style:solid;
+    border-bottom-width:1px;*/
+}
+.ajax__tab_auge .ajax__tab_header .ajax__tab_outer {
+    background-image:none !important;
+    background-color:#4e89c5 !important;
+    border-top-left-radius:.25rem;
+    border-top-right-radius:.25rem;
+    padding-right:.5rem !important;
+    height:1.95rem !important;
+    margin-right:.1rem !important;
+    border-color:#145072;
+    border-style:solid;
+    border-width:1px;
+    border-bottom:none;
+}
+.ajax__tab_auge .ajax__tab_header .ajax__tab_inner {
+    background-image:none !important;
+}
+.ajax__tab_auge .ajax__tab_header .ajax__tab_tab {
+    background-image:none !important;
+    padding:.4rem !important;
+}
+
+.ajax__tab_auge .ajax__tab_tab {
+	font-family:Arial;
+    font-size:.9rem;
+    font-weight:400;
+    color: white;
+    padding: .75rem .5rem;
+    border:none;
+    background-image:none !important;
+	}
+.ajax__tab_auge .ajax__tab_hover .ajax__tab_tab {
+    color: white;
+    background-image:none !important;
+}
+.ajax__tab_auge .ajax__tab_active .ajax__tab_inner {
+    background-image:none !important;
+    background-color: #edf1f8;
+    border-top-left-radius:.25rem;
+    border-top-right-radius:.25rem;
+}
+.ajax__tab_auge .ajax__tab_active .ajax__tab_outer {
+    margin-right:.2rem !important;
+    background-color: #edf1f8 !important;
+    margin-right:.1rem !important;
+    padding:0!important;
+    height:2rem !important;
+}
+.ajax__tab_auge .ajax__tab_active .ajax__tab_tab {
+    color: black;
+    background-image:none !important;
+    font-family:Arial;
+    font-size:.9rem;
+    font-weight:500 !important;
+    padding: .75rem .5rem;
+}
+.ajax__tab_auge .ajax__tab_active .ajax__tab_tab:hover {
+    color: black;
+}
+.ajax__tab_auge .ajax__tab_active .ajax__tab_tab:focus{
+    border:none !important;
+    outline: none !important;
+}
+.ajax__tab_auge .ajax__tab_disabled { color: #A0A0A0;}
+.ajax__tab_auge .ajax__tab_body {
+    clear:both;
+    font-family:Arial;
+    font-size:.9rem;
+    border:1px solid #145072 !important;
+    background-color:#edf1f8 !important;
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    min-height: 2rem;
+    padding: .5rem !important;
+    padding-top:1rem !important;
+}
+
+
+.listbox 
+{
+	width:18.6%;	
+	border-radius: 4px;
+	padding: 2px 4px;
+	}
+
+/*#pnlContenidoPrincipal input[type=text], #pnlContenidoPrincipal input[type=password], #ContenidoSuperior input[type=text],*/ 
+.textboxEvol {
+	width:20.5%;	
+	border-radius: .25rem !important;
+	padding: 2px 4px !important;
+	line-height:normal !important;
+	font:normal;
+}
+.txtPrefijoNumeroComprobante
+{
+	width: 4%;
+	border-radius: 4px;
+	padding: 2px 4px;
+	}
+
+.txtSufijoNumeroComprobante
+{
+	width: 13.3%;
+	border-radius: 4px;
+	padding: 2px 4px;
+	}
+	
+.txtCodigoBuscador
+{
+	width: 15.85%;
+	border-radius: 4px;
+	padding: 2px 4px;
+	}
+.txtCodigoBuscadorLimpiar
+{
+	width: 13.2%;
+	border-radius: 4px;
+	padding: 2px 4px;
+	}
+
+/*#pnlContenidoPrincipal selectEvol, */
+.selectEvol {
+	width:20.3%;
+	border-radius: 4px;
+	padding: 2px 4px;
+}
+
+.Select2-Container 
+{
+	position:inherit;
+	display:inline-block;
+	width:18.6%;
+	max-width: 600px;
+	}
+.Select2-Container2 
+{
+	position:inherit;
+	display:inline-block;
+	width:50%;
+	max-width: 600px;
+	}
+.select2 
+{
+	/*left: 4%;*/
+	/*width:95%;*/
+	/*max-width: 600px;*/
+    padding-bottom:0;
+	}
+	
+.select2Disabled 
+{
+	/*left: 4%;*/
+	width:95%;
+	max-width: 600px;
+	border-radius: 4px;
+	}
+/*.select2-selection__clear
+{
+	float:none !important;
+	}*/
+	
+	.ddlPrefijoNumeroComprobante
+{
+	width: 4.9%;
+	border-radius: 4px;
+	padding: 2px 4px;
+	}
+/*#pnlContenidoPrincipal span, */
+.labelEvol {
+margin-bottom:0.3%;
+width:8.3%;	
+display:inline-block;
+/*font-weight:bold !important;*/
+font-size:10pt !important;
+color:Black;
+text-align: left !important;
+}
+
+.labelFooterEvol {
+margin-bottom:0.3%;
+width:9.5%;	
+display:inline-block;
+margin-left: 1%;
+font-weight:bold !important;
+font-size:.9rem !important;
+color:White;
+text-align: right !important;
+}
+
+.checkboxlist {}
+.checkboxlist input[type=checkbox]:checked + labelEvol
+{
+	background:black;
+	font-weight:bold;
+	color:White;
+	font-size: 10pt;
+	}
+	
+.checkboxlist2 
+{
+	font-weight:bold;
+	font-size: .9rem;
+	}
+.checkboxlist2 input[type=checkbox]:checked + labelEvolEvol
+{
+	background:black;
+	font-weight:bold;
+	color:White;
+	font-size: .9rem;
+	}
+	
+ .panelLabel 
+ {
+ 	display:inline-block;
+ 	vertical-align: top;
+ 	width:25.4%;
+ 	margin-left:0.6%;
+ 	margin-top:3px;
+ 	}
+ .panelCheckBoxList
+ {
+ 	display:inline-block;
+ 	border:1px solid;
+ 	width:40%;
+ 	overflow-y:scroll;
+ 	margin-top:3px;
+ 	max-height:100px;
+ 	}
+
+/*#pnlContenidoPrincipal input[type=submit], */
+.botonesEvol, .button {
+	background-color:#4e89c5;
+	background-image: linear-gradient(-90deg, #4E89C5 0%, #2567AB 98%);
+    border-color: #145072;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    font-family: Arial;
+    padding: .35rem .7rem;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    text-shadow: 0 -1px 1px #145072;
+	vertical-align: middle;
+    border-radius: .25rem;
+}
+/*#pnlContenidoPrincipal input[type=submit]:hover, */
+.botonesEvol:hover{
+	background-color:#72B0D4;
+	background-image: linear-gradient(-90deg, #72B0D4 0%, #4B88B6 99%);
+    border-color: #00516E;
+    cursor: pointer;
+}
+/*#pnlContenidoPrincipal textarea, */
+.textarea
+{
+	width:51.3%;
+	height:30px;
+	font-family:Arial;
+	border-radius:4px;
+	font-size:small;
+	vertical-align:bottom;
+}
+
+
+    /*
+#menu
+{
+    height:60px;
+    background:url(images/apretado.png) repeat-x;
+	margin-bottom:18px;
+	font-weight: bold;
+}
+        */
+#UpdatePanel1{
+	padding:50px;
+	
+}
+/*
+#Salir 
+{
+    margin-top:2px;
+    margin-right:2px;
+    float:right;
+}
+    */
+.modalBackground {
+	background-color:#2E2D27 !important;
+	filter:alpha(opacity=60) !important;
+	opacity:0.6 !important;
+}
+
+.modalPopupComprobantes fieldset, .modalPopup fieldset, 
+.pnlContenidoPrincipal fieldset, .modalPopupBarraProgreso fieldset,
+.modalPopUpBuscarAfiliados fieldset, modalPopUpBuscarCuentasContables fieldset
+{
+	border-radius: 8px !important;
+}
+
+
+/*Modal popup PV*/
+.modalPopup, .modalPopUpDomicilios, .modalPopupBarraProgreso, 
+.modalPopupComprobantes, .modalPopUpBuscarAfiliados, .modalPopUpCargoAfiliadoModificarDatos,
+.modalPopUpBuscarCuentasContables {
+	background-color: #f4f4ff !important;
+	border-width:3px !important;
+	border-style:solid !important;
+	border-color:Gray !important;
+	padding:3px !important;
+    position: fixed !important;
+    z-index: 100001 !important;
+	text-align:left !important;	
+	border-radius:10px !important;
+}
+
+.modalPopup span{
+	display: inline-block !important;
+	width:auto !important;	
+}
+
+.modalPopup fieldset 
+{
+	border:0px solid gray !important;
+	}
+	
+.modalPopup fieldset legend
+{
+	padding: 0.2em 0.5em !important;
+	font-weight:bold !important;
+	font-size:10pt !important;
+	color:Black !important;
+	text-align:left !important;
+	position: relative !important;
+	}
+	/*
+.modalPopup fieldset legend:before {
+  position: absolute;
+  content: '';
+  height: 8px;
+  border-left: 1px solid gray;
+  left: 0px;
+  top: 7px;
+}
+*/
+
+.modalPopup
+{
+	/*width:50% !important;
+	left: 25% !important;
+	top: 20% !important;*/
+}
+
+.modalPopup selectEvol{
+	display: inline-block;
+	width:256px;	
+}
+
+.modalPopupMenues selectEvol{
+	display: inline-block;
+	width:100% !important;
+}
+
+/* Modal Popup Comprobantes */
+.modalPopupComprobantes 
+{
+	width:90%;
+	height:90%;
+}
+
+.modalPopupComprobantes fieldset
+{
+	text-align:left;
+	height:98%;
+    Width:98%;
+    border-radius: 8px;
+	}
+
+.modalPopupComprobantes fieldset span
+{
+	height:98%;
+    Width:98%;
+	}
+
+.Comprobantes
+{
+	border-style:inset;
+	border-width:2px;
+	height:90% !important;
+	width:98% !important;
+	}
+	
+.Comprobantes div, Comprobantes div iframe
+{
+	height:99%;
+    Width:99.8%;
+	}
+		
+/* FIN Modal Popup Comprobantes */	
+
+.modalPopUpBuscarCuentasContables
+{
+    width:90%;
+    height:auto;
+}
+	
+.modalPopUpBuscarCuentasContables fieldset
+{
+    min-height:60vh;
+}
+
+.modalPopUpBuscarAfiliados
+{
+	width:90%;
+	height:auto;
+	}
+.modalPopUpBuscarAfiliados fieldset
+{
+	min-height:400px;
+	}
+
+.modalPopupBarraProgreso 
+{
+	width:40% !important;
+	left: 35% !important;
+	top: 30% !important;
+	border-radius: 10px !important;
+}
+
+.modalPopUpDomicilios, .modalPopUpCargoAfiliadoModificarDatos
+{
+	width:50%;
+	left: 25% !important;
+	top: 20% !important;
+}
+
+.txtFecha
+{
+	width:10%;
+	}
+
+.CuentasContablesBuscarPopUp 
+{
+	color:#333333;
+	}
+.CuentasContablesBuscarPopUp span
+{
+	margin-bottom:0.3%;
+	width:9.5% !important;	
+	display:inline-block;
+	margin-left: 1%;
+}
+
+.txtMultilinea
+{
+	width:45% !important;
+	margin-left:1%;
+	}
+/************ MaskedEdit Related Styles ***********************/
+
+.MaskedEditFocus
+{
+    background-color: #ffffcc;
+    color: #000000;
+}
+.MaskedEditMessage
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+.MaskedEditError
+{
+    background-color: #ffcccc;
+}
+.MaskedEditFocusNegative
+{
+    background-color: #ffffcc;
+    color: #ff0000;
+}
+.MaskedEditBlurNegative
+{
+    color: #ff0000;
+}
+
+.MyCalendar .ajax__calendar_container {
+    border:1px solid #646464;
+    background-color: lemonchiffon;
+    color: red;
+}
+.MyCalendar .ajax__calendar_other .ajax__calendar_day,
+.MyCalendar .ajax__calendar_other .ajax__calendar_year {
+    color: black;
+}
+.MyCalendar .ajax__calendar_hover .ajax__calendar_day,
+.MyCalendar .ajax__calendar_hover .ajax__calendar_month,
+.MyCalendar .ajax__calendar_hover .ajax__calendar_year {
+    color: black;
+}
+.MyCalendar .ajax__calendar_active .ajax__calendar_day,
+.MyCalendar .ajax__calendar_active .ajax__calendar_month,
+.MyCalendar .ajax__calendar_active .ajax__calendar_year {
+    color: black;
+    font-weight:bold;
+}
+
+#PopUpContenedor
+{
+    min-width: 500px;
+    min-height:400px;
+    width: 500px;
+    height:400px;
+    vertical-align:top;
+    text-align:left;
+    margin:5px auto;
+}
+#PopUpContenedor .centrado
+{
+    text-align: center;
+    vertical-align: middle;
+    }
+#PopUpContenedor .cancelar
+{
+    position: absolute;
+    right:-34px;
+    top: -30px;
+    }
+
+#PopUpCuentaContable
+{
+    width: 700px;
+    height:500px;
+    vertical-align:top;
+    text-align:left;
+    margin:5px auto;
+    }  
+    
+/* Definiciones de Estilos */
+
+.borrar
+{
+	clear:both;
+	}
+	
+.EnLinea
+{
+	float:left;
+	}
+	
+/* PAGINA MAESTRA */
+
+/*#Contenedor
+{
+    display:table !important;
+    width:99% !important;
+    padding:0.5% !important;
+}
+.Contenedor
+{
+    display:table !important;
+    width:99.5% !important;
+    padding:0% !important;
+}*/
+
+/*#Contenedor2 
+{
+	text-align: center;
+    display:table;
+    width:100%;
+    height:500px; 
+}*/
+#ContenidoSuperior, #ContenidoCentral, #ContenidoInferior
+{
+    width:100%;
+    vertical-align:top;
+}
+#ContenidoSuperior
+{
+	margin-top:-0.5%;
+	}
+#ContenidoCentral, #ContenidoInferior
+{
+	margin-top:0.5%;
+	}
+
+#ContenidoSuperiorIzquierdo
+{
+	float:left;
+	}
+#ContenidoSuperiorCentro
+{
+	float:left;
+	}
+#ContenidoSuperiorDerecho
+{
+	float:right;
+	}
+#ContenidoCentralIzquierdo, #ContenidoCentralDerecho,
+#ContenidoInferiorIzquierdo, #ContenidoInferiorDerecho
+{
+    
+}
+
+/* #ContenidoSuperiorCentro, #ContenidoInferiorCentro */
+#ContenidoPrincipal
+{
+    width: 100%;
+    vertical-align: top;
+}
+#ContenidoPrincipal { border: solid 0px gray; margin-left: auto ; margin-right: auto ;}
+
+/* FIN PAGINA MAESTRA */
+
+.IniciarSistema
+{
+    width:100%;
+	text-align: center;
+} 
+
+
+/* Accordion */
+
+.accordionHeader
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #2E4d7B;
+	font-family: Arial, Sans-Serif;
+	font-size: .9rem;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#master_content .accordionHeader a
+{
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+#master_content .accordionHeader a:hover
+{
+	background: none;
+	text-decoration: underline;
+}
+
+.accordionHeaderSelected
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #5078B3;
+	font-family: Arial, Sans-Serif;
+	font-size: .9rem;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#master_content .accordionHeaderSelected a
+{
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+#master_content .accordionHeaderSelected a:hover
+{
+	background: none;
+	text-decoration: underline;
+}
+
+.accordionContent
+{
+    background-color: #D3DEEF;
+    border: 1px dashed #2F4F4F;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+/* BUG ASYNC FILEUPLOAD FIREFOX*/
+.imageUploaderField {
+    padding-top: .4rem;
+    font-size: .9rem;
+    font-weight: 400;
+    display: block;
+}
+.imageUploaderField input { width:100%!important;}
+
+/*#ContentPlaceHolder1_UpdatePanel1 input{
+	width:250px!important;	
+}
+#ContentPlaceHolder1_UpdatePanel1 selectEvol{
+	width:12%!important;	
+}
+#ContentPlaceHolder1_UpdatePanel1 span{
+	width:11%!important;	
+}*/
+
+/*Pantalla de Inicio*/
+
+#ContentPlaceHolder1_txtUsuario, #ContentPlaceHolder1_txtContrasenia{
+	width:250px !important;
+	}
+.logo{
+	text-align:center;
+	margin:1%;
+	}
+#IniciarSistema{
+	
+}
+#ContentPlaceHolder1_btnCancelar submit{
+	
+}
+
+
+/*#ContentPlaceHolder1_ModifDatos_lblFechaFallecimiento, #ContentPlaceHolder1_ModifDatos_lblFechaIngreso
+{margin-left:-20px;}*/
+
+/*Validadores PV*/
+.Validador2 {
+    
+}
+.Validador{
+	color:#F00;
+	font-size:.9rem;
+	font-weight:bold;
+	width:2.9% !important;
+	display:inline-block;
+		}
+.ValidadorCalendario{
+	color:#F00;
+	font-size:.9rem;
+	font-weight:bold;
+	margin-left: 0px !important;
+	width:0% !important;
+		}
+		
+/*Calendario PV*/	
+.Calendario{
+	display:inline-block;
+	width: 3.3%;
+}
+.Calendario input[type=text]{
+	width:3% ;
+}
+.Calendario img {
+	vertical-align: middle;
+}
+
+/*Espacio validador PV*/	
+.EspacioValidador{
+	display:inline-block;
+	width: 0.5%;
+	}
+.Espacio{
+	display:inline-block;
+	width: 3.8%;
+}
+.EspacioCheckBox{
+	display:inline-block;
+	width: 23.35%;
+}
+.EspacioBotonImagen
+{
+	display:inline-block;
+	width: 0%;
+	}
+.EspacioTotalFacturas, .EspacioTotales
+{
+	display:inline-block;
+	width: 65%;
+	}
+
+/*Popup PV*/
+.modalPopupComprobantes{ 
+background: linear-gradient(-90deg, #E6E6E6 0%, #CCCCCC 99%);
+padding:10px;
+}
+/*ahorros Depositos y Extracciones  PV*/
+/*#ContentPlaceHolder1_cphPrincipal_ExtraerDatos_UpdatePanel2, #ContentPlaceHolder1_cphPrincipal_DepositarDatos_UpdatePanel2 {
+	 margin-top:10px;
+	 }*/
+/*TGE */
+.FormasCobrosAfiliadosDatos span{
+	/*width:25% ;*/
+}
+/*CONTROLES COMUNES*/
+
+.PanelControlesDinamicos 
+{
+	display:inline;
+	}
+	
+	/*Parametros dinamico*/
+.TableCellBold 
+{
+	vertical-align:top;
+	}
+
+.RepComboBox input[type=text] 
+{
+	width:100% !important;
+	font-weight:normal !important;
+	}
+
+.RepComboBox table
+{
+	width:237px !important;
+	}
+	
+.remove-all-styles {
+    all: initial;
+  }
+
+.card-prestamosh5 {
+    padding: 0.1rem !important;
+    font-size: 2rem !important;
+    text-align: left !important;
+}
+.link-prestamos {
+    text-decoration: none !important;
+    color: black !important;
+}
+.card-prestamosp {
+    text-align: left!important;
+   
+    font-size: 0.8rem!important;
+}
+.card-prestamos {
+    height: 5rem;
+    width: 10rem !important;
+    margin-left: 0.5rem !important;
+   
+}
+.cards{
+    align-content: center!important;
+    padding: 0.3rem;
+}
+.stickyTop {
+	position: sticky;
+	top: 3.7rem;
+}
+
+.stickyBotton {
+	position: sticky;
+	bottom: 0;
+}

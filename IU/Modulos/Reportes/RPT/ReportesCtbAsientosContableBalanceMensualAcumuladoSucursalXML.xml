@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="BalancePresentacion" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="LibroBalanceAcumuladoMesSucursal" msdata:IsDataSet="true" msdata:Locale="">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Titulo" type="xs:string" minOccurs="0" />
+              <xs:element name="Sucursal" type="xs:string" minOccurs="0" />  
+              <xs:element name="NumeroCuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="Cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="SaldoInicial" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoAnterior" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DebeAcumulado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HaberAcumulado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoPeriodo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoFinal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdUsuarioEvento" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Empresa" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

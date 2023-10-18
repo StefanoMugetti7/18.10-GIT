@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Maestra.Master" AutoEventWireup="true" CodeBehind="nmpTesorerias.master.cs" Inherits="IU.Modulos.Tesoreria.nmpTesorerias" %>
+<%@ Register src="~/Modulos/Comunes/popUpComprobantes.ascx" tagname="popUpComprobantes" tagprefix="auge" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="ContenidoEncabezado" ContentPlaceHolderID="ContentPlaceEncabezado" runat="server">
+    
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceIzquierdoArriba" runat="server">
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceCentroArriba" runat="server">
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceDerechaArriba" runat="server">
+</asp:Content>
+<asp:Content ID="Content6" ContentPlaceHolderID="ContentPlaceIzquierdoCentro" runat="server">
+</asp:Content>
+<asp:Content ID="ContenidoPrincipal" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:Panel ID="pnlDatos" CssClass="DatosTesoreria" GroupingText="Datos de la Tesoreria" runat="server">
+        <asp:UpdatePanel ID="UpdatePanel2" UpdateMode="Conditional" runat="server" >
+        <ContentTemplate>
+        <auge:popUpComprobantes ID="ctrPopUpComprobantes" runat="server" />
+            <div class="data-table">
+        <asp:GridView ID="gvDatos" DataKeyNames="IndiceColeccion"
+            runat="server" SkinID="Grillaresponsive" AutoGenerateColumns="false" ShowFooter="false"
+            OnRowCommand="gvDatos_RowCommand"
+            >
+            <Columns>
+                <asp:TemplateField HeaderText="Moneda" SortExpression="Moneda.Descripcion">
+                    <ItemTemplate>
+                        <%# Eval("Moneda.Descripcion")%>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="Tipo Valor" SortExpression="TipoValor.TipoValor">
+                    <ItemTemplate>
+                        <%# Eval("TipoValor.TipoValor")%>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="Saldo Inicial" HeaderStyle-CssClass="text-right" ItemStyle-HorizontalAlign="Right" ItemStyle-Wrap="false">
+                    <ItemTemplate>
+                        <%# string.Concat(Eval("Moneda.Moneda"), Eval("SaldoInicial", "{0:N2}"))%>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="Ingresos" HeaderStyle-CssClass="text-right" ItemStyle-HorizontalAlign="Right" ItemStyle-Wrap="false">
+                    <ItemTemplate>
+                        <%# string.Concat(Eval("Moneda.Moneda"), Eval("Ingreso", "{0:N2}"))%>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="Egresos" HeaderStyle-CssClass="text-right" ItemStyle-HorizontalAlign="Right" ItemStyle-Wrap="false">
+                    <ItemTemplate>
+                        <%# string.Concat(Eval("Moneda.Moneda"), Eval("Egreso", "{0:N2}"))%>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="Saldo Tesoreria" HeaderStyle-CssClass="text-right" ItemStyle-HorizontalAlign="Right" ItemStyle-Wrap="false">
+                    <ItemTemplate>
+                        <%# string.Concat(Eval("Moneda.Moneda"), Eval("SaldoFinal", "{0:N2}"))%>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="Saldo en Cajas" HeaderStyle-CssClass="text-right" ItemStyle-HorizontalAlign="Right" ItemStyle-Wrap="false">
+                    <ItemTemplate>
+                        <%# string.Concat(Eval("Moneda.Moneda"), Eval("SaldoFinalCajas", "{0:N2}"))%>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="Saldo Tesoreria y Cajas" HeaderStyle-CssClass="text-right" ItemStyle-HorizontalAlign="Right" ItemStyle-Wrap="false">
+                    <ItemTemplate>
+                        <%# string.Concat(Eval("Moneda.Moneda"), Eval("SaldoTesoreriaCajas", "{0:N2}"))%>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                 <asp:TemplateField HeaderText="Acciones" HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Center"  >
+                    <ItemTemplate>
+                        <asp:ImageButton CommandArgument='<%# Container.DisplayIndex%>' ImageUrl="~/Imagenes/print_f2.png" runat="server" CommandName="Impresion" ID="btnImprimir" 
+                                    AlternateText="Imprimir Comprobante" ToolTip="Imprimir Comprobante" />
+                    </ItemTemplate>
+                </asp:TemplateField> 
+            </Columns>
+        </asp:GridView></div>
+            <div class="data-table">
+              <asp:GridView ID="gvDatos2" 
+            runat="server" SkinID="GrillaResponsive" AutoGenerateColumns="false" ShowFooter="false"
+            OnRowCommand="gvDatos2_RowCommand"
+            >
+            <Columns>
+                    <asp:TemplateField HeaderText="Usuario" SortExpression="Usuario">
+                    <ItemTemplate>
+                        <%# Eval("Usuario")%>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="Moneda" SortExpression="Moneda.Descripcion">
+                    <ItemTemplate>
+                        <%# Eval("Descripcion")%>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Filial" SortExpression="Filial">
+                    <ItemTemplate>
+                        <%# Eval("Filial")%>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="Tipo Valor" SortExpression="TipoValor.TipoValor">
+                    <ItemTemplate>
+                        <%# Eval("TipoValor")%>
+                    </ItemTemplate>
+                </asp:TemplateField>     
+                <asp:TemplateField HeaderText="Saldo Caja" HeaderStyle-CssClass="text-right" ItemStyle-HorizontalAlign="Right" ItemStyle-Wrap="false">
+                    <ItemTemplate>
+                        <%# string.Concat(Eval("Moneda"), Eval("SaldoFinal", "{0:N2}"))%>
+                    </ItemTemplate>
+                </asp:TemplateField>
+      
+                 
+            </Columns>
+        </asp:GridView></div>
+        <asp:Label CssClass="label" ID="lblMensajeTesoreria" runat="server" Visible="false" Width="100%" Text=""></asp:Label>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+    </asp:Panel>
+
+    <asp:ContentPlaceHolder ID="cphPrincipal" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content8" ContentPlaceHolderID="ContentPlaceDerechaCentro" runat="server">
+</asp:Content>
+<asp:Content ID="Content9" ContentPlaceHolderID="ContentPlaceIzquierdoAbajo" runat="server">
+</asp:Content>
+<asp:Content ID="Content10" ContentPlaceHolderID="ContentPlaceDerechaAbajo" runat="server">
+</asp:Content>

@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{41A92DC3-14F9-4550-90EF-9C91E46BE02C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contabilidad.Entidades</RootNamespace>
+    <AssemblyName>Contabilidad.Entidades</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\_dllsSIM\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\_dllsSIM\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\_dllsSIM\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>..\_dllsSIM\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Comunes.Entidades, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ERP_SI\_dllSI\Comunes.Entidades.dll</HintPath>
+    </Reference>
+    <Reference Include="CuentasPagar.Entidades, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dllsSIM\CuentasPagar.Entidades.dll</HintPath>
+    </Reference>
+    <Reference Include="Generales.Entidades, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ERP_SI\_dllSI\Generales.Entidades.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CtbAsientosContables.cs" />
+    <Compile Include="CtbAsientosContablesCuentasContablesParametros.cs" />
+    <Compile Include="CtbAsientosContablesDetalles.cs" />
+    <Compile Include="CtbAsientosContablesTipos.cs" />
+    <Compile Include="CtbAsientosModelos.cs" />
+    <Compile Include="CtbAsientosModelosDetalles.cs" />
+    <Compile Include="CtbAsientosModelosDetallesCodigos.cs" />
+    <Compile Include="CtbBienesUsos.cs" />
+    <Compile Include="CtbBienesUsosDetalles.cs" />
+    <Compile Include="CtbCapitulos.cs" />
+    <Compile Include="CtbCentrosCostosProrrateos.cs" />
+    <Compile Include="CtbCentrosCostosProrrateosDetalles.cs" />
+    <Compile Include="CtbClasificadores.cs" />
+    <Compile Include="CtbConceptosContables.cs" />
+    <Compile Include="CtbConceptosContablesTipoOperacion.cs" />
+    <Compile Include="CtbCuentasContables.cs" />
+    <Compile Include="CtbCuentasContablesActivos.cs" />
+    <Compile Include="CtbCuentasContablesBase.cs" />
+    <Compile Include="CtbCuentasContablesCostoMercaderiaVendida.cs" />
+    <Compile Include="CtbCuentasContablesGanancias.cs" />
+    <Compile Include="CtbDepartamentos.cs" />
+    <Compile Include="CtbEjerciciosContables.cs" />
+    <Compile Include="CtbEntidadContable.cs" />
+    <Compile Include="CtbFilialesCuentasContables.cs" />
+    <Compile Include="CtbMonedas.cs" />
+    <Compile Include="CtbPeriodosContables.cs" />
+    <Compile Include="CtbPeriodosIvas.cs" />
+    <Compile Include="CtbRubros.cs" />
+    <Compile Include="CtbRubrosSubRubros.cs" />
+    <Compile Include="CtbSubRubros.cs" />
+    <Compile Include="CtbTiposAsientos.cs" />
+    <Compile Include="CtbTiposImputaciones.cs" />
+    <Compile Include="EnumContabilidad.cs" />
+    <Compile Include="EstadosContabilidad.cs" />
+    <Compile Include="InterfazValoresImportes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TGEListasValoresSistemasDetallesCuentasContables.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

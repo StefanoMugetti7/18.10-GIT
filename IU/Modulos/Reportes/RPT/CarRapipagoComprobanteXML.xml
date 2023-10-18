@@ -1,0 +1,57 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdTipoCargoLoteEnviadoDetalle" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaAlta" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdAfiliado" type="xs:int" minOccurs="0" />
+              <xs:element name="MatriculaIAF" type="xs:long" minOccurs="0" />
+              <xs:element name="NumeroSocio" type="xs:string" minOccurs="0" />
+              <xs:element name="ZonaGrupo" type="xs:string" minOccurs="0" />
+              <xs:element name="IdTipoDocumento" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoDocumento" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroDocumento" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoDocumentoApoderado" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroDocumentoApoderado" type="xs:int" minOccurs="0" />
+              <xs:element name="CUIL" type="xs:long" minOccurs="0" />
+              <xs:element name="ApellidoNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="Domicilio" type="xs:string" minOccurs="0" />
+              <xs:element name="Localidad" type="xs:string" minOccurs="0" />
+              <xs:element name="PrimerVencimiento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SegundoVencimiento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ImporteEnviado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteSegundoVencimiento" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteEnviadoLetras" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoBarras" type="xs:string" minOccurs="0" />
+              <xs:element name="MensajeAbonar" type="xs:string" minOccurs="0" />
+              <xs:element name="IdCuentaCorriente" type="xs:int" minOccurs="0" />
+              <xs:element name="Concepto" type="xs:string" minOccurs="0" />
+              <xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CodigoBarrasImagen" type="xs:base64Binary" minOccurs="0" /> 
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Empresa" type="xs:string" minOccurs="0" />
+              <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Direccion" type="xs:string" minOccurs="0" />
+              <xs:element name="Provincia" type="xs:string" minOccurs="0" />
+              <xs:element name="Telefono" type="xs:string" minOccurs="0" />
+              <xs:element name="CUIT" type="xs:string" minOccurs="0" />
+              <xs:element name="CondicionFiscal" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroIIBB" type="xs:string" minOccurs="0" />
+              <xs:element name="MatriculaINAES" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaInicioActividad" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

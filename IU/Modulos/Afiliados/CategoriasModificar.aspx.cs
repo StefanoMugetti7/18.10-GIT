@@ -1,0 +1,45 @@
+﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using System.Xml.Linq;
+using Comunes.Entidades;
+using Afiliados.Entidades;
+
+namespace IU.Modulos.Afiliados
+{
+    public partial class CategoriasModificar : PaginaSegura
+    {
+        protected override void PageLoadEvent(object sender, EventArgs e)
+        {
+            base.PageLoadEvent(sender, e);
+            this.ModificarDatos.CategoriaAfiliadoModificarDatosCancelar += new IU.Modulos.Afiliados.Controles.CategoriasModificarDatos.CategoriaAfiliadoDatosCancelarEventHandler(ModificarDatos_CategoriaAfiliadoModificarDatosCancelar);
+            this.ModificarDatos.CategoriaAfiliadoModificarDatosAceptar += new IU.Modulos.Afiliados.Controles.CategoriasModificarDatos.CategoriaAfiliadoDatosAceptarEventHandler(ModificarDatos_CategoriaAfiliadoModificarDatosAceptar);
+            if (!this.IsPostBack)
+            {
+                if (!this.MisParametrosUrl.Contains("IdCategoria"))
+                    Response.Redirect(AyudaProgramacion.ObtenerUrlParametros("~/Modulos/Afiliados/CategoriasListar.aspx"), true);
+                AfiCategorias categoria = new AfiCategorias();
+                categoria.IdCategoria = Convert.ToInt32(this.MisParametrosUrl["IdCategoria"]);
+                this.ModificarDatos.IniciarControl(categoria, Gestion.Modificar);
+            }
+        }
+
+        protected void ModificarDatos_CategoriaAfiliadoModificarDatosAceptar(object sender, global::Afiliados.Entidades.AfiCategorias e)
+        {
+            this.Response.Redirect(AyudaProgramacion.ObtenerUrlParametros("~/Modulos/Afiliados/CategoriasListar.aspx"), true);
+        }
+
+        protected void ModificarDatos_CategoriaAfiliadoModificarDatosCancelar()
+        {
+            this.Response.Redirect(AyudaProgramacion.ObtenerUrlParametros("~/Modulos/Afiliados/CategoriasListar.aspx"), true);
+        }
+    }
+}

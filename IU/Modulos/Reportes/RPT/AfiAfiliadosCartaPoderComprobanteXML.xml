@@ -1,0 +1,46 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Grado" type="xs:string" minOccurs="0" />
+              <xs:element name="Apellido" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoDocumento" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroDocumento" type="xs:int" minOccurs="0" />
+              <xs:element name="NumeroSocio" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialCiudad" type="xs:string" minOccurs="0" />
+              <xs:element name="Domicilio" type="xs:string" minOccurs="0" />
+              <xs:element name="CorreoElectronico" type="xs:string" minOccurs="0" />
+              <xs:element name="Telefono" type="xs:string" minOccurs="0" />
+              <xs:element name="Celular" type="xs:string" minOccurs="0" />
+              <xs:element name="SituacionRevista" type="xs:string" minOccurs="0" />
+              <xs:element name="ApoIdAfiliado" type="xs:int" minOccurs="0" />
+              <xs:element name="ApoApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="ApoNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="ApoTipoDocumento" type="xs:string" minOccurs="0" />
+              <xs:element name="ApoNumeroDocumento" type="xs:int" minOccurs="0" />
+              <xs:element name="ApoNumeroSocio" type="xs:string" minOccurs="0" />
+              <xs:element name="ApoDomicilio" type="xs:string" minOccurs="0" />
+              <xs:element name="ApoCorreoElectronico" type="xs:string" minOccurs="0" />
+              <xs:element name="ApoTelefono" type="xs:string" minOccurs="0" />
+              <xs:element name="ApoCelular" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CUIT" type="xs:string" minOccurs="0" />
+              <xs:element name="Empresa" type="xs:string" minOccurs="0" />
+              <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

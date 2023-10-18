@@ -1,0 +1,75 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdExpediente" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaExpediente" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ExpedienteTipoIdExpedienteTipo" type="xs:int" minOccurs="0" />
+              <xs:element name="ExpedienteTipoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Titulo" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="EstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="ExpedienteTrackingIdExpedienteTracking" type="xs:int" minOccurs="0" />
+              <xs:element name="ExpedienteTrackingSectorIdSector" type="xs:int" minOccurs="0" />
+              <xs:element name="ExpedienteTrackingSectorSector" type="xs:string" minOccurs="0" />
+              <xs:element name="ExpedienteTrackingSectorFilialIdFilial" type="xs:int" minOccurs="0" />
+              <xs:element name="ExpedienteTrackingSectorFilialCodigoFilial" type="xs:string" minOccurs="0" />
+              <xs:element name="ExpedienteTrackingSectorFilialFilial" type="xs:string" minOccurs="0" />
+              <xs:element name="ExpedienteTrackingFecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ExpedienteTrackingEstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="ExpedienteTrackingEstadoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="SelloTiempo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="ExpedienteDerivadoIdExpedienteTracking" type="xs:int" minOccurs="0" />
+              <xs:element name="ExpedienteDerivadoSectorIdSector" type="xs:int" minOccurs="0" />
+              <xs:element name="ExpedienteDerivadoSectorSector" type="xs:string" minOccurs="0" />
+              <xs:element name="ExpedienteDerivadoSectorFilialIdFilial" type="xs:int" minOccurs="0" />
+              <xs:element name="ExpedienteDerivadoSectorFilialCodigoFilial" type="xs:string" minOccurs="0" />
+              <xs:element name="ExpedienteDerivadoSectorFilialFilial" type="xs:string" minOccurs="0" />
+              <xs:element name="ExpedienteDerivadoFecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ExpedienteDerivadoEstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="ExpedienteDerivadoEstadoDescripcion" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdExpedienteTracking" type="xs:int" minOccurs="0" />
+              <xs:element name="IdExpediente" type="xs:int" minOccurs="0" />
+              <xs:element name="SectorIdSector" type="xs:int" minOccurs="0" />
+              <xs:element name="SectorSector" type="xs:string" minOccurs="0" />
+              <xs:element name="SectorFilialIdFilial" type="xs:int" minOccurs="0" />
+              <xs:element name="SectorFilialCodigoFilial" type="xs:string" minOccurs="0" />
+              <xs:element name="SectorFilialFilial" type="xs:string" minOccurs="0" />
+              <xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SelloTiempo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="EstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoDescripcion" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdParametro" type="xs:int" minOccurs="0" />
+              <xs:element name="NombreParametro" type="xs:string" minOccurs="0" />
+              <xs:element name="ParametroValor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

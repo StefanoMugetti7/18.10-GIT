@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdAfiliado" type="xs:int" minOccurs="0" />
+              <xs:element name="ApellidoYNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoDocumento" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroDocumento" type="xs:int" minOccurs="0" />
+              <xs:element name="CIUL" type="xs:int" minOccurs="0" />
+              <xs:element name="NumeroSocio" type="xs:string" minOccurs="0" />
+              <xs:element name="SexoSexo" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaNacimiento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EstadoCivil" type="xs:string" minOccurs="0" />
+              <xs:element name="MatriculaIAF" type="xs:int" minOccurs="0" />
+              <xs:element name="CorreoElectronico" type="xs:string" minOccurs="0" />
+              <xs:element name="CategoriaIdCategoria" type="xs:int" minOccurs="0" />
+              <xs:element name="CategoriaCategoria" type="xs:string" minOccurs="0" />
+              <xs:element name="CategoriaImporteCuota" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GrupoSanguienoGrupoSanguieno" type="xs:string" minOccurs="0" />
+              <xs:element name="GradoGrado" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaIngreso" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaAlta" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaEvento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaRetiro" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaFallecimiento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaBaja" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaSupervivencia" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="IdUsuarioEvento" type="xs:int" minOccurs="0" />
+              <xs:element name="UsuarioAlta" type="xs:string" minOccurs="0" />
+              <xs:element name="ParentescoIdParentesco" type="xs:int" minOccurs="0" />
+              <xs:element name="ParentescoParentesco" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoTipoIdAfiliadoTipo" type="xs:int" minOccurs="0" />
+              <xs:element name="AfiliadoTipoAfiliadoTipo" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoApoderadoIdTipoApoderado" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoApoderadoTipoApoderado" type="xs:string" minOccurs="0" />
+              <xs:element name="CantidadParticipantes" type="xs:int" minOccurs="0" />
+              <xs:element name="CodigoZonaGrupo" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoCategoria" type="xs:string" minOccurs="0" />
+              <xs:element name="CondicionFiscalDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="SituacionRevista" type="xs:string" minOccurs="0" />
+
+              <!-- FILIAL -->
+              <xs:element name="FilialIdFilial" type="xs:int" minOccurs="0" />
+              <xs:element name="FilialCodigoFilial" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialFilial" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialDireccion" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialEstadoIdEstado" type="xs:int" minOccurs="0" />
+              
+              <xs:element name="Titulo" type="xs:string" minOccurs="0" />
+              
+              <!-- DOMICILIOS Y TELEFONOS -->
+              <xs:element name="DomicilioParticularPiso" type="xs:int" minOccurs="0" />
+              <xs:element name="DomicilioParticularDepartamento" type="xs:string" minOccurs="0" />
+              <xs:element name="DomicilioParticularDomicilio" type="xs:string" minOccurs="0" />
+              <xs:element name="DomicilioParticularCodigoPostal" type="xs:string" minOccurs="0" />
+              <xs:element name="DomicilioParticularLocalidad" type="xs:string" minOccurs="0" />
+              <xs:element name="DomicilioParticularProvincia" type="xs:string" minOccurs="0" />
+
+              <xs:element name="DomicilioLaboralDomicilio" type="xs:string" minOccurs="0" />
+              <xs:element name="DomicilioLaboralCodigoPostal" type="xs:string" minOccurs="0" />
+              <xs:element name="DomicilioLaboralLocalidad" type="xs:string" minOccurs="0" />
+              <xs:element name="DomicilioLaboralProvincia" type="xs:string" minOccurs="0" />
+
+              <xs:element name="ParticularNumero" type="xs:string" minOccurs="0" />
+              <xs:element name="LaboralNumero" type="xs:string" minOccurs="0" />
+              <xs:element name="CelularNumero" type="xs:string" minOccurs="0" />
+              <xs:element name="Mensaje" type="xs:string" minOccurs="0" />
+              <xs:element name="CBU" type="xs:string" minOccurs="0" />
+              <xs:element name="Empleador" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaIngresoEmpresa" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IngresoDeclarado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Cargo" type="xs:string" minOccurs="0" />
+              <xs:element name="Mes" type="xs:string" minOccurs="0" />
+              
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="Table2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdAfiliado" type="xs:int" minOccurs="0" />
+              <xs:element name="IdAfiliadoRef" type="xs:string" minOccurs="0" />
+              <xs:element name="ApellidoYNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoDocumentoTipoDocumento" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroDocumento" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaNacimiento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="ParentescoParentesco" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,114 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdFactura" type="xs:int" minOccurs="0" />
+              <xs:element name="AfiliadoIdAfiliado" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoFacturaIdTipoFactura" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoFacturaCodigoValor" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoFacturaDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoFacturaLetra" type="xs:string" minOccurs="0" />
+              <xs:element name="PrefijoNumeroFactura" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroFactura" type="xs:string" minOccurs="0" />
+              <xs:element name="ConceptoComprobanteIdConceptoComprobante" type="xs:int" minOccurs="0" />
+              <xs:element name="ConceptoComprobanteDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="MonedaIdMoneda" type="xs:int" minOccurs="0" />
+              <xs:element name="MonedaCotizacion" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaFactura" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaContable" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ObservacionComprobante" type="xs:string" minOccurs="0" />
+              <xs:element name="ImporteSinIVA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IvaTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteSubtotalConIVA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteNetoGravado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteNetoNoGravado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteOperacionesExentas" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FechaVencimiento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FilialIdFilial" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaAlta" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdUsuarioAlta" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaAnulacion" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EtiquetaCAE" type="xs:string" minOccurs="0" />
+              <xs:element name="CAE" type="xs:string" minOccurs="0" />
+              <xs:element name="CAEFechaVencimiento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoOperacionIdTipoOperacion" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoOperacion" type="xs:string" minOccurs="0" />
+              <xs:element name="RazonSocial" type="xs:string" minOccurs="0" />
+              <xs:element name="Domicilio" type="xs:string" minOccurs="0" />
+              <xs:element name="Localidad" type="xs:string" minOccurs="0" />
+              <xs:element name="CondicionFiscal" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteRazonSocial" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteCUIT" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteCondicionFiscal" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteDomicilio" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteLocalidad" type="xs:string" minOccurs="0" />
+              <xs:element name="IdFacturaDetalle" type="xs:int" minOccurs="0" />
+              <xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductoIdProducto" type="xs:int" minOccurs="0" />
+              <xs:element name="DescripcionProducto" type="xs:string" minOccurs="0" />
+              <xs:element name="Cantidad" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DescuentoPorcentual" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DescuentoImporte" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PrecioUnitarioSinIva" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PrecioUnitarioConIva" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteIVA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IVAAlicuota" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteSubtotalItem" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteTotalItem" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImportePercepciones" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CodigoBarras" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoBarrasImagen" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="CodigoQRImagen" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="IIBBDescripcion1" type="xs:string" minOccurs="0" />
+              <xs:element name="IIBBDescripcion2" type="xs:string" minOccurs="0" />
+              <xs:element name="PeriodoFacturadoDesde" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PeriodoFacturadoHasta" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ComprobanteExento" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DetalleComprobanteExento" type="xs:string" minOccurs="0" />
+              <xs:element name="CondicionVenta" type="xs:string" minOccurs="0" />
+              <xs:element name="MostrarIVA" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CodigoBarrasCobro" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoBarrasCobroImagen" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="NombreCodigoBarrasCobro" type="xs:string" minOccurs="0" />
+              <xs:element name="MostrarDatosRemitos" type="xs:boolean" minOccurs="0" />           
+              <xs:element name="NumeroRemitoCompleto" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaRemito" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaEntrega" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Filial" type="xs:string" minOccurs="0" />
+              <xs:element name="DomicilioEntrega" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CUIT" type="xs:string" minOccurs="0" />
+              <xs:element name="Empresa" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroIIBB" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaInicioActividad" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MatriculaINAES" type="xs:string" minOccurs="0" />
+              <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdFactura" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoPercepcionDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Porcentaje" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

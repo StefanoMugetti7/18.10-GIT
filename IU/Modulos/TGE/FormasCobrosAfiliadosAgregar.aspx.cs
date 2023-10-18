@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using System.Xml.Linq;
+using Generales.Entidades;
+using Comunes.Entidades;
+
+namespace IU.Modulos.TGE
+{
+    public partial class FormasCobrosAfiliadosAgregar : PaginaAfiliados
+    {
+        protected override void PageLoadEventAfiliados(object sender, EventArgs e)
+        {
+            base.PageLoadEventAfiliados(sender, e);
+            this.ctrFormasCobroAfiliadoDatos.FormasCobrosAfiliadosModificarDatosAceptar += new IU.Modulos.TGE.Control.FormasCobrosAfiliadosDatos.FormasCobrosAfiliadosAceptarEventHandler(ctrFormasCobroAfiliadoDatos_FormasCobrosAfiliadosModificarDatosAceptar);
+            this.ctrFormasCobroAfiliadoDatos.FormasCobrosAfiliadosModificarDatosCancelar+=new IU.Modulos.TGE.Control.FormasCobrosAfiliadosDatos.FormasCobrosAfiliadosCancelarEventHandler(ctrFormasCobroAfiliadoDatos_FormasCobrosAfiliadosModificarDatosCancelar);
+            if (!this.IsPostBack)
+            {
+                TGEFormasCobrosAfiliados cobroAfiliado = new TGEFormasCobrosAfiliados();
+                cobroAfiliado.IdAfiliado = this.MiAfiliado.IdAfiliado;
+                this.ctrFormasCobroAfiliadoDatos.IniciarControl(cobroAfiliado, Gestion.Agregar);
+            }
+        }
+
+        void ctrFormasCobroAfiliadoDatos_FormasCobrosAfiliadosModificarDatosAceptar(object sender, Generales.Entidades.TGEFormasCobrosAfiliados e)
+        {
+            this.Response.Redirect(AyudaProgramacion.ObtenerUrlParametros("~/Modulos/TGE/FormasCobrosAfiliadosListar.aspx"), true);
+        }
+
+        void ctrFormasCobroAfiliadoDatos_FormasCobrosAfiliadosModificarDatosCancelar()
+        {
+            this.Response.Redirect(AyudaProgramacion.ObtenerUrlParametros("~/Modulos/TGE/FormasCobrosAfiliadosListar.aspx"), true);
+        }
+    }
+}

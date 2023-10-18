@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdAfiliado" type="xs:int" minOccurs="0" />
+              <xs:element name="RazonSocial" type="xs:string" minOccurs="0" />
+              <xs:element name="CUIT" type="xs:string" minOccurs="0" />
+              <xs:element name="CondicionFiscal" type="xs:string" minOccurs="0" />
+              <xs:element name="Orden" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaMovimiento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoOperacion" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoOperacionIdTipoOperacion" type="xs:int" minOccurs="0" />
+              <xs:element name="IdRefTipoOperacion" type="xs:int" minOccurs="0" />
+              <xs:element name="Concepto" type="xs:string" minOccurs="0" />
+              <xs:element name="ImporteCredito" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteDebito" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoActual" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoInicial" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Estado" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TipoListado" type="xs:string" minOccurs="0" />
+              <xs:element name="Direccion" type="xs:string" minOccurs="0" />
+              <xs:element name="Telefono" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Mensajes>
+  <!--Presentacion Comunes -->
+  <btnAceptar>Aceptar</btnAceptar>
+  <btnSiguiente>Siguiente</btnSiguiente>
+  <btnConfirmar>Confirmar</btnConfirmar>
+  <SeleccioneOpcion>Seleccione una opción</SeleccioneOpcion>
+  <Todos>Todos</Todos>
+  <UsuarioLogueado>Usuario: {0} - Filial: {1} - Sector: {2}</UsuarioLogueado>
+  <GrillaTotalImporte> Total: {0}</GrillaTotalImporte>
+  <GrillaTotalRegistros>Cant: {0}</GrillaTotalRegistros>
+  <GrillaTotalMeses>Cant. Total Meses: {0}</GrillaTotalMeses>
+  <ValidarBodegaPredeterminada>La Filial predeterminada no ha sido seleccionada.</ValidarBodegaPredeterminada>
+  <ValidarCantidadItems>Debe ingresar al menos un item para el Comprobante</ValidarCantidadItems>
+  <ValidarCapthca>Haga click en no soy un robot.</ValidarCapthca>
+  <ValidarDominio>Error al contactarse con el Dominio {0}. Contactese con el Administrador.</ValidarDominio>
+  <ValidarAlertaIngresoEfectivo>El Importe ingresado en Efectivo es mayor a {0}</ValidarAlertaIngresoEfectivo>
+  <ValidarPlantillaDatos>La Plantilla de Impresion no esta definido. Codigo de Plantilla {0}</ValidarPlantillaDatos>
+  <ValidarSeleccionarFilial>Debe seleccionar la Filial</ValidarSeleccionarFilial>
+  <ValidarSeleccionarFilialEntrega>Debe seleccionar la Filial de Entrega</ValidarSeleccionarFilialEntrega>
+  <ValidarTipoFuncionalidadEstado>El Estado del Socio no permite realizar el Tipo de Funcion.</ValidarTipoFuncionalidadEstado>
+  
+  
+  
+  <!--Mensajes Comunes-->
+  <ConfirmarAccion>¿Esta seguro que desea Confirmar el movimiento?</ConfirmarAccion>
+  <ConfirmarAnular>¿Esta seguro que desea Anular el movimiento?</ConfirmarAnular>
+  <ConfirmarEliminar>¿Esta seguro que desea Eliminar el registro?</ConfirmarEliminar>
+  <ConfirmarEliminarArgs>¿Esta seguro que desea Eliminar el registro {0}?</ConfirmarEliminarArgs>
+  <EnviarMailOk>Los correos se agregaron a la cola de envío.</EnviarMailOk>
+  <ErrorEnviarMail>El correo no se pudo enviar. {0}</ErrorEnviarMail>
+  <ErrorAccesoDatos>{0}</ErrorAccesoDatos>
+  <ImportarArchivoValidarFormatoCampo>El archivo tiene un formato incorrecto. Columna: {0} - Valor: {1} - Fila: {2} </ImportarArchivoValidarFormatoCampo>
+  <ValidarImporteMayorCero>El importe ingresado debe ser mayor a cero.</ValidarImporteMayorCero>
+  <ResultadoTransaccion>Los datos se han guardado de forma correcta.</ResultadoTransaccion>
+  <ResultadoTransaccionIncorrecto>Los datos no se han guardado. {0}</ResultadoTransaccionIncorrecto>
+  <ResultadoElDatoNoexiste>El dato no existe.</ResultadoElDatoNoexiste>
+
+  <!-- Modulo Afiliaciones -->
+  <ConfirmarBajaFamiliares>Al cambiar el estado a {0} se daran de Baja todos los Familiares. ¿Esta seguro que desea continuar?</ConfirmarBajaFamiliares>
+  <ErrorBuscarNumeroSocio>Error al buscar el próximo número de socio.</ErrorBuscarNumeroSocio>
+  <ValidarAfiliadoEstado>No se puede agregar el Socio porque se encuentra en estado {0}</ValidarAfiliadoEstado>
+  <ValidarAfiliadoCotitulares>No se puede cambiar el estado a {0} porque el socio exite como Cotitular en cuentas de Ahorro</ValidarAfiliadoCotitulares>
+  <ValidarFechaBaja>Debe ingresar una fecha de baja.</ValidarFechaBaja>
+  <ValidarFechaIngreso>La fecha de ingreso se ha modificado.</ValidarFechaIngreso>
+  <ValidarNumeroSocio>El numero de socio ingresado ya existe.</ValidarNumeroSocio>
+  <ValidarNumeroCliente>El numero de cliente ingresado ya existe.</ValidarNumeroCliente>
+  <ValidarNumeroClienteNoExiste>El numero de cliente no existe.</ValidarNumeroClienteNoExiste>
+  <ValidarNumeroSocioFallecido>El numero de socio no es valido.</ValidarNumeroSocioFallecido>
+  <ValidarTipoNumeroDocumentoCliente>El Tipo y Numero Documento existe como Cliente. ¿Quiere importar el Cliente {0} como {1}?</ValidarTipoNumeroDocumentoCliente>
+  <ValidarTipoNumeroDocumentoPaciente>El Tipo y Numero Documento existe como Paciente. ¿Quiere importar el Paciente {0} como {1}?</ValidarTipoNumeroDocumentoPaciente>
+  <AfiliadosExisteDocumento>El Tipo y Número de Documento ya existe.</AfiliadosExisteDocumento>
+  <FamiliaresConfirmarBaja>¿Esta seguro que desea dar de baja el Familiar?</FamiliaresConfirmarBaja>
+  <ApiRenaperDatosImportados>Se importaron los datos de Renaper. Debe Aplicar o Aceptar para guardar los datos.</ApiRenaperDatosImportados>
+  <ApiRenaperDatosNoValidos>Los datos ingresados No son validos</ApiRenaperDatosNoValidos>
+  <ApiRenaperDNINoEncontrado>El DNI ingresado no se encontro en el padron de AFIP. Verifique el numero ingresado.</ApiRenaperDNINoEncontrado>
+  <ConfirmarDesvincularCuenta>¿Esta seguro que quiere desvincular la cuenta del socio Titular {0}?</ConfirmarDesvincularCuenta>
+  <!-- Modulo Ahorros -->
+  <AhoImporteMayorSaldoActual>El importe de Ahorros a Extraer no puede ser mayor al saldo actual de la cuenta del socio {0}.</AhoImporteMayorSaldoActual>
+  <AhoImporteComisionMayorSaldoActual>El importe de la comisión de Ahorros a Extraer no puede ser mayor al saldo actual de la cuenta del socio {0}.</AhoImporteComisionMayorSaldoActual>
+  <AhoPlazosFijos>El importe no puede ser mayor al saldo actual.</AhoPlazosFijos>
+  <ConfirmarCancelarPlazoFijoDesdeCajaAhorro>El Plazo Fijo quedara Cancelado. ¿Está seguro que desea continuar?</ConfirmarCancelarPlazoFijoDesdeCajaAhorro>
+  <ConfirmarRenovacionAnticipadaPlazoFijo>Se realizara una renovación anticipada. ¿Está seguro que desea continuar?</ConfirmarRenovacionAnticipadaPlazoFijo>
+  <ConfirmarOperacionEspecial>La operación quedará confirmada de forma automática. ¿Esta seguro que desea continuar?</ConfirmarOperacionEspecial>
+  <ConfirmarPlazoFijoDesdeCajaAhorro>El Plazo Fijo quedara Confirmado. ¿Está seguro que desea continuar?</ConfirmarPlazoFijoDesdeCajaAhorro>
+  <CotitularesConfirmarBaja>¿Esta seguro que desea dar de baja el Cotitular {0}?</CotitularesConfirmarBaja>
+  <ValidarFechaInicioVigencia>La Fecha de Inicio de Vigencia {0} no puede ser mayor a la fecha del dia.</ValidarFechaInicioVigencia>
+  <PlazosFijosSinCuenta>Plazo Fijo sin Cuenta de Ahorro</PlazosFijosSinCuenta>
+  <PlazosFijosConfirmarCancelar>Esta seguro que desea Cancelar el Plazo Fijo {0}</PlazosFijosConfirmarCancelar>
+  <PlazoFijoConfirmarRenovar>El Plazo Fijo se confirmara de forma automatica. Importe Total: {0} con Fecha Vencimiento {1}</PlazoFijoConfirmarRenovar>
+  <ValidarCantidadValoresChequesTerceros>Los depositos de cheque deben realizarce con operaciones individuales.</ValidarCantidadValoresChequesTerceros>
+  <ValidarCierreSaldoActual>La Cuenta no puede Cerrarse porque tinee saldo. Saldo Actual {0}</ValidarCierreSaldoActual>
+  <ValidarFechaMovimiento>La fecha de movimiento no puede ser mayor a la fecha del día.</ValidarFechaMovimiento>
+  <ValidarPlazoDias>La cantidad de días ingresada no puede ser menor {0}</ValidarPlazoDias>
+  <ValidarTasaInteres>La Tasa de Interes no es correcta. Valor {0}</ValidarTasaInteres>
+  <ValidarTipoRenovacionSinCuenta>El Tipo de Renovación no es valido si el Plazo Fijo no esta asociado a una Cuenta de Ahorros.</ValidarTipoRenovacionSinCuenta>
+
+  <!-- Modulo Auditoria -->
+  <AuditoriaIncorrecto>Ha habido un problema al generar los datos de Auditoria</AuditoriaIncorrecto>
+  <AuditoriaUsuario>No se ha definido el UsuarioLogueado en el Objeto para la Auditoria</AuditoriaUsuario>
+
+  <!-- Modulo Bancos -->
+  <BancosConfirmarOperaciones>Las operaciones quedarán confirmadas. ¿Esta seguro que desea continuar?</BancosConfirmarOperaciones>
+  <BancosCuentasMovimientosConfirmarBaja>¿Esta seguro que desea dar de baja el movimiento {0}?</BancosCuentasMovimientosConfirmarBaja>
+  <BancosCuentasMovimientosConfirmarDesconciliar>¿Esta seguro que desea anular la Conciliacion del movimiento {0}?</BancosCuentasMovimientosConfirmarDesconciliar>
+  <ValidarCambioChequesImportes>El importe Total de Cheques {0} no coincide con el Total de los valores ingresados {1}</ValidarCambioChequesImportes>
+  <ValidarCambioChequesItems>Debe seleccionar un Cheque para cambiar.</ValidarCambioChequesItems>
+  <ValidarFechaBanco>Debe ingresar una fecha para Conciliar el Movimiento {0}</ValidarFechaBanco>
+  <ValidarFechaBancoMovimiento>La fecha del banco no puede ser mayor a la fecha del dia.</ValidarFechaBancoMovimiento>
+  <ValidarFechaDiferidoDeposito>La Fecha Diferido del Cheque no puede ser mayor a la fecha del dia.</ValidarFechaDiferidoDeposito>
+  <ValidarImporte>El importe debe ser mayor a cero.</ValidarImporte>
+  <ValidarItemsTransferencia>Debe seleccionar al menos un item para Transferir.</ValidarItemsTransferencia>
+  <ValidarItemsConciliar>Debe seleccionar al menos un item para Conciliar </ValidarItemsConciliar>
+  <ValidarItemsConfirmar>Debe seleccionar al menos un item para Confirmar.</ValidarItemsConfirmar>
+  <ValidarTransferenciaCredito>La Transferencia no se puede Anular. El movimiento de Credito {0} ha sido modificado.</ValidarTransferenciaCredito>
+  <ValidarCuentaOrigenDestino>La Cuenta de Origen debe ser distinta a la de Destino</ValidarCuentaOrigenDestino>
+  <ValidarConciliarLoteBancos>Se van a conciliar #CantidadRegistros# registros por un Importe de #ImporteConciliar#. ¿Esta seguro que desea continuar?</ValidarConciliarLoteBancos>
+
+  <!-- Modulo Cargos -->
+  <ConfirmarBajaReserva>¿Esta seguro que desea dar de baja la reservas?</ConfirmarBajaReserva>
+  <ConfirmarDesimputarCobro>¿Esta seguro que desea Desimputar el Cobro del cargo?</ConfirmarDesimputarCobro>
+  <ConfirmarRevertirCobro>¿Esta seguro que desea Revertir los Cobros seleccionados del cargo?</ConfirmarRevertirCobro>
+  <ValidarFechaAltaPeriodoFacturado>La fecha de alta del cargo debe ser mayor al periodo {0} que se encuentra Facturado.</ValidarFechaAltaPeriodoFacturado>
+  <ValidarFormasCobrosCodigosEntidadesTopesCargos>El importe del cargo supera el Limite Tope para la forma de Cobro Seleccionada.</ValidarFormasCobrosCodigosEntidadesTopesCargos>
+  <ValidarImporteDesimputarItems>Debe Cargar el Importe a desimputar en al menos un Cobro.</ValidarImporteDesimputarItems>
+  <ValidarImporteRevertirItems>Debe Cargar el Importe a Revertir en al menos un Cobro.</ValidarImporteRevertirItems>
+  <ValidarPorcentaje>Debe cargar un Porcentaje menor o igual a 100.</ValidarPorcentaje>
+  <ValidarPorcentajeMayorCero>El porcentaje debe ser mayor a 0.</ValidarPorcentajeMayorCero>
+  <ResultadoCargoPendiente>Los datos se han guardado en estado Pendiente por superar el limite tope de la forma de cobro.</ResultadoCargoPendiente>
+
+  <!-- Modulo Cobranzas Externas-->
+  <CobranzasExternasGrillaVacia>Debe Cargar al menos un dato a Conciliar</CobranzasExternasGrillaVacia>
+  <CobranzasExternasConfirmarMovimiento> ¿Esta seguro que desea confirmar la conciliacion?</CobranzasExternasConfirmarMovimiento>
+  <CobranzasExternasAnularMovimiento> ¿Esta seguro que desea anular la conciliacion?</CobranzasExternasAnularMovimiento>
+  <SeleccioneDeduccion>Debe seleccionar un tipo de deduccion</SeleccioneDeduccion>
+
+  <!-- Modulo Contabilidad-->
+  <AsientoModeloDetalleParametosCuentaContable>No se encontro el parametro contable para  la Filial {0}, Moneda {1}, Tipo Valor {2}</AsientoModeloDetalleParametosCuentaContable>
+  <AsientoModeloDetalleCodigoNoExiste>No se encontro el código detalle {0} en el Asiento Modelo {1} de la Operacion {2}</AsientoModeloDetalleCodigoNoExiste>
+  <AsientoModeloDosCuentasContables>Seleccione al menos dos cuentas contables</AsientoModeloDosCuentasContables>
+  <AsientoModeloValidarTipoOperacion>El Tipo de Operación ya esta definida en el Asiento Modelo {0}</AsientoModeloValidarTipoOperacion>
+  <SeleccioneCuentaContable>La cuenta contable es obligatoria</SeleccioneCuentaContable>
+  <CentroCostoObligatorio>Debe seleccionar un Centro de Costos para la Cuenta Contable {0} {1}</CentroCostoObligatorio>
+  <CompletarCuentaContable>Debe seleccionar una cuenta contable para el registro {0}</CompletarCuentaContable>
+  <CompletarDebeHaber>El debe o el haber son obligatorios</CompletarDebeHaber>
+  <DebeHaberIguales>La suma del debe y del haber deben ser iguales</DebeHaberIguales>
+  <CuentaContableExiste>La cuenta contable seleccionada ya existe</CuentaContableExiste>
+  <SeleccioneDebeHaber>Seleccionar al menos una cuenta en el debe y una en el haber</SeleccioneDebeHaber>
+  <ValidarAjustePorInflacionModificarPeriodo>La fecha del Asiento para el calculo del ajuste ha cambiado. Debe volver a Armar el Asiento.</ValidarAjustePorInflacionModificarPeriodo>
+  <ValidarCuentaContableParametroExiste>La cuenta contable parametro ya esta definida</ValidarCuentaContableParametroExiste>
+  <ValidarEjercicioContable>No se encontro un Ejercicio Contable disponible para la Fecha del Asiento</ValidarEjercicioContable>
+  <ValidarFechaContablePeriodoCerrado>Modifique la Fecha Contable. La Fecha para el Periodo {0} esta cerrado.</ValidarFechaContablePeriodoCerrado>
+  <ValidarSeleccionarEjercicioContable>Debe seleccionar un Ejercicio Contable</ValidarSeleccionarEjercicioContable>
+  <ValidarSeleccionarEjercicioContableImportarPlantilla>El Ejercicio Contable de la Plantilla no es valido.</ValidarSeleccionarEjercicioContableImportarPlantilla>
+  <FechaFinConFechaInicio>La fecha de Inicio debe ser mayor a la ultima fecha Fin {0} de un Ejercicio cargado.</FechaFinConFechaInicio>
+  <ValidarFechaInicio>La fecha de Inicio debe ser menor a la de Fin</ValidarFechaInicio>
+  <EjercicioContableSuperado>El Ejercicio Contable ya esta Cerrado, Cargue un nuevo Ejercicio</EjercicioContableSuperado>
+  <AsientoNoModificable>El Periodo contable esta Cerrado, el asiento no se puede modificar</AsientoNoModificable>
+  <FechaAsientoNoValida>La fecha del asiento contable debe estar dentro del ejercicio contable</FechaAsientoNoValida>
+  <FechaAsientoNoValidaArg>La fecha del asiento no pertenece al Ejercicio. Seleccione una fecha entre {0} y {1}, o cambie de Ejercicio.</FechaAsientoNoValidaArg>
+  <ActualizarPlanCuentas>El plan de cuentas se ha actualizado</ActualizarPlanCuentas>
+  <ActualizarPlanCuentasIncorrecto>El plan de cuentas se ha actualizado</ActualizarPlanCuentasIncorrecto>
+  <ValidarFechaContablePeriodoContableCerrado>El Ejercicio contable esta bloqueado.</ValidarFechaContablePeriodoContableCerrado>
+
+  <!-- Modulo Cotizaciones-->
+  <ValidarCotizacionesDetalles>No se ingreso ningun detalle en la cotizacion</ValidarCotizacionesDetalles>
+  <ProveedorCodigoNoExiste>No existe el codigo del proveedor</ProveedorCodigoNoExiste>
+
+  <!-- Modulo Cuenta Corriente -->
+  <CuentaCorrienteValidarSaldoActual>El Importe a Extraer no puede ser mayor al Saldo Actual: {0}.</CuentaCorrienteValidarSaldoActual>
+
+  <!-- Modulo Cuentas a Pagar -->
+  <ConfirmarBajaProveedorComision>¿Esta seguro que desea Confirmar la Baja del Porcentaje {0} de la Operacion {1} para el Proveedor {2}?</ConfirmarBajaProveedorComision>
+  <ValidarAnulacionPeriodosIvasCerrado>El comprobante no se puede Anular. El IVA para el Periodo {0} esta cerrado.</ValidarAnulacionPeriodosIvasCerrado>
+  <ValidarCantidadSolicitudesPagos>Debe existir al menos un item en la Orden de Pago.</ValidarCantidadSolicitudesPagos>
+  <ValidarFechaContablePeriodoIvaCerrado>Modifique la Fecha Contable. El IVA para el Periodo {0} esta cerrado.</ValidarFechaContablePeriodoIvaCerrado>
+  <ValidarImporteTotalImporteValores>El importe total no coincide con el importe de valores ingresados</ValidarImporteTotalImporteValores>
+  <ValidarImporteSolicitudPago>El importe de la Solicitud de Pago {0} no puede ser 0.</ValidarImporteSolicitudPago>
+  <ValidarImporteMayorSolicitudPago>El importe de la Solicitud de Pago {0} no puede ser mayor a {1}</ValidarImporteMayorSolicitudPago>
+  <ValidarNumeroFactura>El número de factura ya existe en la base de datos</ValidarNumeroFactura>
+  <ValidarParametroValorProveedorParaSPRemesaIAF>Se debe cargar el Parametro Valor para el Proveedor Remesa IAF</ValidarParametroValorProveedorParaSPRemesaIAF>
+  <ValidarParametroValorCodigoProductoParaRemesaIAF>Se debe cargar el Parametro Valor para el Codigo de Producto Remesa IAF</ValidarParametroValorCodigoProductoParaRemesaIAF>
+  <ValidarProveedorSeleccionado>Debe seleccionar un proveedor</ValidarProveedorSeleccionado>
+  <ValidarRetencionesCalculo>Debe calcular las retenciones nuevamente. El calculo actual se hizo en base a {0}.</ValidarRetencionesCalculo>
+  <ValidarSolicitudDetalles>No se cargo ningun detalle en la solicitud</ValidarSolicitudDetalles>
+  <ValidarSolicitudDetallesCantidad>La cantidad ingresada no es válida</ValidarSolicitudDetallesCantidad>
+  <ValidarSolicitudDetalleDescuentoNegativo>Cuando el Precio Unitario es Negativo el Descuento Debe Ser Igual a 0</ValidarSolicitudDetalleDescuentoNegativo>
+  <ValidarSolicitudDetallesPrecio>El precio ingresado no es válido</ValidarSolicitudDetallesPrecio>
+  <ValidarSolicitudDetallesCentroCosto>Debe seleccionar el Centro de Costo de cada item.</ValidarSolicitudDetallesCentroCosto>
+  <ValidarSolicitudDetallesIVA>El tipo de Comprobante No permite IVA.</ValidarSolicitudDetallesIVA>
+  <ValidarSolicitudPagoTipoOperacionComprobante>No se encontro el Tipo Operacion para el Comprobante. Codigo Operacion {0}. Codigo Comprobante {1}</ValidarSolicitudPagoTipoOperacionComprobante>
+  <ValidarTiposComprobantesContabilizar>No se pueden mezclar comprobantes de distintas operaciones.</ValidarTiposComprobantesContabilizar>
+  <PimeroPreAutorizar>Para Autorizar la Solicitud, Primero debe estar PreAutorizada</PimeroPreAutorizar>
+  <PrimeroAutorizar>Para Autorizar por Presidencia la Solicitud, Primero debe estar Autorizada</PrimeroAutorizar>
+  <SeleccioneComprobante>Seleccione al menos un comprobante</SeleccioneComprobante>
+
+  <!-- Modulo Cobros -->
+  <!-- Modulo Ordenes de Cobro -->
+  <ConfirmarNotaCreditoCargos>¿Esta seguro que desea Confirmar la Nota de Credito?</ConfirmarNotaCreditoCargos>
+  <ConfirmarAnticipoCuentaCorriente>¿Esta seguro que desea generar un Anticipo en la Cuenta Corriente del Cliente?</ConfirmarAnticipoCuentaCorriente>
+  <ConfirmarOrdenCobroFacturaPrestamo>La Orden de Cobro y el Prestamo quedaran Confirmados. ¿Esta seguro que desea Confirmar la operacion?</ConfirmarOrdenCobroFacturaPrestamo>
+  <ValidarAnticipoRemitoParaTiposValores>Debe ingresar al menos un Remito para un Anticipo en cuenta corriente para los tipos de valores Prestamos y/o Cargos.</ValidarAnticipoRemitoParaTiposValores>
+  <ValidarCargoDescuentoAfiliadoTiposRetenciones>Si la orden de cobro es por Descuento de Cargos no se permiten Retenciones.</ValidarCargoDescuentoAfiliadoTiposRetenciones>
+  <ValidarImporteValoresItemesIncluidos>Existen comprobantes sin incluir y el importe a cobrar es mayor a lo seleccionado.</ValidarImporteValoresItemesIncluidos>
+  <ValidarImporteTotal>El Importe Total de la Orden de Cobro No es correcto.</ValidarImporteTotal>
+  <ValidarImporteTotalFormasCobros>El Importe Total de la Orden de Cobro no coincide con el Importe Total de las Formas de Cobro ingresadas</ValidarImporteTotalFormasCobros>
+  <ValidarNoPermiteAnticipoYFacturaParaTiposValores>No se permite Anticipos y Facturas para los Tipos de Valores ingresados en una mima Orden de Cobro.</ValidarNoPermiteAnticipoYFacturaParaTiposValores>
+  <ValidarOrdenesCobrosDetalles>Debe seleccionar la menos un item para cobrar.</ValidarOrdenesCobrosDetalles>
+  <ValidarOrdenesCobrosValoresPrestamosDatos>Complete los datos del Prestamos</ValidarOrdenesCobrosValoresPrestamosDatos>
+  <ValidarOrdenesCobrosValoresDescuentoCargosDatos>Complete los datos del Cargo </ValidarOrdenesCobrosValoresDescuentoCargosDatos>
+  <OrdenCobroGenerada>Se ha generado la Orden de Cobro Nro. {0}</OrdenCobroGenerada>
+  <OrdenCobroConfirmarMov>Se ha generado la Orden de Cobro Nro {0} ¿Desea confirmar el movimiento en caja? </OrdenCobroConfirmarMov>
+  <OrdenCobroConPrestamoConfirmacionPopUp>Al dar de Baja la Orden de Cobro se anulara el Prestamo {0}. ¿Esta seguro que desea continuar?</OrdenCobroConPrestamoConfirmacionPopUp>
+  <ValidarImporteCobrar>El importe a cobrar debe ser menor o igual al importe de la deuda</ValidarImporteCobrar>
+  <ValidarClienteIngresado>Debe ingresar un cliente</ValidarClienteIngresado>
+  <ValidarImporteNotaCredito>Por el momento solo se pueden cargar las notas de credito en una orden de cobro por valor cero</ValidarImporteNotaCredito>
+  <ValidarTiposRetencionesImporte>Debe seleccionar el Tipo de Retencion para los items con Importe mayor a 0.</ValidarTiposRetencionesImporte>
+  <ValidarEfectivoTope>El importe de efectivo supera los {0}.</ValidarEfectivoTope>
+
+
+  <!--Modulo Nichos-->
+
+  <ResultadoCementeriosAgregar>Los datos se han guardado con éxito</ResultadoCementeriosAgregar>
+  <ResultadoTransaccionIncorrecto>Los datos no se han guardado</ResultadoTransaccionIncorrecto>
+
+
+  <!-- Modulo Ordenes Compras -->
+  <ValidarOrdenCompraDetalles>No se selecciono ninguna Detalle para la Orden de Compra</ValidarOrdenCompraDetalles>
+  <ValidarOrdenCompraProveedor>Debe seleccionar un Proveedor</ValidarOrdenCompraProveedor>
+  <ValidarOrdenCompraTerceroDetalles>El tipo de Orden de Compra solo admite un item de detalle.</ValidarOrdenCompraTerceroDetalles>
+  <NoSeEncontroSolicitudPorProveedor>No se encontraron Solicitudes de Compra para este proveedor</NoSeEncontroSolicitudPorProveedor>
+  <ValidarAutorizacionParaCotizar>La Solicitud debe estar Autorizada para poder Cotizarla</ValidarAutorizacionParaCotizar>
+  <ValidarCuotasDescuentoAfiliado>Debe ingresar la cantidad de cuotas a descontar al Socio</ValidarCuotasDescuentoAfiliado>
+  <ValidarCuotasPagoProveedor>Debe ingresar la cantidad de cuotas a pagar al proveedor</ValidarCuotasPagoProveedor>
+  <ValidarFormaCobroAfiliado>Debe seleccionar la Forma de Cobro al Socio</ValidarFormaCobroAfiliado>
+  <SeleccioneAlgunaOrden>Selecciones al menos una orden a confirmar</SeleccioneAlgunaOrden>
+
+  <!-- Modulo Expedientes -->
+  <AceptarDerivacion>Aceptar Derivación</AceptarDerivacion>
+  <ExpedienteTrackingConfirmarBaja>¿Esta seguro que desea dar de baja la derivación?</ExpedienteTrackingConfirmarBaja>
+  <RechazarDerivacion>Rechazar Derivación</RechazarDerivacion>
+  <ResultadoAlta>Se ha generado el Expediente Nro. {0}</ResultadoAlta>
+  <ValidarFilialSectorIngresado>La Filial y Sector a Derivar ya ha sido ingresado.</ValidarFilialSectorIngresado>
+  <ValidarSectorNoDefinido>El usuario no tiene un Sector definido</ValidarSectorNoDefinido>
+
+  <!-- Modulo Facturas -->
+  <FacturaElectronicaAprobado>Se validaron {0} de {1} Facturas.</FacturaElectronicaAprobado>
+  <FactruaElectronicaParcial>Se validaraon {0} de {1} Facturas. Consulte las observaciones de AFIP en los comprobantes en Observaciones.</FactruaElectronicaParcial>
+  <FacturaElectronicaRechazo>Error al validar las Facturas Electroinca. {0}</FacturaElectronicaRechazo>
+  <FacturasLotesResultado>Se ha generado el Lote de Facturas Nro. {0} de forma correcta.</FacturasLotesResultado>
+  <FacturasLotesResultadoFE>Se ha generado el Lote de Facturas Nro. {0} de forma correcta. Haga click en Continuar para Validar las Facturas Electronicas.</FacturasLotesResultadoFE>
+  <FacturasLotesValidarItems>Debe seleccionar al menos un item para continuar</FacturasLotesValidarItems>
+  <ResultadoTransaccionFacturaElectronicaRechazo>Los datos se han guardado de forma correcta. La Factura Electroinca NO se Valido. {0}. Verifique los datos y vuleva a Validar la Factura desde Ventas -> Comprobante de Ventas -> Listar.</ResultadoTransaccionFacturaElectronicaRechazo>
+  <ResultadoTransaccionFacturaContado>Los datos se han guardado de forma correcta. La Factura se genero pero la Orden de Cobro NO se realizo, debera hacerla de forma manual.</ResultadoTransaccionFacturaContado>
+  <ConfirmarValidarFE>¿Esta seguro que desea validar la Factura Electronica en AFIP?</ConfirmarValidarFE>
+  <ConfirmarLotesFacturas>Se van a generar {0} comprobantes. ¿Esta seguro que desea continuar?</ConfirmarLotesFacturas>
+  <ConfirmarLotesFacturasBajas>{0} comprobantes quedaran pendientes. </ConfirmarLotesFacturasBajas>
+  <ErrorAfipFECAESolicitarDetalle>Error al Solicitar CAE en Comprobante Codigo: {0} - Mensaje: {1}</ErrorAfipFECAESolicitarDetalle>
+  <ErrorAfipFECAESolicitarGeneral>Error al solicitar CAE. Codigo: {0} - Mensaje: {1}</ErrorAfipFECAESolicitarGeneral>
+  <ErrorAfipValidarPuntoVentaAsociadosWebService>No se encontraron Puntos de Ventas asociados al Web Service de Factura Electronica. {0}</ErrorAfipValidarPuntoVentaAsociadosWebService>
+  <ErrorAfipValidarObtenerUltimoComprobante></ErrorAfipValidarObtenerUltimoComprobante>
+  <ErrorAfipValidarUltimoNroComprobante>Error al Validar el Nro. de Comprobante. Codigo: {0} - Mensaje: {1}</ErrorAfipValidarUltimoNroComprobante>
+  <ErrorValidarComprobanteEnLinea>No se puede dar de alta el Comprobante. Para el Tipo de Punto de Venta {0} utilice el modulo de Procesos de Datos para importar los comprobantes de AFIP.</ErrorValidarComprobanteEnLinea>
+  <ErrorValidarConceptoComprobante>Error al Validar el Concepto del Comprobante.</ErrorValidarConceptoComprobante>
+  <ErrorAfipValidarPuntoVentaNumeroParametro>El Punto de Venta no esta asociado al Web Service de Factura Electronica.</ErrorAfipValidarPuntoVentaNumeroParametro>
+  <ErrorValidarNumeroComprobanteRemito>El Punto de Venta y/o Numero de Remito no son validos.</ErrorValidarNumeroComprobanteRemito>
+  <ErrorValidarNumeroComprobanteManual>El numero de comprobante ya existe en la base de datos.</ErrorValidarNumeroComprobanteManual>
+  <ErrorValidarNumeroComprobanteManualRemito>El numero de comprobante de Remito ya existe en la base de datos.</ErrorValidarNumeroComprobanteManualRemito>
+  <ErrorValidarProximoNumeroComprobante>Error al obtener el Proximo Numero de Comprobante. Verifique los parametros de la Tabla VTAFilialesPuntosVentas.</ErrorValidarProximoNumeroComprobante>
+  <ErrorValidarPuntoVenta>No se encontro el punto de venta {0}</ErrorValidarPuntoVenta>
+  <ErrorValidarWSCuit>Falta cargar el CUIT del Cliente en la Tabla Empresa</ErrorValidarWSCuit>
+  <ErrorValidarWSUrl>La URL del WebService no es validad.</ErrorValidarWSUrl>
+  <SocioFacturaDiferentes>El Numero de Factura NO Coincide con el Socio</SocioFacturaDiferentes>
+  <ValidarCotizacionDetalle>Todos los items deben ser Cotizados</ValidarCotizacionDetalle>
+  <ValidarDatosFacturas>Debe completar los datos de la Factura</ValidarDatosFacturas>
+  <ValidarFilialPuntosVentas>No se encontraron Puntos de Ventas definidos para la Filial {0} Usuario {1}</ValidarFilialPuntosVentas>
+  <ValidarItemsFacturaIVA>Existen ítems sin IVA para el tipo de Comprobante {0}.</ValidarItemsFacturaIVA>
+  <ValidarItemsFacturaPrecio>Existen ítems sin Precio.</ValidarItemsFacturaPrecio>
+  <ValidarItemsFacturaCantidad>Existen ítems sin Cantidad.</ValidarItemsFacturaCantidad>
+  <ValidarImporteTotalNegativo>El Total de la Factura debe ser mayor a cero.</ValidarImporteTotalNegativo>
+  <ValidarItemsFactura>El comprobante debe tener al menos un ítem.</ValidarItemsFactura>
+  <ValidarItemImporteNegativo>Las Notas de crédito no permiten importes en negativo.</ValidarItemImporteNegativo>
+  <ValidarItemTipoPercepcion>Debe seleccionar un Tipo de Percepcion e ingresar el Porcentaje.</ValidarItemTipoPercepcion>
+  <ValidarNumeroCliente>El numero de Cliente es obligatorio.</ValidarNumeroCliente>
+  <ValidarCantidadItemFacturaImportado>La Cantidad Facturada debe ser mayor o igual a la remitada, Codigo Producto {0}, Cantidad Remitada {1}</ValidarCantidadItemFacturaImportado>
+  <ValidarClienteRemito>El remito importado NO pertenece al cliente seleccionado</ValidarClienteRemito>
+  <GenerarOrdenCobroFactura>¿Desea generar la orden de cobro de esta factura?</GenerarOrdenCobroFactura>
+  <RemitosValidarAcopioImporteEntregar>El importe a entregar de {2} mas el importe entregado de {1} no puede ser mayor al importe del acopio de {0}</RemitosValidarAcopioImporteEntregar>
+  <RemitosDetallesValidarPrecioUnitario>Debe ingresar el Precio unitario en todos los items.</RemitosDetallesValidarPrecioUnitario>
+  <FacturasImportarPresupuesto>Debe seleccionar una moneda</FacturasImportarPresupuesto>
+  <ValidarFacturaContadoSignoNegativo>La factura al contado no puede ser de un tipo de factura negativo.</ValidarFacturaContadoSignoNegativo>
+  <ImporteCero>"El Total de la Factura Debe ser Mayor a 0"</ImporteCero>
+  <ErrorDiferenciaImporte>La diferencia entre los importes debe ser 0.</ErrorDiferenciaImporte>
+  
+
+  <!-- Modulo Hotel -->
+  <ValidarReservaFechaIngreso>Ingrese una Fecha de Ingreso para la Reserva</ValidarReservaFechaIngreso>
+  <ValidarReservaFechaEgreso>Ingrese una Fecha de Egreso para la Reserva</ValidarReservaFechaEgreso>
+  <ValidarReservasItemEliminar>¿Esta seguro que desea eliminar el ítem?</ValidarReservasItemEliminar>
+  <ValidarReservasItemsCantidad>La Reserva debe tener al menos un ítem.</ValidarReservasItemsCantidad>
+  <ValidarReservasItemsDescuentosDuplicados>Existen descuentos duplicados en la reserva.</ValidarReservasItemsDescuentosDuplicados>
+  <ValidarReservasItemsProductosSeleccionados>Debe ingresar un detalle para cada item que tenga un tipo de producto seleccionado.</ValidarReservasItemsProductosSeleccionados>
+  <ValidarReservasItemReserva>Debe ingresar al menos un item a la reserva.</ValidarReservasItemReserva>
+  <ValidarReservasFechasReservas>Las fechas ingresadas en el detalle deben estar detro del rango de ingreso y egreso</ValidarReservasFechasReservas>
+  <ResultadoHotelAgregar>Se ha dado de alta la Reserva Nro. {0}</ResultadoHotelAgregar>
+  <!-- Modulo Generales -->
+  <ConfirmarModificarFormasCobros>Se modificaran las Formas de Cobro de los cargos y prestamos que el socio tenga cargados en el sistema. ¿Esta seguro que desea continuar?</ConfirmarModificarFormasCobros>
+  <ConfirmarFirmaDigitalManuscritaBaja>¿Esta seguro que desea Eliminar la Firma Digital Manuscripta?</ConfirmarFirmaDigitalManuscritaBaja>
+  <ValidarArchivo>Debe seleccionar un archivo</ValidarArchivo>
+  <ValidarFeriados>El día {0} es No laborable. {1}</ValidarFeriados>
+  <ValidarFirmaDigitalManuscritaHabilitar>Servicio adicional. Comuniquese con EVOL SRL para su habilitacion instantanea.</ValidarFirmaDigitalManuscritaHabilitar>
+  <ValidarFormasCobroAfiliados>Verificar las Formas de Cobro del Cargo y del Socio</ValidarFormasCobroAfiliados>
+  <ValidarFormasCobroAfiliadosBaja>No se puede dar de baja la Forma de Cobro porque esta asociada a un Cargo a descontar.</ValidarFormasCobroAfiliadosBaja>
+  <ValidarFormasCobroAfiliadosPredeterminadoBaja>No se puede dar de baja la Forma de Cobro porque es la Predeterminada. Primero debe seleccionar otra Forma de Cobro como Predeterminada.</ValidarFormasCobroAfiliadosPredeterminadoBaja>
+  <ValidarListaValoresRecursivas>El item {0} no tiene un valor dependiente seleccionado.</ValidarListaValoresRecursivas>
+  <ValidarParametrosValores>No se encontro el valor para el parametro {0}</ValidarParametrosValores>
+  <ValidarTiposFuncionalidadListaValor>Debe seleccionar un tipo de funcionalidad y una lista de valor</ValidarTiposFuncionalidadListaValor>
+  <!-- Modulo Haberes -->
+  <ResultadoCalculoIncorrecto>Hubo un error al calcular.</ResultadoCalculoIncorrecto>
+  <HaberesValidarCalcularFondoSuplementario>Se debe volver a calcular el fondo suplementario para continuar.</HaberesValidarCalcularFondoSuplementario>
+  <ArchivoReciboNoExiste>No se encontro el Recibo de Haberes solicitado.</ArchivoReciboNoExiste>
+  <RemesasConfirmarDepositos>Se depositaran {0} Haberes por un Total de {1} en las cuentas corrientes. ¿Esta seguro que desea continuar? </RemesasConfirmarDepositos>
+  <RemesasConfirmarCierre>Se generar el Cierre de la Remesa. La misma no podra ser modificada. Cantidad de Haberes a devolver {0}. Se generara una Solicitud de Pago a IAF por {1}.</RemesasConfirmarCierre>
+  <RemesasDetallesConfirmarAgregar>Se dara de alta el registro de {0} ¿Esta seguro que desea continuar?</RemesasDetallesConfirmarAgregar>
+  <RemesasDetallesConfirmarBaja>Se dara de baja el registro de {0} ¿Esta seguro que desea continuar?</RemesasDetallesConfirmarBaja>
+
+  <!-- Modulo Informes Recepciones-->
+  <ValidarInformeDetalleCantidad>Debe ingresar la cantidad en todos los items</ValidarInformeDetalleCantidad>
+  <ValidarInformeDetallePrecioUnitario>Debe ingresar el Precio en todos los items</ValidarInformeDetallePrecioUnitario>
+  <ValidarInformeDetalleCantidadRecibida>La cantidad recibida no puede ser mayor a la pedida</ValidarInformeDetalleCantidadRecibida>
+  <ValidarMotivoCancelacion>Es obligatorio completar el Motivo de Cancelacion</ValidarMotivoCancelacion>
+  <ValidarNumeroRemito>El numero de remito ingresado ya existe</ValidarNumeroRemito>
+
+  <!-- Modulo Listas Precios-->
+  <ValidarImportarArchivoCodigo>Los codigos de productos {0} no se encontraron en la Base. Dar de alta primero los productos.</ValidarImportarArchivoCodigo>
+  <ValidarImportarArchivoColumna>La columna {0} no se encontro en el archivo</ValidarImportarArchivoColumna>
+  <ValidarImportarArchivoPrecio>El Precio del Codigo de Producto {0} no es correcto.</ValidarImportarArchivoPrecio>
+  <ValidarListaPrecioDetalle>No se encontro ningun detalle en la lista</ValidarListaPrecioDetalle>
+  <ValidarPrecioListaPrecio>Falto ingresar el Precio del producto: {0}.</ValidarPrecioListaPrecio>
+  <ValidarFechaInicioVigencia>La fecha de Inicio de Vigencia debe ser mayor al dia de HOY, y a la fecha de la ultima Lista de Precios Activa</ValidarFechaInicioVigencia>
+  <ValidarSeleccionarListaPrecio>Debe seleccionar una Lista de Precios</ValidarSeleccionarListaPrecio>
+  <ProductoYaIngresado>El Producto que intenta ingresar ya se encuentra en la lista</ProductoYaIngresado>
+  <ValidarIdProductoLista>Se ingreso un item sin Producto</ValidarIdProductoLista>
+  <!-- Modulo Medicina -->
+  <ValidarTurnoDoble>El socio ya posee un turno.</ValidarTurnoDoble>
+  <ValidarTurnoAfiliado>Debe ingresar un Socio</ValidarTurnoAfiliado>
+  <FirmaModificarPrestadorCancelar>Los datos no se han guardado, ¿está seguro que desea volver? </FirmaModificarPrestadorCancelar>
+  <ArchivoIngresadoIncorrecto>El archivo ingresado debe ser una imagen.</ArchivoIngresadoIncorrecto>
+  <PacientesValidarSociosTitulares>Los datos del Asociado se deben modificar desde el modulo de Socios.</PacientesValidarSociosTitulares>
+  <PacientesValidarSociosClientes>Los datos del Asociado se deben modificar desde el modulo de Clientes.</PacientesValidarSociosClientes>
+  <ValidarTiempoDelPrestador>El tiempo del turno tiene que ser mayor a 5 minutos.</ValidarTiempoDelPrestador>
+
+  <!-- Campos Valores -->
+  <ValidarCampoDropDownList>Debe seleccionar una opcion para {0}</ValidarCampoDropDownList>
+  <ValidarCampoNumericTextBoxDistintoTamanio>Debe ingresar un dato numerico para {0} entre {1} y {2} digitos</ValidarCampoNumericTextBoxDistintoTamanio>
+  <ValidarCampoNumericTextBoxMismoTamanio>Debe ingresar un dato numerico para {0} de {1} digitos</ValidarCampoNumericTextBoxMismoTamanio>
+  <ValidarCampoNumericTextBoxTipoDato>Debe ingresar un dato numerico para {0}. El dato {1} no es válido.</ValidarCampoNumericTextBoxTipoDato>
+  <ValidarCampoRequerido>Debe ingresar un dato para {0}. El campo es obligatorio.</ValidarCampoRequerido>
+  <ValidarCampoTextBoxDistintoTamanio>Debe ingresar un dato alfanumerico para {0} entre {1} y {2} caracteres</ValidarCampoTextBoxDistintoTamanio>
+  <ValidarCampoTextBoxMismoTamanio>Debe ingresar un dato alfanumerico para {0} de {1} caracteres</ValidarCampoTextBoxMismoTamanio>
+  <ValidarCampoFechaTextBoxTipoDato>El campo "{0}" tiene un valor no valido: {1}</ValidarCampoFechaTextBoxTipoDato>
+  <ValidarCampoCurrencyTextBoxTipoDato>El campo "{0}" tiene un valor no valido: {1}</ValidarCampoCurrencyTextBoxTipoDato>
+
+  <!-- Modulo Prestamos -->
+  <ConfirmarImporteExcedido>El socio tiene un Importe Excedido de {0}. ¿Esta seguro que desea continuar?</ConfirmarImporteExcedido>
+  <ConfirmarAnularPrestamo>¿Esta seguro que desea Anular el Prestamo? Esta operacion NO se puede deshacer!</ConfirmarAnularPrestamo>
+  <ErrorConexionARBAPrestamos>{0} <BR /> Puede continuar con la carga del Prestamo pero no se incluiran Percepciones de ARBA.</ErrorConexionARBAPrestamos>
+  <ValidarCalculoVAN>Se ha modificado la cantidad de Prestamos y se ha calculado el VAN. Verifique los datos antes de continuar.</ValidarCalculoVAN>
+  <ValidarCancelacion>El prestamo no puede confirmarse porque hay cargos o cuotas incluidas ya cobradas.</ValidarCancelacion>
+  <ValidarCantidad>El socio ya tiene un Prestamo en trámite.</ValidarCantidad>
+  <ValidarCantidadCuotasPrestamosCortoPlazo>El tipo de operacion no admite cuotas.</ValidarCantidadCuotasPrestamosCortoPlazo>
+  <ValidarCobroCuotaEstado>La cuota {0} del prestamo {1} no se puede cobrar. Verifique que el estado sea correcto.</ValidarCobroCuotaEstado>
+  <ValidarCoeficienteCotizaciones>El importe del coeficiente debe ser mayor a 0.</ValidarCoeficienteCotizaciones>
+  <ValidarCuotasPendientesGenerarCargos>El prestamo no se puede Cancelar porque ya tiene todas las cuotas en Cargos. Por favor realice una Orden de Cobro de Cargos del Socio.</ValidarCuotasPendientesGenerarCargos>
+  <!--<ValidarFechaCancelacion>La Fecha de Cancelación {0} no coincide con la fecha del día. Deberá anular la Cancelación y realizar una nueva Cancelación para recalcular los valores del Prestamo.</ValidarFechaCancelacion>-->
+  <ValidarFechaPrestamo>La Fecha del Prestamo no puede ser mayor a la fecha del día.</ValidarFechaPrestamo>
+  <ValidarFechaPrestamoFechaVtoCuotaPrestamosCortoPlazo>La Fecha del Prestamo No puede ser mayor a la Fecha de Vencimiento de la primer cuota.</ValidarFechaPrestamoFechaVtoCuotaPrestamosCortoPlazo>
+  <ValidarFechaCancelacion>El mes de la Fecha de Cancelación {0} no coincide con el mes actual. Deberá anular la Cancelación y realizar una nueva Cancelación para recalcular los valores del Prestamo.</ValidarFechaCancelacion>
+  <ValidarFilialFormaPago>La Filial {0} solo permite el Tipo de pago en efectivo.</ValidarFilialFormaPago>
+  <ValidarFormasCobro>No se han especificado Formas de Cobro para el Socio.</ValidarFormasCobro>
+  <ValidarImportePreAutorizado>El importe a Pre Autorizar debe ser mayor a 0.</ValidarImportePreAutorizado>
+  <ValidarImporteAutorizado>El importe a Autorizar debe ser mayor a 0.</ValidarImporteAutorizado>
+  <ValidarIpsPlanes>No se encontro un Plan IPS definido para el Importe y Cantidad de Cuotas del Numero de CAD {0}</ValidarIpsPlanes>
+  <ValidarImportePrestamo>El importe del Prestamo debe ser mayor a 0.</ValidarImportePrestamo>
+  <ValidarImportePrestamoCheques>El importe del Cheque debe ser mayor a 0.</ValidarImportePrestamoCheques>
+  <ValidarImporteCancelacion>El importe de cancelacion debe ser mayor 0.</ValidarImporteCancelacion>
+  <ValidarIPSNumeroCADCero>Debe ingresar en Prestamos -> IPS CAD y seleccionar un numero de CAD para la forma de cobro {0}</ValidarIPSNumeroCADCero>
+  <ValidarIPSNumeroCADNoEncontro>No se encontro el Numero de CAD en el sistema.</ValidarIPSNumeroCADNoEncontro>
+  <ValidarIPSNumeroCADImporteCuota>El importe de la cuota del prestamo debe ser {0} para el Numero de CAD ingresado.</ValidarIPSNumeroCADImporteCuota>
+  <ValidarIPSNumeroCADCantidadCuotas>La cantidad de cuotas del prestamo debe ser {0} para el Numero de CAD ingresado.</ValidarIPSNumeroCADCantidadCuotas>
+  <ValidarPlanBancoSol>No se encontraron los parametros del codigo de Plan {0} para el Importe {1}</ValidarPlanBancoSol>
+  <ValidarPlanTasaFechaPrestamo>No se encontro una Tasa definida para el Plan {0} para la fecha del prestamo {1}.</ValidarPlanTasaFechaPrestamo>
+  <ValidarPorcentajeGastosAdministrativos>El porcentaje del Gastos Administrativo no es valido.</ValidarPorcentajeGastosAdministrativos>
+  <ValidarPrestamosCesionesCantidadCalcularVAN>Debe seleccionar al menos un prestamo.</ValidarPrestamosCesionesCantidadCalcularVAN>
+  <ValidarPrestamoChequesNumeros>Debe ingresar el Numero del Cheque</ValidarPrestamoChequesNumeros>
+  <ValidarPrestamoChequesFechaDiferido>Debe ingresar la Fecha Diferido del Cheque</ValidarPrestamoChequesFechaDiferido>
+  <ValidarPrestamoChequesBanco>Debe seleccionar el Banco del Cheque</ValidarPrestamoChequesBanco>
+  <ValidarPrestamosCuotasSeleccionarNovaciones>Debe Seleccionar al menos una Cuota para Cancelar</ValidarPrestamosCuotasSeleccionarNovaciones>
+  <ValidarPrestamosCotizaciones>Se modificarán todos las cuotas de los Prestamos con el nuevo Coeficiente a partir de la Fecha indicada.</ValidarPrestamosCotizaciones>
+
+
+  <!-- Modulo Parametros -->
+  <ParametroValorConfirmarBaja>¿Esta seguro que desea dar de baja el varlo del parametro?</ParametroValorConfirmarBaja>
+  <PrestamosCuotasMinima>La cantidad de cuotas no puede ser menor a {0}</PrestamosCuotasMinima>
+  <PrestamosCuotasMaxima>La cantidad de cuotas no puede ser mayor a {0}</PrestamosCuotasMaxima>
+  <PrestamosImporteDesde>El importe solicitado no puede ser menor a {0}</PrestamosImporteDesde>
+  <PrestamosImporteHasta>El importe solicitado no puede ser mayor a {0}</PrestamosImporteHasta>
+
+  <!-- Modulo Procesos Datos -->
+  <BackupResultadoOK>Se ha generado con éxito el Backup de los datos {0}</BackupResultadoOK>
+  <ValidarSubirArchivo>Debe seleccionar un archivo</ValidarSubirArchivo>
+  <SeleccioneProceso>Debe seleccionar un proceso</SeleccioneProceso>
+  <gvCheckFechaValidarFecha>Debe ingresar una Fecha para {0}</gvCheckFechaValidarFecha>
+
+  <!-- Modulo Produccion -->
+  <ProduccionValidarFinalizar>No ha seleccionado el Producto y/o Cantidad de la Produccion. Al finalizar la Produccion NO se actualizara el stock por Produccion. ¿Esta seguro que desea continuar?</ProduccionValidarFinalizar>
+  <ResultadoProduccionAgregar>Se ha dado de alta la Produccion Nro. {0}</ResultadoProduccionAgregar>
+
+  <!--Modulo Remitos-->
+  <RemitoFacturaCantidadYaRemitada>Este Producto ya ha sido Remitado, Codigo Producto : {0}</RemitoFacturaCantidadYaRemitada>
+  <RemitoFacturasCantidadItems>La Cantidad Ingresada Excede la Cantidad Facturada,Cantidad que intenta Remitar: {2}, Cantidad Anteriormente Remitada: {3}, Cantidad Facturada: {0} ,Codigo de Producto: {1} </RemitoFacturasCantidadItems>
+  <RemitoSeleccioneSocio>Debe ingresar el cliente</RemitoSeleccioneSocio>
+  <RemitosValidarCantidad>Verifique que la cantidad que esta remitando sea distinta de 0 (cero) y no mayor a la cantidad pendiente de {1}. Producto: {0}</RemitosValidarCantidad>
+  <RemitosValidarItems>Debe seleccioanr al menos un producto</RemitosValidarItems>
+  <RemitosValidarItemsCantidad>Debe ingresar la cantidad para los productos seleccionados</RemitosValidarItemsCantidad>
+  <RemitoVentaConfirmacionPopUp>¿Esta seguro que desea generar el Remito?</RemitoVentaConfirmacionPopUp>
+  <RemitoValidarTotal>Verifique que el importe total sea distinto de 0 y no mayor al importe pendiente</RemitoValidarTotal>
+
+  <!-- Modulo Reportes -->
+  <RepNoHayDatos>No se encontraron datos para el reporte.</RepNoHayDatos>
+  <RepConvertirPDF>Ha ocurrido un problema al generar el PDF. {0}</RepConvertirPDF>
+  <RepAccesoDatos>Ha ocurrido un problema al acceder a los datos del reporte. {0}</RepAccesoDatos>
+
+  <!-- Modulo Stock -->
+  <StockInsuficiente>Stock insuficiente para el Producto {0}, Stock Actual: {1}.</StockInsuficiente>
+  <ProductoSinStock>No hay Stock para el producto que desea ingresar</ProductoSinStock>
+  <StockMovimientosSeleccioneItem>Debe seleccionar al menos un item</StockMovimientosSeleccioneItem>
+  <StockMovimientosFiliales>La Filial de Origen y Destino no pueden ser iguales.</StockMovimientosFiliales>
+  <!-- Modulo Subsidios -->
+  <ValidarSubsidioCantidadMaxima>La cantidad solicitada mas la cantidad registrada de {0} supera la cantidad maxima permitida de {1}. Cantidad Maxima a solicitar {2}</ValidarSubsidioCantidadMaxima>
+  <ValidarSocioCategoria>La categoria {0} del socio no permite Subsidio y/o reintegros.</ValidarSocioCategoria>
+  <ValidarSubsidioCarencia>Validar Carencia</ValidarSubsidioCarencia>
+  <ValidarSubsidioContratado>El socio no tiene el subsidio contratado.</ValidarSubsidioContratado>
+  <ValidarSubsidioEscala>No se encontro una escala definida para el subsidio y los parametros ingresados</ValidarSubsidioEscala>
+  <ValidarSubsidioValidezEvento>El tiempo de validez del subsidio ha superado.</ValidarSubsidioValidezEvento>
+
+  <!-- Modulo Tesorerias -->
+  <CajaAbiertaFueraDeFechaMsg>Esta trabajando con la Caja del dia {0}</CajaAbiertaFueraDeFechaMsg>
+  <CajaCerrarDiaAnterior></CajaCerrarDiaAnterior>
+  <CajaExtraerConfirmar>La operación quedara Confirmada. ¿Esta seguro que desea continuar?</CajaExtraerConfirmar>
+  <CajaValidarAbierta>La Caja no ha sido abierta</CajaValidarAbierta>
+  <CajaValidarCerrada>La Caja ha sido cerrada</CajaValidarCerrada>
+  <CajaValidarAbiertaUsuarioSector>La esta abierta pero el Sector del usuario se ha modificado.</CajaValidarAbiertaUsuarioSector>
+  <TesoreriaCerrar>La Tesoreria no ha podido Cerrarse. Fecha de Cierre {0}.</TesoreriaCerrar>
+  <TesoreriaConfirmarCierre>Esta seguro que desea Cerrar la Tesoreria</TesoreriaConfirmarCierre>
+  <TesoreriaValidarCajasAbiertas>No se puede Cerrar la Tesoreria. Existen Cajas Abiertas para el día de la fecha.</TesoreriaValidarCajasAbiertas>
+  <TesoreriaValidarAbierta>La Tesoreria no fue abierta para el día de la fecha. Debe ingresar por el Menu en Tesoreria -> Tesoreria Abrir.</TesoreriaValidarAbierta>
+  <TesoreriaValidarCerrada>La Tesoreria fue cerrada para el día de la fecha</TesoreriaValidarCerrada>
+  <TesoreriaAbrirError>No se ha podido abrir la Tesoreria para el día de la fecha.</TesoreriaAbrirError>
+  <TesoreriaMovimientoValidarImporte>El importe ingresado no puede ser mayor al Saldo Actual</TesoreriaMovimientoValidarImporte>
+  <ValidarAbiertaFechaAnterior>La Tesoreria del día {0} se encuentra abierta.</ValidarAbiertaFechaAnterior>
+  <ValidarCajaRetiroCheque>La Caja {0} se encuentra Cerrada.</ValidarCajaRetiroCheque>
+  <ValidarCierreAutomaticoFechaDia>La Tesoreria del día no se puede cerrar de forma automatica.</ValidarCierreAutomaticoFechaDia>
+  <ValidarFecha>La Fecha no puede ser mayor distinta a la fecha del día</ValidarFecha>
+  <ValidarFechaChequeDiferido>La Fecha Diferido del cheque {0} es obligatoria.</ValidarFechaChequeDiferido>
+  <ValidarMovimientoTipoValor>El Tipo de Valor del movimiento no coincide con los Tipos de Valores Ingresados</ValidarMovimientoTipoValor>
+  <ValidarMovimientosValoresImporte>El Total de los Importes por Valores es distinto del Importe del Comprobante</ValidarMovimientosValoresImporte>
+  <ValidarMovimientosSaldoCaja>El Saldo Actual en Efectivo de la Caja: {0} es menor al Importe: {1} del movimiento en Efectivo.</ValidarMovimientosSaldoCaja>
+  <ValidarNumeroCaja>La Caja número {0} se encuentra abierta por otro usuario.</ValidarNumeroCaja>
+  <ValidarTesoreriaCierreAnterior>No se encontraron Tesorerias anteriores abiertas a la fecha</ValidarTesoreriaCierreAnterior>
+  <ValidarTesoriaFechaDia>La Tesoreria abierta es la del día de la fecha.</ValidarTesoriaFechaDia>
+  <TesoreriaAbiertaFueraDeFecha>La Tesorería sera abierta para un dia anterior ¿Esta seguro que desea continuar?</TesoreriaAbiertaFueraDeFecha>
+  <TesoreriaAbiertaFueraDeFechaMsg>Esta trabajando con la Tesoreria del dia {0}</TesoreriaAbiertaFueraDeFechaMsg>
+  <TesoreriaReabrir>Se reabrira la Tesoreria para el dia seleccionado. ¿Está seguro que desea continuar?</TesoreriaReabrir>
+  <TesoreriaCerrarConCajas>La Tesoreria posee Cajas Abiertas. ¿Está seguro que desea continuar? Las cajas seran cerradas.</TesoreriaCerrarConCajas>
+  <ValidarFechaApertura>La fecha de apertura que seleccionó es anterior a la fecha de la ultima Tesoreria cerrada</ValidarFechaApertura>
+
+
+  <!-- Modulo Seguridad -->
+  <PerfilCopiar> - Copiar</PerfilCopiar>
+  <PerfilConfirmarCopia>Esta seguro que desea copiar el Perfil {0}?</PerfilConfirmarCopia>
+  <UsuarioExiste>El nombre de usuario ya existe</UsuarioExiste>
+  <UsuarioIncorrecto>El usuario o la contraseña no es correcto.</UsuarioIncorrecto>
+  <UsuarioNoExiste>El usuario {0} no esta cargado para usar el sistema</UsuarioNoExiste>
+  <UsuarioBodegaPredeterminadaInvalida>The default warehouse has not been selected</UsuarioBodegaPredeterminadaInvalida>
+  <UsuariosAgenciaUnica>Please select a warehouse to work</UsuariosAgenciaUnica>
+  <UsuarioFilialPredeterminadaInvalida>La Filial Predeterminada no esta seleccionada</UsuarioFilialPredeterminadaInvalida>
+  <UsuarioSectorPredeterminadoInvalido>El Sector Predeterminado no esta seleccionado</UsuarioSectorPredeterminadoInvalido>
+  <ContraseñaNoValida>Contraseña "Anterior" no válida</ContraseñaNoValida>
+  <!-- Clase Vendedores -->
+  <CBUIncorrecto>El CBU ingresado no es válido. Debe tener 22 dígitos.</CBUIncorrecto>
+  <CuitIncorrecto>El CUIT ingresado no es válido.</CuitIncorrecto>
+  <VendedoresExisteCUIT>El CUIT ingresado ya existe en la Base de Datos.</VendedoresExisteCUIT>
+  <ValidarFiltroDNS>La dirección desde donde intenta conectarse no esta autorizada. Contactese con su administrador para habilitar la IP {0}</ValidarFiltroDNS>
+
+  <!--****************************************************************************************-->
+
+  <!-- Validaciones de Acceso a Datos-->
+  <Concurrencia>El registro ha sido modificado por otro usuario.</Concurrencia>
+  <ErrorAccesoBaseDatos>Error al conectar con la Base de Datos. Contactese con el Administrador. {0}</ErrorAccesoBaseDatos>
+  <ErrorURLNoValida>No se encontro la URL para el comprobante</ErrorURLNoValida>
+
+
+
+
+</Mensajes>

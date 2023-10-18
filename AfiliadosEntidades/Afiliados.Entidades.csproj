@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE52EE32-3C17-477F-8F76-10FA409AD26B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Afiliados.Entidades</RootNamespace>
+    <AssemblyName>Afiliados.Entidades</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\_dllsSIM\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\_dllsSIM\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>..\_dllsSIM\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Comunes.Entidades, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ERP_SI\_dllSI\Comunes.Entidades.dll</HintPath>
+    </Reference>
+    <Reference Include="Generales.Entidades, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ERP_SI\_dllSI\Generales.Entidades.dll</HintPath>
+    </Reference>
+    <Reference Include="Seguridad.Entidades, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ERP_SI\_dllSI\Seguridad.Entidades.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entidades\AfiAfiliados.cs" />
+    <Compile Include="Entidades\AfiAfiliadosDatosUIF.cs" />
+    <Compile Include="Entidades\AfiAfiliadosMatrizRiesgo.cs" />
+    <Compile Include="Entidades\AfiAfiliadosTipos.cs" />
+    <Compile Include="Entidades\AfiAfiliadosVisitas.cs" />
+    <Compile Include="Entidades\AfiAlertasTipos.cs" />
+    <Compile Include="Entidades\AfiArmas.cs" />
+    <Compile Include="Entidades\AfiArmasDestinos.cs" />
+    <Compile Include="Entidades\AfiCategorias.cs" />
+    <Compile Include="Entidades\AfiCertificadoSupervivencia.cs" />
+    <Compile Include="Entidades\AfiClientes.cs" />
+    <Compile Include="Entidades\AfiCompensaciones.cs" />
+    <Compile Include="Entidades\AfiDomicilios.cs" />
+    <Compile Include="Entidades\AfiDomiciliosTipos.cs" />
+    <Compile Include="Entidades\AfiEstadoCivil.cs" />
+    <Compile Include="Entidades\AfiFamiliares.cs" />
+    <Compile Include="Entidades\AfiGrados.cs" />
+    <Compile Include="Entidades\AfiGruposSanguineos.cs" />
+    <Compile Include="Entidades\AfiMensajesAlertas.cs" />
+    <Compile Include="Entidades\AfiNacionalidades.cs" />
+    <Compile Include="Entidades\AfiPacientes.cs" />
+    <Compile Include="Entidades\AfiParentesco.cs" />
+    <Compile Include="Entidades\AfiSexos.cs" />
+    <Compile Include="Entidades\AfiTelefonos.cs" />
+    <Compile Include="Entidades\AfiEmpresasTelefonicas.cs" />
+    <Compile Include="Entidades\AfiTelefonosTipos.cs" />
+    <Compile Include="Entidades\AfiTiposApoderados.cs" />
+    <Compile Include="Entidades\AfiTiposDocumentos.cs" />
+    <Compile Include="Entidades\CuentasCorrientesFiltro.cs" />
+    <Compile Include="Entidades\EnumAfiliados.cs" />
+    <Compile Include="Entidades\EstadosAfiliados.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

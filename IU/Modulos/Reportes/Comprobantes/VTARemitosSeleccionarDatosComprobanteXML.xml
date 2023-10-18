@@ -1,0 +1,61 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdRemito" type="xs:int" minOccurs="0" />
+              <xs:element name="AfiliadoIdAfiliado" type="xs:int" minOccurs="0" />
+              <xs:element name="AfiliadoApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoCUIL" type="xs:long" minOccurs="0" />
+              <xs:element name="NumeroRemitoPrefijo" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroRemitoSuFijo" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaRemito" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FilialIdFilial" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="RazonSocial" type="xs:string" minOccurs="0" />
+              <xs:element name="Domicilio" type="xs:string" minOccurs="0" />
+              <xs:element name="Localidad" type="xs:string" minOccurs="0" />
+              <xs:element name="CondicionFiscal" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteRazonSocial" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteCUIT" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteCondicionFiscal" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteDomicilio" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteLocalidad" type="xs:string" minOccurs="0" />
+              <xs:element name="CantidadCuotas" type="xs:int" minOccurs="0" />
+              <xs:element name="ImporteCuota" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Firma" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoOperacion" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdRemitoDetalle" type="xs:int" minOccurs="0" />
+              <xs:element name="ProductoIdProducto" type="xs:int" minOccurs="0" />
+              <xs:element name="ProductoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Cantidad" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoDescripcion" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CUIT" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroIIBB" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaInicioActividad" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MatriculaINAES" type="xs:string" minOccurs="0" />
+              <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

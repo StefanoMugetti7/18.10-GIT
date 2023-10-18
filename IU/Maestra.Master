@@ -1,0 +1,715 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Maestra.Master.cs" Inherits="IU.Maestra" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register Src="~/Mensajes.ascx" TagPrefix="ctr" TagName="Mensajes" %>
+<%@ Register Src="~/ProgressBar.ascx" TagPrefix="ctr" TagName="ProgressBar" %>
+<%@ Register Src="~/Modulos/Seguridad/Controles/SegUsuariosNotificacionesModificarPopUp.ascx" TagName="popUpNotificaciones" TagPrefix="auge" %>
+
+<!DOCTYPE html >
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+    <title>EVOL - SIM</title>
+    <link rel="shortcut icon" type="image/x-icon" href="~/evol.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+    <%--<link rel="stylesheet" href="~/assets/global/plugins/select2/css/select2.min.css" type="text/css" />--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <%--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>--%>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+    <%--<link href="https://raw.githack.com/ttskch/select2-bootstrap4-theme/master/dist/select2-bootstrap4.css" rel="stylesheet"/>--%>
+    <link href="https://erp.evol.com.ar/cdn/css/select2-bootstrap4.css" rel="stylesheet" />
+    <script src="https://erp.evol.com.ar/cdn/js/jquery.history.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.9.13/combined/js/gijgo.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.9.13/combined/css/gijgo.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.13/js/messages/messages.es-es.js" type="text/javascript"></script>
+    <link href="~/css/bootstrap-4-navbar.css" rel="stylesheet" />
+    <script src="https://unpkg.com/bootstrap-show-password@1.2.1/dist/bootstrap-show-password.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <script type="text/javascript">
+
+        function ResolveUrl(url) {
+            return url.replace("~/", baseUrl);
+        }
+
+        function toDate(dateStr) {
+            if (dateStr) {
+                var parts = dateStr.split("/")
+                return new Date(parts[2], parts[1] - 1, parts[0])
+            }
+        }
+
+        function toStrDate(d) {
+            var month = d.getMonth() + 1;
+            var day = d.getDate();
+            return (day < 10 ? '0' : '') + day + '/' + (month < 10 ? '0' : '') + month + '/' + d.getFullYear();
+        }
+    </script>
+
+    <style type="text/css">
+        .ErrorControl {
+            border: 1px solid;
+            border-color: red;
+        }
+        /* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+        .miModal {
+            cursor: wait;
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            filter: alpha(opacity=30);
+            opacity: 0.3;
+            background: #2E2D27 url('../../Imagenes/ajax-loader.gif') 50% 50% no-repeat;
+            /*background-image: url('http://i.stack.imgur.com/FhHRx.gif')
+	                50% 50% 
+                no-repeat;*/
+            /*background: url('http://i.stack.imgur.com/FhHRx.gif') 
+                50% 50% 
+                no-repeat;*/
+        }
+
+        /* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+        body.loading .miModal {
+            overflow: hidden;
+        }
+
+        /* Anytime the body has the loading class, our
+   modal element will be visible */
+        body.loading .miModal {
+            display: block;
+        }
+
+        /*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+        .dropdown-submenu {
+            position: relative;
+        }
+
+            .dropdown-submenu > .dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-top: 0px;
+                margin-left: 0px;
+            }
+    </style>
+</head>
+
+<body class="body">
+    <div class="miModal">
+        <!-- Place at bottom of page -->
+        <!--<img src="/Imagenes/ajax-loader.gif" alt="Cargando" />-->
+    </div>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true"
+            OnAsyncPostBackError="ScriptManager1_AsyncPostBackError" runat="server"
+            LoadScriptsBeforeUI="true" AsyncPostBackTimeout="600">
+            <Scripts>
+                <asp:ScriptReference Path="~/js/bootstrap-4-navbar.js" />
+                <%-- <asp:ScriptReference Path="~/assets/js/jquery-3.1.1.min.js" />
+                <asp:ScriptReference Path="~/assets/js/jquery-migrate-3.0.0.min.js" />
+                
+                <asp:ScriptReference Path="~/Recursos/currencytextbox.js" />
+                <asp:ScriptReference Path="~/Recursos/numerictextbox.js" />
+                <asp:ScriptReference Path="~/Recursos/accounting.js" />
+                <asp:ScriptReference Path="~/Recursos/jquery.maskMoney.min.js" />
+                <asp:ScriptReference Path="~/Recursos/jquery.maskMoney.evol.js" />--%>
+            </Scripts>
+        </asp:ScriptManager>
+        <asp:CustomValidator runat="server" />
+        <asp:HiddenField ID="hdfBrowserTab" runat="server" />
+        <script type="text/javascript" lang="javascript">
+            var $ = jQuery.noConflict();
+            var gblSimbolo = "$";
+            var gblSeparadorMil = ".";
+            var gblSeparadorDecimal = ",";
+            var gblCantidadDecimales = 2;
+            var baseUrl = '<%= Page.ResolveClientUrl("~/") %>';
+            var itsPostBack = <%= Page.IsPostBack ? "true" : "false" %>;
+            if (!itsPostBack) {
+                var bReload = false;
+                var uniqueId;
+                var url;
+                var urlParametros = window.location.href;
+                var sURLVariables = urlParametros.split('?').length > 1 ? urlParametros.split('?')[1] : "";
+                //sURLVariables = sURLVariables.length > 0 ? 
+                //    sURLVariables.indexOf("tabName") != -1 ? sURLVariables.indexOf("&") != -1 ? sURLVariables.split('&').shift() : sURLVariables : "" : "";
+                if (sURLVariables.length > 0) {
+                    if (sURLVariables.indexOf("tabName") != -1) {
+                        if (sURLVariables.indexOf("&") != -1) {
+                            var arrUrlVariables = sURLVariables.split('&');
+                            arrUrlVariables.shift();
+                            sURLVariables = arrUrlVariables.join('&');
+                        } else {
+                            sURLVariables = "";
+                        }
+                    }
+                }
+                $.urlParam = function (name) {
+                    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.search);
+                    return (results !== null) ? results[1] || 0 : false;
+                }
+                url = [location.protocol, '//', location.host, location.pathname].join('');
+                if (window.name == "") {
+                    uniqueId = Math.random().toString(36).substring(2) + (new Date()).getTime().toString(36);
+                    window.name = uniqueId;
+                    bReload = true;
+                } else if (window.name != "" && urlParametros.indexOf("tabName") == -1) {
+                    bReload = true;
+                } else if (urlParametros.indexOf("tabName") != -1 && $.urlParam("tabName") != window.name) {
+                    bReload = true;
+                }
+                if (bReload) {
+                    window.open(url + "?tabName=" + window.name + "&" + sURLVariables, "_self");
+                }
+            }
+            //$("input[type=hidden][id$='hdfBrowserTab']").val(window.name);
+
+        </script>
+        <div class="container-fluid">
+            <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark py-0 navbarEvol">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav flex-wrap" id="navbar__nav">
+                        <asp:Literal ID="ltrMenu" runat="server"></asp:Literal>
+                    </ul>
+                </div>
+                <asp:Image ID="imgLogoICO" runat="server" ImageAlign="Top" Height="50" Width="140" Visible="false" />
+            </nav>
+
+            <div id="ContenedorEncabezado">
+
+                <div id="Encabezado">
+                    <div id="menu">
+
+                        <%--<asp:Menu ID="mnMenuPrincipal" runat="server" SkinID="MenuBasicoFormal" EnableViewState="true" 
+                    Orientation="Horizontal">
+               </asp:Menu>  --%>
+                    </div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceEncabezado" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div id="Contenedor">
+                <div id="ContenidoSuperior">
+                    <div class="form-group row">
+                        <div class="col-sm-12 col-md-8 col-lg-4">
+                            <div class="form-group row">
+                                <div class="row">
+                                    <asp:Label ID="lblUsuarioLogueado" CssClass="col-sm-4 col-form-label" runat="server"></asp:Label>
+                                    <asp:Label ID="lblFilialText" Text="Filial: " CssClass="col-sm-1 col-form-label" Visible="false" runat="server"></asp:Label>
+                                    <div class="col-sm-3">
+                                        <asp:DropDownList ID="ddlFilialUsuario" CssClass="form-control select2" runat="server" Visible="false" OnSelectedIndexChanged="ddlFilialUsuario_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList>
+                                    </div>
+                                    <asp:Label ID="lblSectorText" Text=" Sector: " CssClass="col-sm-1 col-form-label" Visible="false" runat="server"></asp:Label>
+                                    <div class="col-sm-3">
+                                        <asp:DropDownList ID="ddlSectorUsuario" CssClass="form-control select2" runat="server" Visible="false" OnSelectedIndexChanged="ddlSectorUsuario_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList>
+                                    </div>
+                                    <asp:ContentPlaceHolder ID="ContentPlaceIzquierdoArriba" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-4">
+                            <asp:ContentPlaceHolder ID="ContentPlaceCentroArriba" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-4">
+                            <div class="row">
+                            <AUGE:popUpNotificaciones id="ctrNotificaciones" Visible="false" runat="server"/>
+                            
+                            <asp:Label ID="lblMensajesAlertas" CssClass="col-form-label" runat="server"></asp:Label>
+                                
+                            <asp:ContentPlaceHolder ID="ContentPlaceDerechaArriba" runat="server">
+                            </asp:ContentPlaceHolder>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="borrar"></div>
+                    <div id="ContenidoCentral">
+                        <div id="ContenidoCentralIzquierdo">
+                            <asp:ContentPlaceHolder ID="ContentPlaceIzquierdoCentro" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+
+
+                        <div id="ContenidoPrincipal">
+                            <div class="card">
+                                <div class="card-body">
+                                    <asp:Label CssClass="label" ID="lblMenuPosicion" runat="server"></asp:Label>
+                                </div>
+                            </div>
+                            <div class="">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+
+                        <div id="ContenidoSinEstilo">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+
+                        <div id="ContenidoCentralDerecho">
+                            <asp:ContentPlaceHolder ID="ContentPlaceDerechaCentro" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                    <div class="borrar"></div>
+                    <div id="ContenidoInferior">
+                        <div id="ContenidoInferiorIzquierdo">
+                            <asp:ContentPlaceHolder ID="ContentPlaceIzquierdoAbajo" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <div id="ContenidoInferiorCentro">
+                            <asp:UpdatePanel ID="upMensajes" UpdateMode="Always" runat="server">
+                                <ContentTemplate>
+                                    <ctr:Mensajes ID="popUpMensajes" runat="server" />
+                                    <asp:Label CssClass="label" Width="100%" ID="lblMensaje" runat="server"></asp:Label>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                        </div>
+                        <div id="ContenidoInferiorDerecho">
+                            <asp:ContentPlaceHolder ID="ContentPlaceDerechaAbajo" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </div>
+                <ctr:ProgressBar ID="poupProgressBar" runat="server" />
+            </div>
+        </div>
+    </form>
+    <!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+</body>
+</html>
+
+<script type="text/javascript" lang="javascript">
+
+
+    $(document).ready(function () {
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(InitGlobalControls);
+        Sys.WebForms.PageRequestManager.getInstance().add_initializeRequest(BeginRequestHandler);
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+        bootstrapNavbar();
+        InitGlobalControls();
+        // Call UpgradeASPNETValidation after the page has loaded so that it 
+        // runs after the standard ASP.NET scripts.
+        UpgradeASPNETValidation();
+    });
+
+
+    //var buttons = $("[id$='navbarNavDropdown'] .active-dropdown");
+    //$(document).click(function() {
+    //    buttons.removeClass("active-dropdown");
+    //});
+    function ValidarDatepicker(date) {
+        if (date.length > 10)
+            date = date.substring(0, 10);
+
+        var matches = /^(\d{1,2})[-\/](\d{1,2})[-\/](\d{4})$/.exec(date);
+        if (matches == null) return false;
+        var d = matches[1];
+        var m = matches[2] - 1;
+        var y = matches[3];
+        var composedDate = new Date(y, m, d);
+        return composedDate.getDate() == d &&
+            composedDate.getMonth() == m &&
+            composedDate.getFullYear() == y;
+    }
+
+    function Validaciones() {
+        var validar = 0;
+        $('input:text.datepicker').each(function () {
+            var date = $(this).val();
+            if (date.length > 0) {
+                if (!ValidarDatepicker(date)) {
+                    $(this).removeClass('is-valid');
+                    $(this).addClass('is-invalid ErrorControl');
+                    validar = 1;
+                    return false;
+                }
+            }
+        });
+        $('input:text.ValidarNumeroTarjeta').each(function () {
+            if ($(this).val().length == 0) {
+                $(this).removeClass('is-valid');
+                $(this).addClass('is-invalid ErrorControl');
+                validar = 1
+                return;
+            }
+            else if ($(this).val().length > 0) {
+                var sum = 0, even = false;
+                $(this).val().split("").reverse().forEach(function (dstr) {
+                    d = parseInt(dstr);
+                    sum += ((even = !even) ? d : (d < 5) ? d * 2 : (d - 5) * 2 + 1);
+                });
+                if (sum % 10 != 0) {
+                    validar = 1;
+                    $(this).removeClass('is-valid');
+                    $(this).addClass('is-invalid ErrorControl');
+                    return;
+                }
+            }
+        });
+        return validar == 0;
+    }
+
+    function InitGlobalControls(sender, args) {
+        /*Controles Select*/
+        $("select.select2").each(function () {
+            if (!$(this).hasClass("select2-hidden-accessible")) {
+                $(this).select2({ width: '100%', selectOnClose: true, theme: 'bootstrap4', language: 'es' });
+            }
+        });
+        /*Controles Fecha*/
+        $('input:text.datepicker').each(function () {
+            if (!$(this).is(':disabled') && !$(this).hasClass("hasDatepicker")) {
+                $(this).addClass("hasDatepicker");
+                $(this).attr("autocomplete", "off");
+                $(this).datepicker({
+                    showOnFocus: true, uiLibrary: 'bootstrap4', locale: 'es-es', format: 'dd/mm/yyyy', close: (function () {
+                        var date = $(this).val();
+                        if (date.length > 0) {
+                            if (ValidarDatepicker(date)) {
+                                $(this).removeClass('is-invalid ErrorControl');
+                                $(this).addClass('is-valid');
+                                //$("input[id*='btnBuscar']").prop('disabled', false);
+                            } else {
+                                $(this).removeClass('is-valid');
+                                $(this).addClass('is-invalid ErrorControl');
+                                //$("input[id*='btnBuscar']").prop('disabled', true);
+                            }
+                        }
+                        else if (date.length == 0) {
+                            $(this).removeClass('is-invalid ErrorControl');
+                            $(this).addClass('is-valid');
+                            //$("input[id*='btnBuscar']").prop('disabled', false);
+                        }
+                    })
+                });
+                $(this).blur(function () {
+                    var date = $(this).val();
+                    if (date.length > 0) {
+                        if (ValidarDatepicker(date)) {
+                            $(this).removeClass('is-invalid ErrorControl');
+                            $(this).addClass('is-valid');
+                            //$("input[id*='btnBuscar']").prop('disabled', false);
+                        } else {
+                            $(this).removeClass('is-valid');
+                            $(this).addClass('is-invalid ErrorControl');
+                            //$("input[id*='btnBuscar']").prop('disabled', true);
+                        }
+                    } else if (date.length == 0) {
+                        $(this).removeClass('is-invalid ErrorControl');
+                        $(this).addClass('is-valid');
+                        //$("input[id*='btnBuscar']").prop('disabled', false);
+                    }
+                });
+            }
+        });
+
+        $('input:text.ValidarNumeroTarjeta').each(function () {
+            $(this).blur(function () {
+                if ($(this).length > 0) {
+                    var sum = 0, even = false;
+                    $(this).val().split("").reverse().forEach(function (dstr) {
+                        d = parseInt(dstr);
+                        sum += ((even = !even) ? d : (d < 5) ? d * 2 : (d - 5) * 2 + 1);
+                    });
+                    if (sum % 10 == 0) {
+                        $(this).removeClass('is-invalid ErrorControl');
+                        $(this).addClass('is-valid');
+                        return true;
+                    }
+                    else {
+                        $(this).removeClass('is-valid');
+                        $(this).addClass('is-invalid ErrorControl');
+                    }
+                }
+                else {
+                    $(this).removeClass('is-valid');
+                    $(this).addClass('is-invalid ErrorControl');
+                }
+            });
+        });
+        /* ASP.NET Gridview Parent DIV*/
+        $('table.GridViewStyle').each(function () {
+            if ($(this).find('tbody').outerWidth() <= $(this).closest('div').outerWidth()) {
+                $(this).addClass('d-md-table');
+            } else {
+                $(this).removeClass('d-md-table');
+            }
+        });
+    }
+
+    function Validaciones() {
+        var validar = 0;
+        $('input:text.datepicker').each(function () {
+            var date = $(this).val();
+            if (date.length > 0) {
+                if (!ValidarDatepicker(date)) {
+                    $(this).removeClass('is-valid');
+                    $(this).addClass('is-invalid ErrorControl');
+                    validar = 1;
+                    return false;
+                }
+            }
+        });
+        return validar == 0;
+    }
+
+
+    function fnMenuItemClick() {
+        //fnBorrarParametrosURL();
+        if (!window.event.ctrlKey)
+            showPopupProgressBar();
+    }
+
+    function fnBorrarParametrosURL() {
+        var resultado = "";
+        $.ajax({
+            type: "POST",
+            url: "/MasterWS.asmx/BorrarParametrosURL",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (r) {
+                resultado = r.d;
+            }
+        });
+        return resultado;
+    }
+
+    //Etiqueta para mostrar los mensajes
+    var messageElem = '<%= lblMensaje.ClientID %>';
+    //Registro el evento que se dispara al comenzar un postback
+    // Variable utilizada para guardar el control que hace el postback al servidor
+    var postBackControl;
+    //Funcion que se ejecuta al inicializarse un postback al servidor
+    function BeginRequestHandler(sender, args) {
+        if (!(Validaciones())) {
+            args.set_cancel(true); // Cancela el postback
+            return;
+        } else {
+            args.set_cancel(false); // Activa el postback
+            showPopupProgressBar();
+            postBackControl = args.get_postBackElement().id;
+            if ($get(postBackControl) != null) {
+                $get(postBackControl).disabled = true;
+            }
+        }
+    }
+
+    //Funcion que se ejecuta al finalizar un postback
+    function EndRequestHandler(sender, args) {
+        hidePopupProgressBar();
+        if (args.get_error() != undefined && args.get_error().httpStatusCode == '500') {
+            var errorMessage = args.get_error().message
+            args.set_errorHandled(true);
+            if (errorMessage.match('Sys.WebForms.PageRequestManagerServerErrorException:'))
+                errorMessage = errorMessage.substring(52);
+            $get(messageElem).innerHTML = errorMessage;
+            $get(messageElem).style.color = 'red';
+        }
+        if ($get(postBackControl) != null) {
+            $get(postBackControl).disabled = false;
+            if ($($get(postBackControl)).prop('type') == 'button'
+                || $($get(postBackControl)).prop('type') == 'submit') {
+                $get(postBackControl).focus();
+            }
+        }
+    }
+
+    function pageRedirect(e, url) {
+        e.preventDefault();
+        $("body").addClass("loading");
+        url = url.replace("~/", baseUrl);
+        var sURLVariables = urlParametros.split('?').length > 1 ? urlParametros.split('?')[1] : "";
+        window.location.href = url + '?' + sURLVariables;
+        return false;
+    }
+
+    function BotonVolver() {
+        showPopupProgressBar();
+        if (history.length > 2) {
+            // if history is not empty, go back:
+            window.History.back();
+        }
+        //else if (url) {
+        //    // go to specified fallback url:
+        //    window.History.replaceState(null, null, url);
+        //}
+        else {
+            // go home:
+            window.History.replaceState(null, null, '/');
+        }
+    }
+
+    function deshabilitarControles(control) {
+        $('#' + control + ' *').prop('disabled', true);
+        $('#' + control + ' img').hide();
+    }
+
+    function SetInitializeCulture(symbol) {
+        gblSimbolo = symbol;
+        /*Controles Currency*/
+        //$('input:text.EvolCurrency').each(function() {
+        //    var val = $(this).maskMoney('unmasked')[0];
+        //    $(this).val(accounting.formatMoney(val, gblSimbolo, gblCantidadDecimales, "."))
+        //});
+    }
+    /**
+    * Re-assigns the ASP.NET validation JS function to
+    * provide a more flexible approach
+    */
+    function UpgradeASPNETValidation() {
+        if (typeof (Page_ClientValidate) != "undefined") {
+            AspValidatorUpdateDisplay = ValidatorUpdateDisplay;
+            ValidatorUpdateDisplay = NicerValidatorUpdateDisplay;
+            AspValidatorValidate = ValidatorValidate;
+            ValidatorValidate = NicerValidatorValidate;
+
+            // Remove the error class on each control group before validating
+            // Store a reference to the ClientValidate function
+            var origValidate = Page_ClientValidate;
+            // Override with our custom version
+            Page_ClientValidate = function (validationGroup) {
+                // Clear all the validation classes for this validation group
+                for (var i = 0; i < Page_Validators.length; i++) {
+                    if ((typeof (Page_Validators[i].validationGroup) == 'undefined' && !validationGroup) ||
+                        Page_Validators[i].validationGroup == validationGroup) {
+                        $("#" + Page_Validators[i].controltovalidate).parents('.form-group').each(function () {
+                            $(this).removeClass('has-error');
+                        });
+                    }
+                }
+                // Call the original function
+                origValidate(validationGroup);
+            };
+            //Override multiple validation group - , separates values
+            //IsValidationGroupMatch = function (control, validationGroup) {
+            //    if ((typeof (validationGroup) == "undefined") || (validationGroup == null)) {
+            //        return true;
+            //    }
+            //    var controlGroup = "";
+            //    var isGroupContained = false;
+            //    if (typeof (control.validationGroup) == "string") {
+            //        controlGroup = control.validationGroup;
+            //        var controlGroupArray = [];
+            //        if (validationGroup.indexOf(",") > -1) {
+            //            controlGroupArray = validationGroup.split(",");// validationGroup.split(",");
+            //        }
+            //        for (var i = 0; i < controlGroupArray.length; i++) {
+            //            if (controlGroupArray[i].trim() == controlGroup.trim()) {
+            //                isGroupContained = true;
+            //            }
+            //        }
+            //    }
+            //    return (controlGroup == validationGroup || isGroupContained);
+            //}
+        }
+    }
+
+    /**
+    * This function is called once for each Field Validator, passing in the 
+    * Field Validator span, which has helpful properties 'isvalid' (bool) and
+    * 'controltovalidate' (string = id of the input field to validate).
+    */
+    function NicerValidatorUpdateDisplay(val) {
+        // Do the default asp.net display of validation errors (remove if you want)
+        AspValidatorUpdateDisplay(val);
+
+        // Add our custom display of validation errors
+        // IF we should be paying any attention to this validator at all
+        if ((typeof (val.enabled) == "undefined" || val.enabled != false) && IsValidationGroupMatch(val, AspValidatorValidating)) {
+            val.innerHTML = '';
+            if (val.isvalid) {
+                // do whatever you want for invalid controls
+                $('#' + val.controltovalidate).removeClass("is-invalid").removeClass("ErrorControl").addClass("is-valid");
+            } else {
+                // reset invalid controls so they display as valid
+                var t = $('#' + val.controltovalidate);
+                t.removeClass("is-valid").addClass("is-invalid").addClass("ErrorControl");
+            }
+        }
+    }
+
+    function NicerValidatorValidate(val, validationGroup, event) {
+        AspValidatorValidating = validationGroup;
+        AspValidatorValidate(val, validationGroup, event);
+        // Animate scrolling ERROR
+        //for (var i in Page_Validators) {
+        //    try {
+        //        if (!Page_Validators[i].isvalid) {
+        //            var control = $("#" + Page_Validators[i].controltovalidate);
+
+        //            var top = control.offset().top;
+        //            $('html, body').animate({ scrollTop: top - 80}, 800);
+        //            control.focus();
+        //            return;
+        //        }
+        //    } catch (e) { }
+        //}
+    }
+
+
+            //(function($) {
+            //  // cache appropiate nodes.
+            //  var navbar = $('#navbar'), //nav
+            //      navbar__toggle = navbar.find('#navbar__toggle'),
+            //      navbar__nav = navbar.find('#navbar__nav'), // ul
+            //      navbarWidth,
+            //      navbar__navWidth;
+
+            //  function calculateBreakpoint() {
+  	         //   // Momentarially removed collapsed state
+            //    //navbar.removeClass('navbar-collapsed');
+            //    // get the width of the wrapper and the nav
+            //    navbarWidth = navbar.outerWidth();
+            //      navbar__navWidth = navbar__nav.outerWidth();
+            //    if (navbar__navWidth <= navbarWidth) {
+            //      navbar.addClass('navbar-expand');
+            //    } else {
+            //      navbar.removeClass('navbar-expand');
+            //    }
+            //  }
+
+            //  $(window).on('resize', calculateBreakpoint);
+            //  //navbar__toggle.on('click', toggleNav);
+            //  calculateBreakpoint();
+
+            //}(jQuery));
+</script>

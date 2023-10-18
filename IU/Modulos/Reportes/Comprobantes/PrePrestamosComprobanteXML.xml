@@ -1,0 +1,278 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdPrestamo" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaPrestamo" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TipoOperacionIdTipoOperacion" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoOperacion" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoMovimientoIdTipoMovimiento" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoMovimientoTipoMovimiento" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoValorIdTipoValor" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoValorTipoValor" type="xs:string" minOccurs="0" />
+              <xs:element name="NroDeIdentificacion" type="xs:int" minOccurs="0" />
+              <xs:element name="CantidadCuotas" type="xs:int" minOccurs="0" />
+              <xs:element name="ImporteSolicitado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteAutorizado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImportePrestamo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImportePrestamoEnLetras" type="xs:string" minOccurs="0" />
+              <xs:element name="CapitalOtorgado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteGastos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MontoTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MontoTotalEnLetras" type="xs:string" minOccurs="0" />
+              <xs:element name="PorcentajeGastos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteExcedido" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SubPeriodico" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteCuota" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteInteres" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoCapital" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoDeuda" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoDeudaEnLetras" type="xs:string" minOccurs="0" />
+              <xs:element name="ImporteCancelaciones" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteAnticipos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteCancelacion" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Bonificacion" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FechaCancelacion" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdRefPrestamoCancelacion" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="IdUsuarioEvento" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaEvento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SelloTiempo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="AfiliadoIdAfiliado" type="xs:int" minOccurs="0" />
+              <xs:element name="IdFilial" type="xs:int" minOccurs="0" />
+              <xs:element name="IdFilialPago" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaPreAutorizado" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaAutorizado" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaValidezAutorizado" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaConfirmacion" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CuotaFechaVencimientoPrimero" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CuotaFechaVencimientoUltimo" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MonedaIdMoneda" type="xs:int" minOccurs="0" />
+              <xs:element name="MonedaMoneda" type="xs:string" minOccurs="0" />
+              <xs:element name="MonedaDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialIdFilial" type="xs:int" minOccurs="0" />
+              <xs:element name="FilialCodigoFilial" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialFilial" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialDireccion" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialEstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="FilialPagoIdFilialPago" type="xs:int" minOccurs="0" />
+              <xs:element name="FilialPagoCodigoFilial" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialPagoFilial" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialPagoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialPagoDireccion" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialPagoEstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="AfiliadoNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoTipoDocumentoIdTipoDocumento" type="xs:int" minOccurs="0" />
+              <xs:element name="AfiliadoTipoDocumentoTipoDocumento" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoNumeroDocumento" type="xs:int" minOccurs="0" />
+              <xs:element name="AfiliadoCUIL" type="xs:long" minOccurs="0" />
+              <xs:element name="AfiliadoNumeroSocio" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoCategoriaCategoria" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoMatriculaIAF" type="xs:int" minOccurs="0" />
+              <xs:element name="AfiliadoFechaNacimiento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AfiliadoSexo" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoEstadoCivil" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoDomicilioCalle" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoDomicilioPiso" type="xs:int" minOccurs="0" />
+              <xs:element name="AfiliadoDomicilioDepartamento" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoDomicilioCodigoPostal" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoLocalidad" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoProvincia" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoTelefono" type="xs:string" minOccurs="0" />
+              <xs:element name="BancoSolImporteSeguro" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BancoSolTasaAdm" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BancoSolSellado" type="xs:decimal" minOccurs="0" />
+              
+              <xs:element name="PrestamoPlanIdPrestamoPlan" type="xs:int" minOccurs="0" />
+              <xs:element name="PrestamoPlanDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="PrestamoPlanPrestamoPlanTasaIdPrestamoPlanTasa" type="xs:int" minOccurs="0" />
+              <xs:element name="PrestamoPlanPrestamoPlanTasaTasa" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PrestamoPlanPrestamoPlanTasaFechaInicioVigencia" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UsuarioPreAutorizarIdUsuarioPreAutorizar" type="xs:int" minOccurs="0" />
+              <xs:element name="UsuarioPreAutorizarApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioPreAutorizarNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioPreAutorizarUsuario" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioAutorizarIdUsuarioAutorizar" type="xs:int" minOccurs="0" />
+              <xs:element name="UsuarioAutorizarApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioAutorizarNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioAutorizarUsuario" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioConfirmacionIdUsuarioConfirmacion" type="xs:int" minOccurs="0" />
+              <xs:element name="UsuarioConfirmacionApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioConfirmacionNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioConfirmacionCorreoElectronico" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioConfirmacionUsuario" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoCargoIdTipoCargo" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoCargoCodigoCargo" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoCargoTipoCargo" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoCargoImporte" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TipoCargoCantidadMaximaCuotas" type="xs:int" minOccurs="0" />
+              <xs:element name="FormaCobroAfiliadoIdFormaCobroAfiliado" type="xs:int" minOccurs="0" />
+              <xs:element name="FormaCobroAfiliadoFormaCobroIdFormaCobro" type="xs:int" minOccurs="0" />
+              <xs:element name="FormaCobroAfiliadoFormaCobroFormaCobro" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdParametro" type="xs:int" minOccurs="0" />
+              <xs:element name="NombreParametro" type="xs:string" minOccurs="0" />
+              <xs:element name="ParametroValor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdPrestamo" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaPrestamo" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TipoOperacionIdTipoOperacion" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoOperacion" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoMovimientoIdTipoMovimiento" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoOperacionTipoMovimientoTipoMovimiento" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoValorIdTipoValor" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoValorTipoValor" type="xs:string" minOccurs="0" />
+              <xs:element name="NroDeIdentificacion" type="xs:int" minOccurs="0" />
+              <xs:element name="CantidadCuotas" type="xs:int" minOccurs="0" />
+              <xs:element name="ImporteSolicitado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteAutorizado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImportePrestamo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CapitalOtorgado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteGastos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PorcentajeGastos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteExcedido" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SubPeriodico" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteCuota" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoCapital" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoDeuda" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoDeudaEnLetras" type="xs:string" minOccurs="0" />
+              <xs:element name="ImporteCancelaciones" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteCancelacion" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IdRefPrestamoCancelacion" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="EstadoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="IdUsuarioEvento" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaEvento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SelloTiempo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="AfiliadoIdAfiliado" type="xs:int" minOccurs="0" />
+              <xs:element name="IdFilial" type="xs:int" minOccurs="0" />
+              <xs:element name="IdFilialPago" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaPreAutorizado" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaAutorizado" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaValidezAutorizado" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaConfirmacion" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MonedaIdMoneda" type="xs:int" minOccurs="0" />
+              <xs:element name="MonedaMoneda" type="xs:string" minOccurs="0" />
+              <xs:element name="MonedaDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialIdFilial" type="xs:int" minOccurs="0" />
+              <xs:element name="FilialCodigoFilial" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialFilial" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialDireccion" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialEstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="FilialPagoIdFilialPago" type="xs:int" minOccurs="0" />
+              <xs:element name="FilialPagoCodigoFilial" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialPagoFilial" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialPagoDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialPagoDireccion" type="xs:string" minOccurs="0" />
+              <xs:element name="FilialPagoEstadoIdEstado" type="xs:int" minOccurs="0" />
+              <xs:element name="AfiliadoNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoTipoDocumentoIdTipoDocumento" type="xs:int" minOccurs="0" />
+              <xs:element name="AfiliadoTipoDocumentoTipoDocumento" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoNumeroDocumento" type="xs:int" minOccurs="0" />
+              <xs:element name="AfiliadoCUIL" type="xs:long" minOccurs="0" />
+              <xs:element name="AfiliadoNumeroSocio" type="xs:string" minOccurs="0" />
+              <xs:element name="AfiliadoCategoriaCategoria" type="xs:string" minOccurs="0" />
+              <xs:element name="PrestamoPlanIdPrestamoPlan" type="xs:int" minOccurs="0" />
+              <xs:element name="PrestamoPlanDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="PrestamoPlanPrestamoPlanTasaIdPrestamoPlanTasa" type="xs:int" minOccurs="0" />
+              <xs:element name="PrestamoPlanPrestamoPlanTasaTasa" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PrestamoPlanPrestamoPlanTasaFechaInicioVigencia" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UsuarioPreAutorizarIdUsuarioPreAutorizar" type="xs:int" minOccurs="0" />
+              <xs:element name="UsuarioPreAutorizarApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioPreAutorizarNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioPreAutorizarUsuario" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioAutorizarIdUsuarioAutorizar" type="xs:int" minOccurs="0" />
+              <xs:element name="UsuarioAutorizarApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioAutorizarNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioAutorizarUsuario" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioConfirmacionIdUsuarioConfirmacion" type="xs:int" minOccurs="0" />
+              <xs:element name="UsuarioConfirmacionApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioConfirmacionNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioConfirmacionCorreoElectronico" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioConfirmacionUsuario" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoCargoIdTipoCargo" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoCargoCodigoCargo" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoCargoTipoCargo" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoCargoImporte" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TipoCargoCantidadMaximaCuotas" type="xs:int" minOccurs="0" />
+              <xs:element name="FormaCobroAfiliadoIdFormaCobroAfiliado" type="xs:int" minOccurs="0" />
+              <xs:element name="FormaCobroAfiliadoFormaCobroIdFormaCobro" type="xs:int" minOccurs="0" />
+              <xs:element name="FormaCobroAfiliadoFormaCobroFormaCobro" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdCuentaCorriente" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaMovimiento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Periodo" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoCargo" type="xs:string" minOccurs="0" />
+              <xs:element name="Concepto" type="xs:string" minOccurs="0" />
+              <xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ImporteCobrado" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="Table4">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TipoValor" type="xs:string" minOccurs="0" />
+              <xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+        <xs:element name="Table5">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="Table6">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdSolicitudPago" type="xs:int" minOccurs="0" />
+              <xs:element name="EntidadIdRefEntidad" type="xs:int" minOccurs="0" />
+              <xs:element name="EntidadIdEntidad" type="xs:int" minOccurs="0" />
+              <xs:element name="PrefijoNumeroFactura" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroFactura" type="xs:string" minOccurs="0" />
+              <xs:element name="EntidadNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="EntidadCuit" type="xs:string" minOccurs="0" />
+              <xs:element name="EntidadCondicionFiscalDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaFactura" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TiposFacturasIdTipoFactura" type="xs:int" minOccurs="0" />
+              <xs:element name="TiposFacturasDescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="ImporteTotal" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

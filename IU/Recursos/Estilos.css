@@ -18,7 +18,7 @@
 
 .modalBackground {
 	background-color:#BEBCA3;
-	filter:alpha(opacity=60);
+	filter:alpha(opacity=6);
 	opacity:0.6;
 }
 .modalPopup {

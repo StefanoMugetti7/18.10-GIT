@@ -29,6 +29,11 @@
                     <ItemTemplate>
                         <%# Eval("TipoValorTipoValor")%>
                     </ItemTemplate>
+
+
+
+
+
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Forma Cobro" SortExpression="FormaCobro.FormaCobro">
                     <ItemTemplate>

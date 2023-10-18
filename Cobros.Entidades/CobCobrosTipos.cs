@@ -18,5 +18,6 @@ namespace Cobros.Entidades
             get { return _idCobroConcepto; }
             set { _idCobroConcepto = value; }
         }
+        int hola;
     }
 }

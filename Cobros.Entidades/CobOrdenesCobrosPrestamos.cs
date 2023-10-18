@@ -13,7 +13,6 @@ namespace Cobros.Entidades
         #region "Private Members"
         int _idOrdenCobroPrestamo;
         int _idOrdenCobro;
-        int _idPrestamo;
         #endregion
 
         #region "Constructors"
@@ -36,11 +35,6 @@ namespace Cobros.Entidades
             set { _idOrdenCobro = value; }
         }
 
-        public int IdPrestamo
-        {
-            get { return _idPrestamo; }
-            set { _idPrestamo = value; }
-        }
 
         #endregion
     }

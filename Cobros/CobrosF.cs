@@ -22,12 +22,6 @@ namespace Cobros
         {
             return new CobOrdenesCobrosLN().Agregar(pParametro);
         }
-
-        public static bool OrdenesCobrosAgregar(CobOrdenesCobros pParametro, CarTiposCargosAfiliadosFormasCobros pCargoAfiliado)
-        {
-            return new CobOrdenesCobrosLN().Agregar(pParametro, pCargoAfiliado);
-        }
-
         public static bool OrdenesCobrosAgregarAnticipos(CobOrdenesCobros pParametro)
         {
             return new CobOrdenesCobrosLN().AgregarAnticipos(pParametro);

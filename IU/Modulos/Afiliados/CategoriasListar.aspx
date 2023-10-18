@@ -22,6 +22,12 @@
                     <asp:Label CssClass="col-sm-1 col-form-label" ID="lblEstado" Width="100px" runat="server" Text="Estado" />
                     <div class="col-sm-3">
                         <asp:DropDownList CssClass="form-control select2" ID="ddlEstado" Width="200px" runat="server" />
+
+
+
+
+
+
                     </div>
 
                 </div>

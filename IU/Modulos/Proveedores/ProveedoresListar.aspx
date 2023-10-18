@@ -31,6 +31,13 @@
                     <asp:TextBox CssClass="form-control" ID="txtDetalle" runat="server"></asp:TextBox>
                 </div>
                 <asp:Label CssClass="col-sm-1 col-form-label" ID="lblEstado" runat="server" Text="Estado"></asp:Label>
+
+
+
+
+
+
+
                 <div class="col-sm-3">
                     <asp:DropDownList CssClass="form-control select2" ID="ddlEstados" runat="server">
                     </asp:DropDownList>

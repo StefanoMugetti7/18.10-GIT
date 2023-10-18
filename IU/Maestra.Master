@@ -44,7 +44,7 @@
         function ResolveUrl(url) {
             return url.replace("~/", baseUrl);
         }
-        /**masterrrr */
+        /**master                    rrr */
         function toDate(dateStr) {
             if (dateStr) {
                 var parts = dateStr.split("/")

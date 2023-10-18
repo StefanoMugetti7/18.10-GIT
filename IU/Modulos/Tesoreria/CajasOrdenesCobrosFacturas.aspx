@@ -4,3 +4,9 @@
 <asp:Content ID="Content7" ContentPlaceHolderID="cphPrincipal" runat="server">
     <auge:Controles ID="ctrlDatos" runat="server" />
 </asp:Content>
+
+
+
+
+
+

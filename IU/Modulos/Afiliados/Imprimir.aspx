@@ -25,6 +25,12 @@
             $temp.select();
             try {
                 var successful = document.execCommand('copy');
+
+
+
+
+
+
                 MostrarMensaje("Se ha Copiado el Link");
                 //$('#copyClipboard').data('tooltip').show();
             } catch (err) {

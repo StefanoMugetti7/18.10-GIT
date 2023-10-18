@@ -20,6 +20,14 @@
                         </asp:DropDownList>
                     </div>
                     <asp:Label CssClass="col-sm-1 col-form-label" ID="lblNumeroDocumento" runat="server" Text="Número"></asp:Label>
+
+
+
+
+
+
+
+
                     <div class="col-sm-3">
                         <AUGE:NumericTextBox CssClass="form-control" ID="txtNumeroDocumento" runat="server"></AUGE:NumericTextBox>
                     </div>

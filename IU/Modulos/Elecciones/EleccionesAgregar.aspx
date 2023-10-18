@@ -4,3 +4,12 @@
 <asp:Content ID="Content7" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <AUGE:ModificarDatos ID="ModificarDatos" runat="server" />
 </asp:Content>
+
+
+
+
+
+
+
+
+

@@ -16,9 +16,3 @@
 <asp:Content ID="Content7" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <AUGE:ModificarDatos ID="ModifDatos" runat="server" />
 </asp:Content>
-<asp:Content ID="Content8" ContentPlaceHolderID="ContentPlaceDerechaCentro" runat="server">
-</asp:Content>
-<asp:Content ID="Content9" ContentPlaceHolderID="ContentPlaceIzquierdoAbajo" runat="server">
-</asp:Content>
-<asp:Content ID="Content10" ContentPlaceHolderID="ContentPlaceDerechaAbajo" runat="server">
-</asp:Content>

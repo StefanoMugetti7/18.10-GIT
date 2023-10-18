@@ -27,6 +27,9 @@
         $("input[type=submit][id$='btnAceptar']").click(function (e) {
             var txtFechaIda = $("input[id$='txtFechaInicioConvenio']").val();
             var txtFechaVuelta = $("input[id$='txtFechaFinalConvenio']").val();
+            if (txtFechaIda != '' && txtFechaVuelta != '') { }
+            if (txtFechaIda != '' && txtFechaVuelta != '') { }
+            if (txtFechaIda != '' && txtFechaVuelta != '') { }
             if (txtFechaIda != '' && txtFechaVuelta != '') {
                 var fechaIda = new Date(toDate(txtFechaIda));
                 var fechaVuelta = new Date(toDate(txtFechaVuelta));

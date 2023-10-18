@@ -210,6 +210,7 @@ namespace IU.Modulos.Turismo.Controles
                 }
             }
         }
+        /*esta es la modificacion*/
         public void IniciarControl(TurPaquetes pParametro, Gestion pGestion)
         {
             this.GestionControl = pGestion;
